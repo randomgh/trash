@@ -1,0 +1,31 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "standard",
+    "node",
+    "react",
+    "promise",
+    "import"
+  ],
+  "rules": {
+    "react/prop-types": [2],
+
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-nesting": 1
+  },
+  "extends": ["standard", "standard-jsx", "eslint:recommended", "plugin:react/recommended"]
+}
