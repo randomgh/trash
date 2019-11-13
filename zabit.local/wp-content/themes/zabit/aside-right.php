@@ -1,0 +1,1 @@
+<aside class="aside aside_right aside_empty"></aside>

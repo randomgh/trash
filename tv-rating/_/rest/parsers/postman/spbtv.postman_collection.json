@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "e5c65c96-fb0c-44cf-af3c-db027f8a4fac",
+		"name": "spbtv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "channels",
+			"item": [
+				{
+					"name": "channels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": " https://ru.spbtv.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": " https://ru.spbtv.com/epg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.spbtv.com/v1/channels?client_id={{client_id}}&client_version={{client_version}}&expand[channel]={{expand[channel]}}&locale={{locale}}&page[limit]={{page[limit]}}&page[offset]={{page[offset]}}&sort={{sort}}&timezone={{timezone}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spbtv",
+								"com"
+							],
+							"path": [
+								"v1",
+								"channels"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}"
+								},
+								{
+									"key": "client_version",
+									"value": "{{client_version}}"
+								},
+								{
+									"key": "expand[channel]",
+									"value": "{{expand[channel]}}"
+								},
+								{
+									"key": "locale",
+									"value": "{{locale}}"
+								},
+								{
+									"key": "page[limit]",
+									"value": "{{page[limit]}}"
+								},
+								{
+									"key": "page[offset]",
+									"value": "{{page[offset]}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								},
+								{
+									"key": "timezone",
+									"value": "{{timezone}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "broadcasts",
+			"item": [
+				{
+					"name": "programs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": " https://ru.spbtv.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": " https://ru.spbtv.com/epg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.spbtv.com/v1/epg/programs/?client_id={{client_id}}&client_version={{client_version}}&expand[program]={{expand[program]}}&locale={{locale}}&page[limit]={{page[limit]}}&page[offset]={{page[offset]}}&timezone={{timezone}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spbtv",
+								"com"
+							],
+							"path": [
+								"v1",
+								"epg",
+								"programs",
+								""
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}"
+								},
+								{
+									"key": "client_version",
+									"value": "{{client_version}}"
+								},
+								{
+									"key": "expand[program]",
+									"value": "{{expand[program]}}"
+								},
+								{
+									"key": "locale",
+									"value": "{{locale}}"
+								},
+								{
+									"key": "page[limit]",
+									"value": "{{page[limit]}}"
+								},
+								{
+									"key": "page[offset]",
+									"value": "{{page[offset]}}"
+								},
+								{
+									"key": "timezone",
+									"value": "{{timezone}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "genres",
+			"item": [
+				{
+					"name": "genres",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": " https://ru.spbtv.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": " https://ru.spbtv.com/epg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.spbtv.com/v1/genres?client_id={{client_id}}&client_version={{client_version}}&filter[resource_type_in]={{filter[resource_type_in]}}&expand[genre]={{expand[genre]}}&locale={{locale}}&page[limit]={{page[limit]}}&page[offset]={{page[offset]}}&timezone={{timezone}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spbtv",
+								"com"
+							],
+							"path": [
+								"v1",
+								"genres"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}"
+								},
+								{
+									"key": "client_version",
+									"value": "{{client_version}}"
+								},
+								{
+									"key": "filter[resource_type_in]",
+									"value": "{{filter[resource_type_in]}}"
+								},
+								{
+									"key": "expand[genre]",
+									"value": "{{expand[genre]}}"
+								},
+								{
+									"key": "locale",
+									"value": "{{locale}}"
+								},
+								{
+									"key": "page[limit]",
+									"value": "{{page[limit]}}"
+								},
+								{
+									"key": "page[offset]",
+									"value": "{{page[offset]}}"
+								},
+								{
+									"key": "timezone",
+									"value": "{{timezone}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "types",
+			"item": [
+				{
+					"name": "types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": " https://ru.spbtv.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": " https://ru.spbtv.com/epg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.spbtv.com/v1/epg/program_types?client_id={{client_id}}&client_version={{client_version}}&locale={{locale}}&page[limit]={{page[limit]}}&page[offset]={{page[offset]}}&timezone={{timezone}}&sort={{sort}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spbtv",
+								"com"
+							],
+							"path": [
+								"v1",
+								"epg",
+								"program_types"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}"
+								},
+								{
+									"key": "client_version",
+									"value": "{{client_version}}"
+								},
+								{
+									"key": "locale",
+									"value": "{{locale}}"
+								},
+								{
+									"key": "page[limit]",
+									"value": "{{page[limit]}}"
+								},
+								{
+									"key": "page[offset]",
+									"value": "{{page[offset]}}"
+								},
+								{
+									"key": "timezone",
+									"value": "{{timezone}}"
+								},
+								{
+									"key": "sort",
+									"value": "{{sort}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "schedule",
+			"item": [
+				{
+					"name": "schedule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": " https://ru.spbtv.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": " https://ru.spbtv.com/epg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.spbtv.com/v2/epg/program_events.json?client_id={{client_id}}&client_version={{client_version}}&expand[program_event]={{expand[program_event]}}&channel_id={{channel_id}}&region_uid={{region_uid}}&pivot_date={{pivot_date}}&locale={{locale}}&timezone={{timezone}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spbtv",
+								"com"
+							],
+							"path": [
+								"v2",
+								"epg",
+								"program_events.json"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{client_id}}"
+								},
+								{
+									"key": "client_version",
+									"value": "{{client_version}}"
+								},
+								{
+									"key": "expand[program_event]",
+									"value": "{{expand[program_event]}}"
+								},
+								{
+									"key": "channel_id",
+									"value": "{{channel_id}}"
+								},
+								{
+									"key": "region_uid",
+									"value": "{{region_uid}}"
+								},
+								{
+									"key": "pivot_date",
+									"value": "{{pivot_date}}"
+								},
+								{
+									"key": "locale",
+									"value": "{{locale}}"
+								},
+								{
+									"key": "timezone",
+									"value": "{{timezone}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

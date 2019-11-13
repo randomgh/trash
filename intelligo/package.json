@@ -1,0 +1,39 @@
+{
+  "name": "intelligo",
+  "version": "0.0.1",
+  "description": "Intelligo",
+  "keywords": [
+    "intelligo",
+    "messapps"
+  ],
+  "author": "nmudriy",
+  "license": "Apache-2.0",
+  "private": true,
+  "homepage": "https://github.com/Messapps/intelligo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Messapps/intelligo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Messapps/intelligo/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "firebase-serve": "firebase serve",
+    "firebase-deploy": "firebase deploy",
+    "apps-build": "cd apps/ && npm run build",
+    "apps-serve": "cd apps/ && npm run serve",
+    "apps-watch": "cd apps/ && npm run watch",
+    "webpack-serve:dev": "cd www/ && npm run serve",
+    "webpack-serve:prod": "cd www/ && npm run serve",
+    "webpack-watch:dev": "cd www/ && npm run watch",
+    "webpack-watch:prod": "cd www/ && npm run watch",
+    "webpack-build:dev": "cd www/ && npm run build",
+    "webpack-build:prod": "cd www/ && npm run build"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "firebase-admin": "^8.3.0",
+    "firebase-functions": "^3.1.0"
+  }
+}

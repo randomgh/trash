@@ -1,0 +1,28 @@
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+.editor-styles-wrapper .wp-block[data-type="zabit/yt"] {
+  max-width: unset;
+  /* Sizing */
+  /* Typography */
+  /* Adaptations */
+  /* Colors */
+  /* Misc */
+  /* Contents */ }
+  .editor-styles-wrapper .wp-block[data-type="zabit/yt"] .yt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px auto; }
+    .editor-styles-wrapper .wp-block[data-type="zabit/yt"] .yt__video {
+      display: block;
+      margin: 0 auto; }
+  .editor-styles-wrapper .wp-block[data-type="zabit/yt"] .yt {
+    margin: 0;
+    min-height: 240px;
+    background-color: #9e9e9e; }
+
+/*# sourceMappingURL=yt-editor.css.map */

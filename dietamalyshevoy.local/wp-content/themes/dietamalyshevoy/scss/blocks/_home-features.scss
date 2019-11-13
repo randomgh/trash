@@ -1,0 +1,87 @@
+@import '../options';
+
+.home-features {
+  margin-top: $x * 29;
+  margin-bottom: $x * 29;
+
+  & > .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  &__li {
+    display: block;
+    margin: $x * 4;
+    width: $x * 48;
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      width: $x * 20;
+      height: $x * 20;
+
+      &_color {
+        &_red {
+          color: $color--red3;
+        }
+
+        &_yellow {
+          color: $color--yellow2;
+        }
+
+        &_green {
+          color: $color--green2;
+        }
+
+        &_blue {
+          color: $color--blue1;
+        }
+
+        &_purple {
+          color: $color--purple1;
+        }
+      }
+    }
+
+    &__caption {
+      display: block;
+      margin-top: $x * 5;
+
+      & > * {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__title,
+    &__description {
+      display: block;
+      margin: $x * 2 auto;
+      font-family: $font-family_MW;
+      font-style: italic;
+      text-align: center;
+      color: $color--black;
+    }
+
+    &__title {
+      @include text(big);
+
+      min-height: 2em;
+      font-weight: bold;
+    }
+
+    &__description {
+      @include text(medium);
+
+      font-weight: 300;
+    }
+  }
+}

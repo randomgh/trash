@@ -1,0 +1,106 @@
+@import '../options';
+
+.about-description {
+  margin: $x * 20 0 $x * 21 0;
+
+  & > .content {
+    padding: 0 $x * 28;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__column {
+    position: relative;
+
+    &:first-child {
+      flex-shrink: 0;
+      width: $x * 112;
+    }
+
+    &:last-child {
+      flex-grow: 1;
+    }
+  }
+
+  &__link {
+    color: $color--blue1;
+  }
+
+  &__text {
+    @include text(normal);
+
+    display: block;
+    font-family: $font-family_MW;
+    font-weight: 300;
+    margin: 0 0 $x * 4 0;
+    line-height: $x * 7;
+
+    &_bg-red {
+      background-color: $opacity_color--red1;
+    }
+
+    &_bg-blue {
+      background-color: $opacity_color--blue;
+    }
+
+    &_bg-yellow {
+      background-color: $opacity_color--yellow;
+    }
+
+    &_bg-green {
+      background-color: $opacity_color--green;
+    }
+
+  }
+
+  &__title {
+    @include text(h3);
+
+    display: block;
+    font-family: $font-family_MW;
+    font-style: italic;
+    font-weight: bold;
+    color: $color--red1;
+    margin: 0 0 $x * 4 0;
+  }
+
+  &__text-image {
+    width: $x * 66;
+    margin: $x * 5 0 $x * 8 $x * -23;
+  }
+
+  &__arrow-down {
+    position: absolute;
+    width: $x * 75;
+    right: $x * 19;
+    bottom: -$x * 30;
+    z-index: 1;
+  }
+
+  &__btn {
+    @include text(normal);
+
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: $font-family_OS;
+    font-weight: 600;
+    line-height: $x * 6;
+    background-color: $color--red1;
+    border-radius: $x * 10;
+    min-width: $x * 50;
+    padding: $x * 3;
+    text-align: center;
+    color: $color--white;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color--red2;
+    }
+  }
+}

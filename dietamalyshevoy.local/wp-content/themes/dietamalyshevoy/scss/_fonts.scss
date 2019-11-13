@@ -1,0 +1,20 @@
+@import 'utilities/font';
+
+@include font('../../fonts', 'Merriweather',
+        'light' 'normal' 'bold' 'black', 'normal' 'italic', woff2 ttf woff eot svg);
+@include font('../../fonts', 'Merriweather Sans',
+        'light' 'normal' 'bold' 'extra_bold', 'normal' 'italic', woff2 ttf woff eot svg);
+
+@include font('../../fonts', 'Roboto',
+        'thin' 'light' 'normal' 'medium' 'bold' 'black', 'normal' 'italic', woff2 ttf woff eot svg);
+@include font('../../fonts', 'Roboto Condensed',
+        'light' 'normal' 'bold', 'normal' 'italic', woff2 ttf woff eot svg);
+@include font('../../fonts', 'Roboto Mono',
+        'thin' 'light' 'normal' 'medium' 'bold', 'normal' 'italic', woff2 ttf woff eot svg);
+@include font('../../fonts', 'Roboto Slab',
+        'thin' 'light' 'normal' 'bold', 'normal', woff2 ttf woff eot svg);
+
+@include font('../../fonts', 'Caveat',
+        'normal' 'bold', 'normal', woff2 ttf woff eot svg);
+@include font('../../fonts', 'Caveat Brush',
+        'normal', 'normal', woff2 ttf woff eot svg);

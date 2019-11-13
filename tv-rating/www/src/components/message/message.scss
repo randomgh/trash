@@ -1,0 +1,95 @@
+@import '../../scss/options';
+
+// TODO: adjust padding
+
+%message__title { @extend %h4; };
+
+%message__text { @extend %text--normal; };
+
+$message__icon_margin:  $x * 2 auto;
+$message__icon_padding: $x * 3;
+$message__icon_size:    $x * 13;
+$message__icon_color:   $color--white;
+
+$message__icon_background--success: $color--green;
+$message__icon_background--warning: $color--yellow;
+$message__icon_background--danger:  $color--red;
+$message__icon_background--info:    $color--blue;
+
+$message__title_margin: $x auto;
+$message__title_width:  $x * 60;
+
+$message__text_margin: $x auto;
+$message__text_width:  $x * 50;
+
+$message__text__a_color:        $color--blue;
+$message__text__a_color_active: $color--blue_alt;
+
+.message {
+  display: block;
+  flex-shrink: 0;
+  margin: auto;
+
+  &__icon {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: $message__icon_margin;
+    padding: $message__icon_padding;
+    width: $message__icon_size;
+    height: $message__icon_size;
+    color: $message__icon_color;
+
+    .message_status_success & {
+      background-color: $message__icon_background--success;
+    }
+
+    .message_status_warning & {
+      background-color: $message__icon_background--warning;
+    }
+
+    .message_status_danger & {
+      background-color: $message__icon_background--danger;
+    }
+
+    .message_status_info & {
+      background-color: $message__icon_background--info;
+    }
+  }
+
+  &__title {
+    @extend %message__title;
+
+    display: block;
+    margin: $message__title_margin;
+    max-width: $message__title_width;
+    text-align: center;
+  }
+
+  &__text {
+    @extend %message__text;
+
+    display: block;
+    margin: $message__text_margin;
+    max-width: $message__text_width;
+    text-align: center;
+
+    a {
+      transition: color $transition;
+
+      &:not(:hover):not(:active):not(:focus),
+      &:link:not(:hover):not(:active):not(:focus),
+      &:visited:not(:hover):not(:active):not(:focus) {
+        color: $message__text__a_color;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $message__text__a_color_active;
+        text-decoration: underline;
+      }
+    }
+  }
+}

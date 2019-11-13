@@ -1,0 +1,13 @@
+{
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "build": "babel ./ --out-dir ../functions/",
+    "serve": "node ./index.js",
+    "watch": "nodemon ./index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "private": true
+}

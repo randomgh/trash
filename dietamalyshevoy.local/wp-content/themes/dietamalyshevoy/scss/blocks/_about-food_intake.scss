@@ -1,0 +1,93 @@
+@import '../options';
+
+//TODO: add background for this block
+
+.about-food-intake {
+  margin-bottom: $x * 23;
+  background-color: $bg_color--light_blue;
+
+  &:before {
+    content: $content--space;
+    display: block;
+    width: 100%;
+    height: $x * 50;
+    background: url(../../images/wave_top.svg) 0 0 / 100% no-repeat;
+    position: absolute;
+    top: -$x * 50;
+    z-index: -1;
+  }
+
+  &:after {
+    content: $content--space;
+    display: block;
+    width: 100%;
+    height: $x * 75;
+    background: url(../../images/wave_bottom.svg) 0 0 / 100% no-repeat;
+    position: absolute;
+    bottom: -$x * 61;
+    z-index: -1;
+  }
+
+  & > .content {
+      padding: 0 $x * 28;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  &__text {
+    @include text(normal);
+
+    display: block;
+    font-family: $font-family_MW;
+    font-weight: 300;
+    line-height: $x * 7;
+    margin-bottom: $x * 6;
+  }
+
+ &__item {
+    width: 50%;
+    margin-top: $x * 21;
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      padding-right: $x * 10;
+    }
+
+    &:nth-child(even) {
+      padding-left: $x * 10;
+    }
+
+    &__img {
+      box-shadow: 0 $x * 7.5 $x * 12.5 $opacity_color--box_shadow;
+      transform: translateX(-$x * 22) rotate(-15deg);
+    }
+
+    &__title {
+      font-family: $font-family_C;
+      font-weight: bold;
+      font-size: $x * 6.25;
+      line-height: $x * 7.5;
+      transform: matrix(1, -.05, .05, 1, 0, 0);
+      margin: $x * 6 0 $x * 5 0;
+      display: block;
+
+      &-red {
+        color: $color--red1;
+      }
+
+      &-blue {
+        color: $color--blue1;
+      }
+
+      &-yellow {
+        color: $color--yellow1;
+      }
+
+      &-green {
+        color: $color--green1;
+      }
+    }
+  }
+}

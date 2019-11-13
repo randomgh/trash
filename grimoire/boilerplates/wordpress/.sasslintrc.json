@@ -1,0 +1,173 @@
+{
+  "options": {
+    "formatter": "stylish",
+    "merge-default-rules": false
+  },
+  "rules": {
+    "attribute-quotes": [1, {
+      "include": 1
+    }],
+    "bem-depth": [1, {
+      "max-depth": 3
+    }],
+    "border-zero": [1, {
+      "convention": "none"
+    }],
+    "brace-style": [2, {
+      "style": "1tbs",
+      "allow-single-line": 1
+    }],
+    "class-name-format": [0, {
+      "allow-leading-underscore": 0,
+      "convention": "strictbem"
+    }],
+    "clean-import-paths": [2, {
+      "leading-underscore": 0,
+      "filename-extension": 0
+    }],
+    "declarations-before-nesting": 2,
+    "empty-args": [1, {
+      "include": 0
+    }],
+    "empty-line-between-blocks": [2, {
+      "include": 1,
+      "allow-single-line-rulesets": 1
+    }],
+    "extends-before-declarations": 2,
+    "extends-before-mixins": 2,
+    "final-newline": [1, {
+      "include": 0
+    }],
+    "force-attribute-nesting": 0,
+    "force-element-nesting": 0,
+    "force-pseudo-nesting": 0,
+    "function-name-format": [0, {
+      "allow-leading-underscore": 0,
+      "convention": "snakecase"
+    }],
+    "hex-length": [2, {
+      "style": "short"
+    }],
+    "hex-notation": [2, {
+      "style": "lowercase"
+    }],
+    "id-name-format": [2, {
+      "allow-leading-underscore": 0,
+      "convention": "hyphenatedlowercase"
+    }],
+    "indentation": [2, {
+      "size": 2
+    }],
+    "leading-zero": [2, {
+      "include": 0
+    }],
+    "max-file-line-count": [1, {
+      "length": 300
+    }],
+    "max-line-length": [1, {
+      "length": 120
+    }],
+    "mixin-name-format": [0, {
+      "allow-leading-underscore": 0,
+      "convention": "snakecase"
+    }],
+    "mixins-before-declarations": [1, {
+      "exclude": ["adaptation"]
+    }],
+    "nesting-depth": [1, {
+      "max-depth": 3
+    }],
+    "no-attribute-selectors": 1,
+    "no-color-hex": 0,
+    "no-color-keywords": 2,
+    "no-color-literals": [1, {
+      "allow-map-identifiers": 1,
+      "allow-rgba": 0,
+      "allow-variable-identifiers": 1
+    }],
+    "no-combinators": 0,
+    "no-css-comments": 0,
+    "no-debug": 2,
+    "no-disallowed-properties": 0,
+    "no-duplicate-properties": 2,
+    "no-empty-rulesets": 1,
+    "no-extends": 0,
+    "no-ids": 1,
+    "no-important": 1,
+    "no-invalid-hex": 2,
+    "no-mergeable-selectors": 1,
+    "no-misspelled-properties": 2,
+    "no-qualifying-elements": [1, {
+      "allow-element-with-attribute": 0,
+      "allow-element-with-class": 0,
+      "allow-element-with-id": 0
+    }],
+    "no-trailing-whitespace": 2,
+    "no-trailing-zero": 2,
+    "no-transition-all": 1,
+    "no-universal-selectors": 0,
+    "no-url-domains": 0,
+    "no-url-protocols": [0, {
+      "allow-protocol-relative-urls": 0
+    }],
+    "no-vendor-prefixes": [1, {
+      "ignore-non-standard": 0
+    }],
+    "no-warn": 2,
+    "one-declaration-per-line": 2,
+    "placeholder-in-extend": 0,
+    "placeholder-name-format": [1, {
+      "allow-leading-underscore": 0,
+      "convention": "snakecase"
+    }],
+    "property-sort-order": [0, {
+      "order": "smacss",
+      "ignore-custom-properties": 0
+    }],
+    "property-units": 0,
+    "pseudo-element": 2,
+    "quotes": [2, {
+      "style": "single"
+    }],
+    "shorthand-values": [1, {
+      "allowed-shorthands": [1, 2]
+    }],
+    "single-line-per-selector": 2,
+    "space-after-bang": [2, {
+      "include": 0
+    }],
+    "space-after-colon": [2, {
+      "include": 1
+    }],
+    "space-after-comma": [2, {
+      "include": 1
+    }],
+    "space-around-operator": [2, {
+      "include": 1
+    }],
+    "space-before-bang": [2, {
+      "include": 1
+    }],
+    "space-before-brace": [2, {
+      "include": 1
+    }],
+    "space-before-colon": [2, {
+      "include": 0
+    }],
+    "space-between-parens": [2, {
+      "include": 0
+    }],
+    "trailing-semicolon": [2, {
+      "include": 1
+    }],
+    "url-quotes": 0,
+    "variable-for-property": 0,
+    "variable-name-format": [0, {
+      "allow-leading-underscore": 1,
+      "convention": "strictbem"
+    }],
+    "zero-unit": [2, {
+      "include": 0
+    }]
+  }
+}

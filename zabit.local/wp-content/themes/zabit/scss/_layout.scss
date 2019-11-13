@@ -1,0 +1,2051 @@
+@import 'options';
+
+.app {
+  position: relative;
+  display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  z-index: 3;
+  background-color: transparent;
+  transition: background-color $transition;
+
+  @include adaptation(desktop-l) {
+    flex-direction: row;
+//    background: linear-gradient(0, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: $color--background;
+    background: -moz-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$color--background}",endColorstr="#{$color--background}",GradientType=1);
+  }
+
+  @include adaptation(desktop-s) {
+    flex-direction: row;
+    //    background: linear-gradient(0, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: $color--background;
+    background: -moz-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$color--background}",endColorstr="#{$color--background}",GradientType=1);
+  }
+
+
+  @include adaptation(tablet-l) {
+    flex-direction: row;
+    //    background: linear-gradient(0, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: $color--background;
+    background: -moz-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    background: linear-gradient(0deg, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$color--background}",endColorstr="#{$color--background}",GradientType=1);
+  }
+
+  @include adaptation(mobile-l) {
+    pointer-events: none;
+    overflow: auto;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @include adaptation(mobile-s) {
+    pointer-events: none;
+    overflow: auto;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #state-menu:checked ~ .app > & {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      background-color: $color--background;
+      pointer-events: auto;
+    }
+
+    @include adaptation(mobile-s) {
+      background-color: $color--background;
+      pointer-events: auto;
+    }
+  }
+
+  & > .aside {
+    &.aside_left {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        pointer-events: auto;
+        position: sticky;
+        top: 0;
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: space-between;
+        background: linear-gradient(0, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+      }
+
+      @include adaptation(mobile-s) {
+        pointer-events: auto;
+        position: sticky;
+        top: 0;
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: space-between;
+        background: linear-gradient(0, rgba($color--background, 0) 0%, rgba($color--background, 1) 100%);
+      }
+
+      & > .nav__link {
+        &_index {
+          @include adaptation(desktop-l) {
+            width: $x * 8;
+            height: $x * 8;
+            margin-top: -$x * 1.5;
+            margin-bottom: $x * (4 - (8 - 1.5));
+          }
+
+          @include adaptation(desktop-s) {
+            width: $x * 7;
+            height: $x * 7;
+            margin-top: -$x * 1.5;
+            margin-bottom: $x * (3 - (7 - 1.5));
+          }
+
+          @include adaptation(tablet-l) {
+            width: $x * 6;
+            height: $x * 6;
+            margin-top: -$x * 1.5;
+            margin-bottom: $x * (3 - (6 - 1.5));
+          }
+
+          @include adaptation(mobile-l) {
+            width: $x * 7;
+            height: $x * 7;
+            margin-top: -$x * 1.5;
+            margin-bottom: $x * (3 - (7 - 1.5));
+          }
+
+          @include adaptation(mobile-s) {
+            width: $x * 7;
+            height: $x * 7;
+            margin-top: -$x * 1.5;
+            margin-bottom: $x * (3 - (7 - 1.5));
+          }
+        }
+
+        &_menu {
+/*
+          & > svg > path {
+            opacity: 1;
+            transform: rotate(0);
+            transition: opacity $transition,
+            transform $transition;
+
+            &:nth-child(1) {
+              transform-origin: 0 9%;
+
+              #state-menu:checked ~ .app > & {
+                transform: rotate(45deg);
+              }
+            }
+
+            &:nth-child(2) {
+              transform-origin: 50% 50%;
+
+              #state-menu:checked ~ .app > & {
+                opacity: 0;
+              }
+            }
+
+            &:nth-child(3) {
+              transform-origin: 9% 96%;
+
+              #state-menu:checked ~ .app > & {
+                transform: rotate(-45deg);
+              }
+            }
+          }
+*/
+          @include adaptation(desktop-l) {
+            display: none;
+          }
+
+          @include adaptation(desktop-s) {
+            display: none;
+          }
+
+          @include adaptation(tablet-l) {
+            display: none;
+          }
+
+          @include adaptation(mobile-l) {
+
+          }
+
+          @include adaptation(mobile-s) {
+
+          }
+        }
+      }
+    }
+
+    &.aside_right {
+      @include adaptation(desktop-l) {
+        justify-content: flex-end;
+      }
+
+      @include adaptation(desktop-s) {
+        justify-content: flex-end;
+      }
+
+      @include adaptation(tablet-l) {
+        justify-content: flex-end;
+      }
+
+      @include adaptation(mobile-l) {
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity $transition;
+      }
+
+      @include adaptation(mobile-s) {
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity $transition;
+      }
+
+      #state-menu:checked ~ .app > & {
+        @include adaptation(desktop-l) {
+
+        }
+
+        @include adaptation(desktop-s) {
+
+        }
+
+        @include adaptation(tablet-l) {
+
+        }
+
+        @include adaptation(mobile-l) {
+          pointer-events: auto;
+          opacity: 1;
+        }
+
+        @include adaptation(mobile-s) {
+          pointer-events: auto;
+          opacity: 1;
+        }
+      }
+
+      & > * {
+        @include adaptation(desktop-l) {
+
+        }
+
+        @include adaptation(desktop-s) {
+
+        }
+
+        @include adaptation(tablet-l) {
+
+        }
+
+        @include adaptation(mobile-l) {
+          pointer-events: none;
+        }
+
+        @include adaptation(mobile-s) {
+          pointer-events: none;
+        }
+
+        #state-menu:checked ~ .app > & {
+          @include adaptation(desktop-l) {
+
+          }
+
+          @include adaptation(desktop-s) {
+
+          }
+
+          @include adaptation(tablet-l) {
+
+          }
+
+          @include adaptation(mobile-l) {
+            pointer-events: auto;
+          }
+
+          @include adaptation(mobile-s) {
+            pointer-events: auto;
+          }
+        }
+      }
+    }
+  }
+
+  & > .content {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      flex-shrink: 0;
+      flex-grow: 1;
+      flex-direction: column;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity $transition;
+    }
+
+    @include adaptation(mobile-s) {
+      flex-shrink: 0;
+      flex-grow: 1;
+      flex-direction: column;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity $transition;
+    }
+
+    & > * {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        pointer-events: none;
+      }
+
+      @include adaptation(mobile-s) {
+        pointer-events: none;
+      }
+
+      #state-menu:checked ~ .app > & {
+        @include adaptation(desktop-l) {
+
+        }
+
+        @include adaptation(desktop-s) {
+
+        }
+
+        @include adaptation(tablet-l) {
+
+        }
+
+        @include adaptation(mobile-l) {
+          pointer-events: auto;
+        }
+
+        @include adaptation(mobile-s) {
+          pointer-events: auto;
+        }
+      }
+    }
+
+    #state-menu:checked ~ .app > & {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        pointer-events: auto;
+        opacity: 1;
+      }
+
+      @include adaptation(mobile-s) {
+        pointer-events: auto;
+        opacity: 1;
+      }
+    }
+
+    & > .nav {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      @include adaptation(mobile-s) {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      & > .nav__link {
+        @include adaptation(desktop-l) {
+          text-transform: lowercase;
+        }
+
+        @include adaptation(desktop-s) {
+          text-transform: lowercase;
+        }
+
+        @include adaptation(tablet-l) {
+          text-transform: lowercase;
+        }
+
+        @include adaptation(mobile-l) {
+          margin: $x 0;
+          padding: $x * 2;
+          font-size: 15px;
+          line-height: 20px;
+          text-align: center;
+          border-bottom: 1px solid $color--footer_aside_border;
+        }
+
+        @include adaptation(mobile-s) {
+          margin: $x 0;
+          padding: $x * 2;
+          font-size: 15px;
+          line-height: 20px;
+          text-align: center;
+          border-bottom: 1px solid $color--footer_aside_border;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &_active {
+          @include adaptation(desktop-l) {
+
+          }
+
+          @include adaptation(desktop-s) {
+
+          }
+
+          @include adaptation(tablet-l) {
+
+          }
+
+          @include adaptation(mobile-l) {
+            text-decoration: none;
+            background-color: rgba($color--text_active, .05);
+          }
+
+          @include adaptation(mobile-s) {
+            text-decoration: none;
+            background-color: rgba($color--text_active, .05);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: $color--footer_background;
+
+  @include adaptation(desktop-l) {
+    flex-wrap: nowrap;
+  }
+
+  @include adaptation(desktop-s) {
+    flex-wrap: nowrap;
+  }
+
+  @include adaptation(tablet-l) {
+    flex-wrap: nowrap;
+  }
+
+  @include adaptation(mobile-l) {
+    border-top: 1px solid $color--footer_aside_border;
+    flex-wrap: wrap;
+  }
+
+  @include adaptation(mobile-s) {
+    border-top: 1px solid $color--footer_aside_border;
+    flex-wrap: wrap;
+  }
+}
+
+.powered {
+  display: flex;
+  flex-direction: row;
+  background-color: $color--footer_background2;
+
+  @include adaptation(desktop-l) {
+    flex-wrap: nowrap;
+  }
+
+  @include adaptation(desktop-s) {
+    flex-wrap: nowrap;
+  }
+
+  @include adaptation(tablet-l) {
+    border-top: 1px solid $color--footer_aside_border;
+    flex-wrap: wrap;
+  }
+
+  @include adaptation(mobile-l) {
+    border-top: 1px solid $color--footer_aside_border;
+    flex-wrap: wrap;
+  }
+
+  @include adaptation(mobile-s) {
+    border-top: 1px solid $color--footer_aside_border;
+    flex-wrap: wrap;
+  }
+}
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+.overlay,
+.section {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+
+  @include adaptation(desktop-l) {
+    flex-direction: row;
+  }
+
+  @include adaptation(desktop-s) {
+    flex-direction: row;
+  }
+
+  @include adaptation(tablet-l) {
+    flex-direction: row;
+  }
+
+  @include adaptation(mobile-l) {
+    flex-direction: column;
+  }
+
+  @include adaptation(mobile-s) {
+    flex-direction: column;
+  }
+}
+
+.overlay {
+  position: sticky;
+  top: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  @media all and (-ms-high-contrast: none) {
+    & {
+      position: fixed;
+    }
+  }
+
+  @supports (display: -ms-grid) {
+    & {
+      position: fixed;
+    }
+  }
+}
+
+.section {
+  position: relative;
+
+  &:first-of-type {
+    @media all and (-ms-high-contrast: none) {
+      & {
+        margin-top: 0 !important;
+      }
+    }
+    @supports (display: -ms-grid) {
+      & {
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .app_overlay_right &:last-of-type {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-bottom: $x * (4 + 5.25 + 4);
+    }
+
+    @include adaptation(mobile-s) {
+      padding-bottom: $x * (4 + 5.25 + 4);
+    }
+  }
+}
+
+.aside {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  @include adaptation(desktop-l) {
+    padding: $x * 5 0;
+  }
+
+  @include adaptation(desktop-s) {
+    padding: $x * 4 0;
+  }
+
+  @include adaptation(tablet-l) {
+    padding: $x * 4 0;
+  }
+
+  @include adaptation(mobile-l) {
+    padding: $x * 4 0;
+  }
+
+  @include adaptation(mobile-s) {
+    padding: $x * 4 0;
+  }
+
+  &_left {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-right: 1px solid transparent;
+    transition: border-right-color $transition;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 15;
+      padding-right: $x * 5;
+      width: $x * 76.25;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 8;
+      padding-right: $x * 5;
+      width: $x * 56.75;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 4;
+      padding-right: $x * 2;
+      width: $x * 29.25;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    .app_overlay_left .overlay > &,
+    .app_overlay_left .header > & {
+      @include adaptation(desktop-l) {
+        border-right-color: $color--aside_border;
+      }
+
+      @include adaptation(desktop-s) {
+        border-right-color: $color--aside_border;
+      }
+
+      @include adaptation(tablet-l) {
+        border-right-color: $color--aside_border;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    .app_overlay_left.app_overlay_border-transparent.app_video .overlay > &,
+    .app_overlay_left.app_overlay_border-transparent.app_video .header > &  {
+      @include adaptation(desktop-l) {
+        border-right-color: transparent;
+      }
+
+      @include adaptation(desktop-s) {
+        border-right-color: transparent;
+      }
+
+      @include adaptation(tablet-l) {
+        border-right-color: transparent;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+
+  &_right {
+    order: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-left: 1px solid transparent;
+    transition: border-left-color $transition;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 5;
+      padding-right: $x * 6;
+      width: $x * 27.5;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 4;
+      padding-right: $x * 6;
+      width: $x * 22;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 2;
+      padding-right: $x * 3;
+      width: $x * 15;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    .app_overlay_right .overlay > &,
+    .app_overlay_right .header > &  {
+      @include adaptation(desktop-l) {
+        border-left-color: $color--aside_border;
+      }
+
+      @include adaptation(desktop-s) {
+        border-left-color: $color--aside_border;
+      }
+
+      @include adaptation(tablet-l) {
+        border-left-color: $color--aside_border;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    .app_overlay_right.app_overlay_border-transparent.app_video .overlay > &,
+    .app_overlay_right.app_overlay_border-transparent.app_video .header > &  {
+      @include adaptation(desktop-l) {
+        border-left-color: transparent;
+      }
+
+      @include adaptation(desktop-s) {
+        border-left-color: transparent;
+      }
+
+      @include adaptation(tablet-l) {
+        border-left-color: transparent;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+
+  &_empty {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      display: none;
+    }
+
+    @include adaptation(mobile-s) {
+      display: none;
+    }
+  }
+
+  .header > & {
+    @include adaptation(desktop-l) {
+      padding-bottom: $x * 3;
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 4;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 4;
+    }
+  }
+
+  .footer > & {
+    flex-grow: 0;
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-top: $x * 7;
+      padding-bottom: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * 3;
+      padding-bottom: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    &_left {
+      @include adaptation(desktop-l) {
+        padding-right: $x * 15;
+      }
+
+      @include adaptation(desktop-s) {
+        padding-right: $x * 8;
+      }
+
+      @include adaptation(tablet-l) {
+        padding-right: $x * 4;
+      }
+
+      @include adaptation(mobile-l) {
+        justify-content: center;
+        border-bottom: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+
+      @include adaptation(mobile-s) {
+        justify-content: center;
+        border-bottom: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+    }
+
+    &_right {
+      @include adaptation(desktop-l) {
+        padding-right: $x * 15;
+      }
+
+      @include adaptation(desktop-s) {
+        padding-right: $x * 8;
+      }
+
+      @include adaptation(tablet-l) {
+        padding-right: $x * 4;
+      }
+
+      @include adaptation(mobile-l) {
+        justify-content: center;
+        border-top: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+
+      @include adaptation(mobile-s) {
+        justify-content: center;
+        border-top: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+    }
+  }
+
+  .powered > & {
+    flex-grow: 0;
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-top: $x * 6.5;
+      padding-bottom: $x * 6.5;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * 3;
+      padding-bottom: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    &_left {
+      justify-content: center;
+      align-items: center;
+
+      @include adaptation(desktop-l) {
+        padding-right: $x * 15;
+      }
+
+      @include adaptation(desktop-s) {
+        padding-right: $x * 8;
+      }
+
+      @include adaptation(tablet-l) {
+        justify-content: center;
+        border-top: 1px solid $color--footer_aside_border;
+        padding-right: $x * 4;
+        width: 100%;
+      }
+
+      @include adaptation(mobile-l) {
+        justify-content: center;
+        border-top: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+
+      @include adaptation(mobile-s) {
+        justify-content: center;
+        border-top: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+      }
+    }
+
+    &_right {
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      @include adaptation(desktop-l) {
+        padding-right: $x * 12.25;
+      }
+
+      @include adaptation(desktop-s) {
+        padding-right: $x * 8;
+      }
+
+      @include adaptation(tablet-l) {
+        justify-content: center;
+        border-bottom: 1px solid $color--footer_aside_border;
+        padding-right: $x * 4;
+        width: 100%;
+        order: -1;
+      }
+
+      @include adaptation(mobile-l) {
+        justify-content: center;
+        border-bottom: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+        order: -1;
+      }
+
+      @include adaptation(mobile-s) {
+        justify-content: center;
+        border-bottom: 1px solid $color--footer_aside_border;
+        padding-right: $x * 3;
+        width: 100%;
+        order: -1;
+      }
+    }
+  }
+
+  .overlay > &,
+  .section > & {
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      border-top: 1px solid $color--footer_aside_border;
+      border-bottom: 1px solid $color--footer_aside_border;
+    }
+
+    @include adaptation(mobile-s) {
+      border-top: 1px solid $color--footer_aside_border;
+      border-bottom: 1px solid $color--footer_aside_border;
+    }
+  }
+
+  .overlay > & {
+    @include adaptation(desktop-l) {
+      padding-top: $x * (5 + 4 + 4);
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-l) {
+      background-color: $color--footer_background;
+    }
+
+    @include adaptation(mobile-s) {
+      background-color: $color--footer_background;
+    }
+  }
+
+  .section:first-of-type > & {
+    @include adaptation(desktop-l) {
+      padding-top: $x * (5 + 4 + 4);
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+  }
+
+  .section > &_full {
+    @include adaptation(desktop-l) {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    @include adaptation(desktop-s) {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    @include adaptation(tablet-l) {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    @include adaptation(mobile-l) {
+      position: relative;
+    }
+
+    @include adaptation(mobile-s) {
+      position: relative;
+    }
+
+    &:not(.aside_news) {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        height: auto !important;
+      }
+
+      @include adaptation(mobile-s) {
+        height: auto !important;
+      }
+    }
+  }
+
+  & > .background {
+    opacity: 1;
+    transition: opacity $transition;
+
+    .overlay > & {
+      .app_overlay_transparent & {
+        @include adaptation(desktop-l) {
+          opacity: 0;
+        }
+
+        @include adaptation(desktop-s) {
+          opacity: 0;
+        }
+
+        @include adaptation(tablet-l) {
+          opacity: 0;
+        }
+
+        @include adaptation(mobile-l) {
+
+        }
+
+        @include adaptation(mobile-s) {
+
+        }
+      }
+
+      & > * {
+        @include adaptation(desktop-l) {
+
+        }
+
+        @include adaptation(desktop-s) {
+
+        }
+
+        @include adaptation(tablet-l) {
+
+        }
+
+        @include adaptation(mobile-l) {
+          opacity: 0;
+        }
+
+        @include adaptation(mobile-s) {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &_post > .background_left {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      position: static;
+      width: calc(100% + #{$x * (3 + 3)});
+      margin: (-$x * 11) (-$x * 3) (-$x * 4) (-$x * 3);
+      height: auto;
+    }
+
+    @include adaptation(mobile-s) {
+      position: static;
+      width: calc(100% + #{$x * (3 + 3)});
+      margin: (-$x * 11) (-$x * 3) (-$x * 4) (-$x * 3);
+      height: auto;
+    }
+  }
+
+  & > *:not(.background) {
+    z-index: 1;
+  }
+
+  .overlay > & > * {
+    pointer-events: auto;
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  @include adaptation(desktop-l) {
+    padding: $x * 5 $x * 6;
+  }
+
+  @include adaptation(desktop-s) {
+    padding: $x * 4 $x * 3;
+  }
+
+  @include adaptation(tablet-l) {
+    padding: $x * 4 $x * 2.5;
+  }
+
+  @include adaptation(mobile-l) {
+    padding: $x * 4 $x * 3;
+  }
+
+  @include adaptation(mobile-s) {
+    padding: $x * 4 $x * 3;
+  }
+
+  &_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_empty {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      display: none;
+    }
+
+    @include adaptation(mobile-s) {
+      display: none;
+    }
+  }
+
+  .aside_left ~ & {
+    @include adaptation(desktop-l) {
+      width: $x * (76.25 + 27.5);
+      padding-left: $x * 12;
+    }
+
+    @include adaptation(desktop-s) {
+      width: $x * (51.75 + 22);
+      padding-left: $x * 8;
+    }
+
+    @include adaptation(tablet-l) {
+      width: $x * (35.75 + 15);
+      padding-left: $x * 4;
+    }
+
+    @include adaptation(mobile-l) {
+
+    }
+
+    @include adaptation(mobile-s) {
+
+    }
+  }
+
+  .aside_right ~ & {
+    @include adaptation(desktop-l) {
+      width: $x * (76.25 + 76.25);
+      padding-right: $x * 12;
+    }
+
+    @include adaptation(desktop-s) {
+      width: $x * (51.75 + 56.75);
+      padding-right: $x * 6;
+    }
+
+    @include adaptation(tablet-l) {
+      width: $x * (35.75 + 29.25);
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+
+    }
+
+    @include adaptation(mobile-s) {
+
+    }
+  }
+
+  .aside_left + .aside_right ~ & {
+    @include adaptation(desktop-l) {
+      width: $x * 76.25;
+    }
+
+    @include adaptation(desktop-s) {
+      width: $x * 51.75;
+    }
+
+    @include adaptation(tablet-l) {
+      width: $x * 35.75;
+    }
+
+    @include adaptation(mobile-l) {
+
+    }
+
+    @include adaptation(mobile-s) {
+
+    }
+  }
+
+  .header > & {
+    @include adaptation(desktop-l) {
+      padding-bottom: $x * 3;
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 4;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 4;
+    }
+  }
+
+  .footer > & {
+    flex-grow: 1;
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-top: $x * 7;
+      padding-bottom: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * 3;
+      padding-bottom: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 4;
+      padding-bottom: $x * 4;
+    }
+  }
+
+  .footer > .aside_left ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 3;
+    }
+  }
+
+  .footer > .aside_right ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-right: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-right: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-right: $x * 3;
+    }
+  }
+
+  .footer > .aside_left + .aside_right ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 7;
+      padding-right: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 12;
+      padding-right: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 1.5;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 1.5;
+      padding-right: $x * 3;
+    }
+  }
+
+  .powered > & {
+    flex-grow: 1;
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-top: $x * 6.5;
+      padding-bottom: $x * 6.5;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include adaptation(tablet-l) {
+      display: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include adaptation(mobile-l) {
+      display: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    @include adaptation(mobile-s) {
+      display: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .powered > .aside_left ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 3;
+    }
+  }
+
+  .powered > .aside_right ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-right: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-right: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-right: $x * 3;
+    }
+  }
+
+  .powered > .aside_left + .aside_right ~ & {
+    width: auto;
+
+    @include adaptation(desktop-l) {
+      padding-left: $x * 7;
+      padding-right: $x * 7;
+    }
+
+    @include adaptation(desktop-s) {
+      padding-left: $x * 12;
+      padding-right: $x * 12;
+    }
+
+    @include adaptation(tablet-l) {
+      padding-left: $x * 3;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      padding-left: $x * 1.5;
+      padding-right: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-left: $x * 1.5;
+      padding-right: $x * 3;
+    }
+  }
+
+  .overlay > & > * {
+    pointer-events: auto;
+  }
+
+  .overlay > &,
+  .section > & {
+    position: relative;
+  }
+
+  .overlay > & {
+    @include adaptation(desktop-l) {
+      padding-top: $x * (5 + 4 + 4);
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-l) {
+
+    }
+
+    @include adaptation(mobile-s) {
+
+    }
+  }
+
+  .section:first-of-type > & {
+    @include adaptation(desktop-l) {
+      padding-top: $x * (5 + 4 + 4);
+    }
+
+    @include adaptation(desktop-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(tablet-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * (4 + 3 + 4);
+    }
+  }
+
+  .section:first-of-type > .aside_left ~ & {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 2;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 2;
+    }
+  }
+
+  .section:first-of-type > .aside_right ~ & {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 2;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 2;
+    }
+  }
+
+  .section:first-of-type > .aside_left + .aside_right ~ & {
+    @include adaptation(desktop-l) {
+
+    }
+
+    @include adaptation(desktop-s) {
+
+    }
+
+    @include adaptation(tablet-l) {
+
+    }
+
+    @include adaptation(mobile-l) {
+      padding-top: $x * 2;
+    }
+
+    @include adaptation(mobile-s) {
+      padding-top: $x * 2;
+    }
+  }
+
+  &:not(&_flex) > * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+
+  &_footer {
+    @include adaptation(desktop-l) {
+      justify-content: flex-start;
+    }
+
+    @include adaptation(desktop-s) {
+      justify-content: flex-start;
+    }
+
+    @include adaptation(tablet-l) {
+      justify-content: flex-start;
+    }
+
+    @include adaptation(mobile-l) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include adaptation(mobile-s) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &_partners {
+    @include adaptation(desktop-l) {
+      justify-content: flex-start;
+    }
+
+    @include adaptation(desktop-s) {
+      justify-content: flex-start;
+    }
+
+    @include adaptation(tablet-l) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include adaptation(mobile-l) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include adaptation(mobile-s) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__link,
+  &__separator {
+    display: block;
+
+    @include adaptation(desktop-l) {
+      margin: $x * .75 $x * 4.5;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      margin: $x / 4 $x * 3;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    @include adaptation(tablet-l) {
+      margin: $x / 2 $x * 1.5 $x / 4 $x * 1.5;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-l) {
+      margin: 0 $x * 2;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(mobile-s) {
+      margin: 0 $x * 2;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .nav_language > & {
+      &:not(:first-child) {
+        margin-left: $x / 4;
+      }
+
+      &:not(:last-child) {
+        margin-right: $x / 4;
+      }
+    }
+
+    .nav_social > & {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        margin-left: $x;
+      }
+
+      &:not(:last-child) {
+        margin-right: $x;
+      }
+    }
+
+    &:first-child {
+      @include adaptation(desktop-l) {
+        margin-left: 0;
+      }
+
+      @include adaptation(desktop-s) {
+        margin-left: 0;
+      }
+
+      @include adaptation(tablet-l) {
+        margin-left: 0;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    &:last-child {
+      @include adaptation(desktop-l) {
+        margin-right: 0;
+      }
+
+      @include adaptation(desktop-s) {
+        margin-right: 0;
+      }
+
+      @include adaptation(tablet-l) {
+        margin-right: 0;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    outline: none;
+    color: $color--text;
+    letter-spacing: 0;
+    font-weight: normal;
+    transition: color $transition;
+
+    &_imaged {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .nav_partners > & {
+        margin: $x / 2;
+        padding: $x * 2.5 0;
+        min-width: $x * 11;
+        width: auto;
+        height: auto;
+
+        & > svg,
+        & > img {
+          display: block;
+          margin: auto;
+          width: auto;
+          height: $x * 6;
+        }
+
+        &:not(:first-child) {
+          margin-left: $x;
+        }
+
+        &:not(:last-child) {
+          margin-right: $x;
+        }
+      }
+
+      @include adaptation(desktop-l) {
+        width: $x * 4;
+        height: $x * 4;
+      }
+
+      @include adaptation(desktop-s) {
+        width: $x * 3;
+        height: $x * 3;
+      }
+
+      @include adaptation(tablet-l) {
+        width: $x * 3;
+        height: $x * 3;
+      }
+
+      @include adaptation(mobile-l) {
+        width: $x * 3;
+        height: $x * 3;
+      }
+
+      @include adaptation(mobile-s) {
+        width: $x * 3;
+        height: $x * 3;
+      }
+    }
+
+    &_inline {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      & > svg {
+        display: block;
+        width: auto;
+        height: 1em;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &_active {
+      font-weight: 500;
+      color: $color--text_active;
+      text-decoration: underline;
+      letter-spacing: -.017em;
+    }
+
+    &_active {
+      pointer-events: none;
+    }
+  }
+}
+
+@import 'blocks/block-heading';
+@import 'blocks/block-subheading';
+@import 'blocks/block-title';
+@import 'blocks/block-about';
+@import 'blocks/block-divider';
+@import 'blocks/block-stats';
+@import 'blocks/block-indicators';
+@import 'blocks/block-table';
+@import 'blocks/block-bio';
+@import 'blocks/block-youtube';
+@import 'blocks/block-video';
+@import 'blocks/block-youtube-play';
+@import 'blocks/block-background';
+@import 'blocks/block-chart';
+@import 'blocks/block-announcement';
+@import 'blocks/block-event';
+@import 'blocks/block-event-list';
+@import 'blocks/block-event-excerpt';
+@import 'blocks/block-news';
+@import 'blocks/block-news-list';
+@import 'blocks/block-news-excerpt';
+@import 'blocks/block-social';
+@import 'blocks/block-meta';
+@import 'blocks/block-accomplishments';
+@import 'blocks/block-mce';
+@import 'blocks/block-error';
+@import 'blocks/block-loader';
+@import 'blocks/block-preloader';
+@import 'blocks/block-pagination';
+@import 'blocks/block-matchup';
+@import 'blocks/block-results';
+@import 'blocks/block-circles';
+@import 'blocks/block-woo';

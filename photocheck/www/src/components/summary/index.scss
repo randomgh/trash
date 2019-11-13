@@ -1,0 +1,79 @@
+.reports {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.report {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  &_source {
+    display: block;
+    max-width: 100%;
+  }
+
+  &_filter {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    opacity: .5;
+    transition: opacity .5s ease-out 0s;
+
+    &.report_active {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.canvas {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  &_source {
+    display: block;
+    max-width: 100%;
+  }
+
+  &_filter {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &.canvas_active {
+      display: block;
+    }
+  }
+}
+
+.result {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  &_source {
+    display: block;
+    max-width: 100%;
+  }
+
+  &_filter {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,103 @@
+@import '../options';
+
+.social {
+  display: block;
+  margin: $x * 6 0;
+
+  &__text {
+    display: block;
+    margin: 0;
+    font-weight: 500;
+    color: $color--text;
+
+    @include adaptation(desktop-l) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: $x / 2 0;
+  }
+
+  &__link {
+    @extend %text--none;
+
+    box-sizing: border-box;
+    display: block;
+    margin: $x / 2;
+    padding: $x;
+    width: $x * 5;
+    height: $x * 5;
+    border-radius: 50%;
+    text-decoration: none;
+    outline: none;
+    color: $color--text;
+    background-color: $color--aside_border;
+    transition: color $transition,
+                background-color $transition;
+
+    @include adaptation(desktop-l) {
+      width: $x * 5;
+      height: $x * 5;
+    }
+
+    @include adaptation(desktop-s) {
+      width: $x * 4.5;
+      height: $x * 4.5;
+    }
+
+    @include adaptation(tablet-l) {
+      width: $x * 3;
+      height: $x * 3;
+    }
+
+    @include adaptation(mobile-l) {
+      width: $x * 5;
+      height: $x * 5;
+    }
+
+    @include adaptation(mobile-s) {
+      width: $x * 5;
+      height: $x * 5;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color--text-active;
+      background-color: $color--white;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

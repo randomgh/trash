@@ -1,0 +1,70 @@
+@import 'string';
+
+@mixin font-face($path, $name, $type, $weight: null, $style: null, $extensions: eot woff2 woff ttf svg) {
+  $fullName: str-replace(str-replace($name, ' '), '.') + '-' + $type;
+
+  $mods: (
+    eot: '?#iefix',
+    svg: '#' + $fullName
+  );
+
+  $formats: (
+    otf: 'opentype',
+    ttf: 'truetype'
+  );
+
+  $path: $path + '/' + $fullName;
+
+  $src: null;
+  @each $extension in $extensions {
+    $src: append(
+      $src,
+      url($path + '.' + if(map-has-key($mods, $extension), $extension + map-get($mods, $extension), $extension))
+      format(quote(if(map-has-key($formats, $extension), map-get($formats, $extension), $extension))),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    @if index($extensions, eot) {
+      src: url(quote($path + '.' + eot));
+    }
+    src: $src;
+  }
+}
+
+@mixin font($path, $name, $weights: ('normal'), $styles: 'normal' 'italic', $extensions: eot woff2 woff ttf svg) {
+  $weightMap: (
+    'thin':        100,
+    'hairline':    100,
+    'extra_light': 200,
+    'ultra_light': 200,
+    'light':       300,
+    'medium':      500,
+    'semi_bold':   600,
+    'demi_bold':   600,
+    'extra_bold':  800,
+    'ultra_bold':  800,
+    'black':       900,
+    'heavy':       900
+  );
+
+  $path: $path + '/' + str-replace(str-replace($name, ' ', '_'), '.', '');
+
+  @each $weight in $weights {
+    @each $style in $styles {
+      @include font-face(
+        $path,
+        $name,
+        if($weight == 'normal', if($style == 'normal', 'Regular', ''), capitalize(camelize($weight))) +
+        if($style == 'normal', '', capitalize(camelize($style))),
+        if(map-has-key($weightMap, $weight), map-get($weightMap, $weight), if($weight, unquote($weight), null)),
+        if($style, unquote($style), null),
+        $extensions
+      );
+    }
+  }
+}

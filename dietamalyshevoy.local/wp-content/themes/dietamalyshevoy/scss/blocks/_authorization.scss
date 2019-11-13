@@ -1,0 +1,290 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.authorization {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    @include text(h2);
+
+    font-family: $font-family_MW;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 $x * 6 0;
+    color: $color--black3;
+  }
+
+  &__subtitle {
+    @include text(h5);
+
+    font-family: $font-family_MW;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 $x * 6 0;
+    color: $color--black3;
+  }
+
+  &__fieldset {
+    width: $x * 108;
+    background-color: $color--white;
+    border-radius: $x * 2;
+    padding: $x * 6;
+    box-sizing: border-box;
+  }
+
+  &__field {
+    display: block;
+    width: 100%;
+    padding: $x * 2 $x * 4;
+    margin-bottom: $x * 2;
+    background-color: $bg_color--menu_button_alt;
+    border-radius: $x * 2;
+    position: relative;
+    box-sizing: border-box;
+
+    &__title {
+      @include text(medium);
+
+      font-family: $font-family_R;
+      font-weight: 600;
+      color: $color--black3;
+      margin: 0;
+      padding: 0 0 $x 0;
+    }
+
+    &__input {
+      @include clear_input;
+      @include text(normal);
+
+      display: block;
+      width: 100%;
+      font-family: $font-family_R;
+      color: $color--black3;
+      outline: none;
+
+      &::placeholder {
+        @include text(normal);
+
+        font-family: $font-family_R;
+        color: $color--black4;
+      }
+
+      &:-webkit-autofill { // sass-lint:disable-line no-vendor-prefixes
+        @include text(normal);
+
+        border: none;
+        -webkit-text-fill-color: $color--black3; // sass-lint:disable-line no-vendor-prefixes
+        -webkit-box-shadow: 0 0 0 100px $bg_color--menu_button_alt inset; // sass-lint:disable-line no-vendor-prefixes
+      }
+
+      &::after {
+        content: attr(data-units);
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &__change-type {
+      width: $x * 6;
+      height: $x * 4.5;
+      position: absolute;
+      right: $x * 4;
+      top: $x * 5;
+      color: $color--black4;
+      transition: color $transition;
+
+      &:hover {
+        color: $color--blue1;
+      }
+    }
+  }
+
+  &__password-hint {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: $x * 8;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $transition;
+
+    &_active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__title {
+      @include text(medium);
+
+      font-family: $font-family_R;
+      margin: $x 0 $x * 2 0;
+      color: $color--black5;
+      width: 100%;
+    }
+
+    &__block {
+      @include text(tiny);
+
+      font-family: $font-family_R;
+      font-weight: 600;
+      color: $color--black5;
+      padding: $x * 2.5 $x * 2;
+      background-color: #F5F5F5;
+      border-radius: $x;
+      box-sizing: border-box;
+      width: $x * 31.5;
+      text-align: center;
+      transition: all $transition;
+
+      &_active {
+        background-color: $color--green2;
+        color: $color--white;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: $x * 3;
+    position: relative;
+
+    &__label {
+      @include text(medium);
+
+      font-family: $font-family_R;
+      font-weight: 500;
+      color: $color--black4;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    &__input {
+      @include clear_input;
+
+      position: relative;
+      margin-right: $x * 4;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      &__check-mark {
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        pointer-events: none;
+        background-color: $color--white;
+        border-radius: $x * .5;
+        border: 1px solid $opacity_color--box_shadow ;
+        transition: all $transition;
+
+        & > svg {
+          color: $color--white;
+        }
+      }
+
+      :checked ~ &__check-mark {
+        border: 1px solid $color--green2 ;
+        background-color: $color--green2;
+      }
+    }
+  }
+
+  &__submit {
+    @include text(normal);
+
+    font-family: $font-family_R;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: $x * 3;
+    color: $color--black4;
+    border-radius: $x * 10;
+    background-color: $bg_color--grey;
+    margin: $x * 6 0 $x * 5 0;
+    border: none;
+    pointer-events: none;
+    transition: background-color $transition;
+    outline: none;
+
+    &_active {
+      pointer-events: auto;
+      cursor: pointer;
+      background-color: $color--red1;
+      color: $color--white;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color--red2;
+      }
+
+      &:disabled {
+        pointer-events: none;
+        cursor: none;
+        color: $color--black4;
+        background-color: $bg_color--grey;
+      }
+    }
+  }
+
+  &__link {
+    @include text(normal);
+
+    display: block;
+    font-family: $font-family_R;
+    font-weight: 500;
+    color: $color--blue1;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: $x * 3;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--blue2;
+    }
+  }
+
+  &__restore-password {
+    @include text(normal);
+
+    display: block;
+    font-family: $font-family_R;
+    font-weight: 500;
+    color: $color--black6;
+    text-decoration: underline;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+    margin: $x * 2 0 $x * 8 0;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--black3;
+      text-decoration: none;
+    }
+  }
+}

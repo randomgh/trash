@@ -1,0 +1,213 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.contacts-list {
+  margin-top: $x * 18;
+  margin-bottom: $x * 18;
+
+  & > .content {
+    max-width: $x * 228;
+  }
+
+  &__title {
+    @include text(h3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: $x * 4 auto;
+    font-family: $font-family_MW;
+    font-weight: bold;
+    font-style: italic;
+    color: $color--black;
+
+    & > svg {
+      display: block;
+      flex-shrink: 0;
+      margin-right: $x * 6;
+      height: $x * 12;
+    }
+  }
+
+  &__list {
+    @include clear_list;
+
+
+    &_type {
+      &_rows {
+        display: block;
+        margin: $x * 9 auto;
+      }
+
+      &_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin: $x * 4 (-$x * 3);
+      }
+    }
+  }
+
+  &__li {
+    box-sizing: border-box;
+
+    .contacts-list__list_type_rows & {
+      display: block;
+      padding: $x * 6 $x * 6 $x * 4 $x * 6;
+      border-top: 1px solid $color--dark_gray;
+      border-bottom: 1px solid $color--dark_gray;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    .contacts-list__list_type_cards & {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: $x * 3;
+      padding: $x * 6;
+      border-radius: $x * 2;
+      width: $x * 72;
+      background-color: $color--white;
+      box-shadow: $shadow--card;
+    }
+
+    &__title {
+      @include text(h6);
+
+      margin: $x * 3 0;
+      font-family: $font-family_MW;
+      font-weight: bold;
+      font-style: italic;
+      color: $color--red1;
+
+      .contacts-list__list_type_rows & {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: $x * 14;
+      }
+
+      .contacts-list__list_type_cards & {
+        display: block;
+      }
+    }
+
+    &__contacts {
+      @include clear_list;
+
+      margin: $x * 3 auto;
+
+      .contacts-list__list_type_rows & {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .contacts-list__list_type_cards & {
+        display: block;
+      }
+    }
+
+    &__contact {
+      @include text(normal);
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      min-height: $x * 15;
+      font-family: $font-family_MW;
+      font-weight: 300;
+      color: $color--black;
+
+      .contacts-list__list_type_rows & {
+        margin: $x * 2 $x * 3;
+        width: calc(50% - #{$x * 6});
+
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+
+        &:nth-child(even) {
+          margin-right: $x * 6;
+        }
+      }
+
+      .contacts-list__list_type_cards & {
+        margin: $x * 2 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      & > svg {
+        display: block;
+        flex-shrink: 0;
+        margin-right: $x * 4;
+        width: $x * 8;
+        height: $x * 8;
+      }
+
+      &_color {
+        &_blue > svg {
+          color: $color--blue1;
+        }
+
+        &_green > svg {
+          color: $color--green2;
+        }
+
+        &_purple > svg {
+          color: $color--purple1;
+        }
+      }
+    }
+
+    &__button {
+      @include text(normal);
+
+      box-sizing: border-box;
+      display: block;
+      margin: $x * 2;
+      padding: $x * 3 $x * 6;
+      border-radius: $x * 10;
+      background-color: $bg_color--blue;
+      font-family: $font-family_OS;
+      font-weight: 600;
+      color: $color--blue1;
+      text-align: center;
+      text-decoration: none;
+      transition: color $transition, background-color $transition;
+      outline: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color--blue1;
+        color: $bg_color--blue;
+      }
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

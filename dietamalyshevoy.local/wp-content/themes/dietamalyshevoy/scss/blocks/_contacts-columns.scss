@@ -1,0 +1,51 @@
+@import '../options';
+
+.contacts-columns {
+  margin-top: $x * 35;
+  margin-bottom: $x * 35;
+
+  & > .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: $x * 228;
+  }
+
+  &__li {
+    display: block;
+    flex-grow: 1;
+    margin: $x * 5 $x * 12;
+    width: calc(50% - #{$x * 24});
+
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+
+    &:nth-child(even) {
+      margin-right: $x * 24;
+    }
+
+    &__title,
+    &__text {
+      display: block;
+      margin: $x * 2 auto;
+      font-family: $font-family_MW;
+    }
+
+    &__title {
+      @include text(h5);
+
+      font-weight: bold;
+      font-style: italic;
+      color: $color--red1;
+    }
+
+    &__text {
+      @include text(normal);
+
+      font-weight: 300;
+      color: $color--black;
+    }
+  }
+}

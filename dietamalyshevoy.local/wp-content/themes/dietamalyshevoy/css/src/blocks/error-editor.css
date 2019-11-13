@@ -1,0 +1,9 @@
+.editor-styles-wrapper .wp-block[data-type="dem/error"] {
+  max-width: unset; }
+  .editor-styles-wrapper .wp-block[data-type="dem/error"] .error {
+    margin-top: 124px;
+    margin-bottom: 124px; }
+    .editor-styles-wrapper .wp-block[data-type="dem/error"] .error > .content {
+      width: 656px; }
+
+/*# sourceMappingURL=error-editor.css.map */

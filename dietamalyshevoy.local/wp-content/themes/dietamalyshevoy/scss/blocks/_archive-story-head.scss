@@ -1,0 +1,58 @@
+@import '../options';
+
+.archive-story-head {
+  margin-top: $x * 16;
+  margin-bottom: $x * 16;
+
+  & > .content {
+    max-width: $x * 228;
+  }
+
+  &__title,
+  &__subtitle {
+    display: block;
+    margin: $x * 3 auto;
+    font-family: $font-family_MW;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__title {
+    @include text(big);
+
+    color: $color--red1;
+  }
+
+  &__subtitle {
+    @include text(h1);
+
+    margin-right: $x * 105;
+    color: $color--black;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: $x * 8 auto;
+
+    &__image {
+      display: block;
+      flex-shrink: 0;
+      margin-right: $x * 16;
+      width: $x * 101;
+    }
+
+    &__caption {
+      @include text(normal);
+
+      display: block;
+      flex-grow: 1;
+      font-family: $font-family_MW;
+      font-weight: 300;
+      font-style: italic;
+      color: $color--black;
+    }
+  }
+}

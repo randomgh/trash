@@ -1,0 +1,42 @@
+@function capitalize($string) {
+  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function uncapitalize($string) {
+  @return to-lower-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice(
+      $string,
+      1,
+      $index - 1
+    ) + $replace + str-replace(
+      str-slice(
+        $string,
+        $index + str-length($search)
+      ),
+      $search,
+      $replace
+    );
+  }
+
+  @return $string;
+}
+
+@function camelize($string, $exclude: ' -–—_,;:.') {
+  @if str-length($string) > 0 {
+    $char: str-slice($string, 1, 1);
+
+    @if str-index($exclude, $char) {
+      @return to-upper-case(str-slice($string, 2, 2)) + camelize(str-slice($string, 3), $exclude);
+    }
+
+    @return $char + camelize(str-slice($string, 2), $exclude);
+  }
+
+  @return $string;
+}

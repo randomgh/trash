@@ -1,0 +1,1248 @@
+{
+  "AD": {
+    "name": "Andorra",
+    "subdivisions": {}
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "subdivisions": {}
+  },
+  "AF": {
+    "name": "Afghanistan",
+    "subdivisions": {}
+  },
+  "AG": {
+    "name": "Antigua and Barbuda",
+    "subdivisions": {}
+  },
+  "AI": {
+    "name": "Anguilla",
+    "subdivisions": {}
+  },
+  "AL": {
+    "name": "Albania",
+    "subdivisions": {}
+  },
+  "AM": {
+    "name": "Armenia",
+    "subdivisions": {}
+  },
+  "AO": {
+    "name": "Angola",
+    "subdivisions": {}
+  },
+  "AQ": {
+    "name": "Antarctica",
+    "subdivisions": {}
+  },
+  "AR": {
+    "name": "Argentina",
+    "subdivisions": {}
+  },
+  "AS": {
+    "name": "American Samoa",
+    "subdivisions": {}
+  },
+  "AT": {
+    "name": "Austria",
+    "subdivisions": {}
+  },
+  "AU": {
+    "name": "Australia",
+    "subdivisions": {}
+  },
+  "AW": {
+    "name": "Aruba",
+    "subdivisions": {}
+  },
+  "AX": {
+    "name": "Åland Islands",
+    "subdivisions": {}
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "subdivisions": {}
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "subdivisions": {}
+  },
+  "BB": {
+    "name": "Barbados",
+    "subdivisions": {}
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "subdivisions": {}
+  },
+  "BE": {
+    "name": "Belgium",
+    "subdivisions": {}
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "subdivisions": {}
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "subdivisions": {}
+  },
+  "BH": {
+    "name": "Bahrain",
+    "subdivisions": {}
+  },
+  "BI": {
+    "name": "Burundi",
+    "subdivisions": {}
+  },
+  "BJ": {
+    "name": "Benin",
+    "subdivisions": {}
+  },
+  "BL": {
+    "name": "Saint Barthélemy",
+    "subdivisions": {}
+  },
+  "BM": {
+    "name": "Bermuda",
+    "subdivisions": {}
+  },
+  "BN": {
+    "name": "Brunei Darussalam",
+    "subdivisions": {}
+  },
+  "BO": {
+    "name": "Bolivia",
+    "subdivisions": {}
+  },
+  "BQ": {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "subdivisions": {}
+  },
+  "BR": {
+    "name": "Brazil",
+    "subdivisions": {}
+  },
+  "BS": {
+    "name": "Bahamas",
+    "subdivisions": {}
+  },
+  "BT": {
+    "name": "Bhutan",
+    "subdivisions": {}
+  },
+  "BV": {
+    "name": "Bouvet Island",
+    "subdivisions": {}
+  },
+  "BW": {
+    "name": "Botswana",
+    "subdivisions": {}
+  },
+  "BY": {
+    "name": "Belarus",
+    "subdivisions": {}
+  },
+  "BZ": {
+    "name": "Belize",
+    "subdivisions": {}
+  },
+  "CA": {
+    "name": "Canada",
+    "subdivisions": {}
+  },
+  "CC": {
+    "name": "Cocos (Keeling) Islands",
+    "subdivisions": {}
+  },
+  "CD": {
+    "name": "Congo, Democratic Republic of the",
+    "subdivisions": {}
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "subdivisions": {}
+  },
+  "CG": {
+    "name": "Congo",
+    "subdivisions": {}
+  },
+  "CH": {
+    "name": "Switzerland",
+    "subdivisions": {}
+  },
+  "CI": {
+    "name": "Côte d'Ivoire",
+    "subdivisions": {}
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "subdivisions": {}
+  },
+  "CL": {
+    "name": "Chile",
+    "subdivisions": {}
+  },
+  "CM": {
+    "name": "Cameroon",
+    "subdivisions": {}
+  },
+  "CN": {
+    "name": "China",
+    "subdivisions": {}
+  },
+  "CO": {
+    "name": "Colombia",
+    "subdivisions": {}
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "subdivisions": {}
+  },
+  "CU": {
+    "name": "Cuba",
+    "subdivisions": {}
+  },
+  "CV": {
+    "name": "Cabo Verde",
+    "subdivisions": {}
+  },
+  "CW": {
+    "name": "Curaçao",
+    "subdivisions": {}
+  },
+  "CX": {
+    "name": "Christmas Island",
+    "subdivisions": {}
+  },
+  "CY": {
+    "name": "Cyprus",
+    "subdivisions": {}
+  },
+  "CZ": {
+    "name": "Czechia",
+    "subdivisions": {}
+  },
+  "DE": {
+    "name": "Germany",
+    "subdivisions": {}
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "subdivisions": {}
+  },
+  "DK": {
+    "name": "Denmark",
+    "subdivisions": {}
+  },
+  "DM": {
+    "name": "Dominica",
+    "subdivisions": {}
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "subdivisions": {}
+  },
+  "DZ": {
+    "name": "Algeria",
+    "subdivisions": {}
+  },
+  "EC": {
+    "name": "Ecuador",
+    "subdivisions": {}
+  },
+  "EE": {
+    "name": "Estonia",
+    "subdivisions": {}
+  },
+  "EG": {
+    "name": "Egypt",
+    "subdivisions": {}
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "subdivisions": {}
+  },
+  "ER": {
+    "name": "Eritrea",
+    "subdivisions": {}
+  },
+  "ES": {
+    "name": "Spain",
+    "subdivisions": {}
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "subdivisions": {}
+  },
+  "FI": {
+    "name": "Finland",
+    "subdivisions": {}
+  },
+  "FJ": {
+    "name": "Fiji",
+    "subdivisions": {}
+  },
+  "FK": {
+    "name": "Falkland Islands (Malvinas)",
+    "subdivisions": {}
+  },
+  "FM": {
+    "name": "Micronesia, Federated States of",
+    "subdivisions": {}
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "subdivisions": {}
+  },
+  "FR": {
+    "name": "France",
+    "subdivisions": {}
+  },
+  "GA": {
+    "name": "Gabon",
+    "subdivisions": {}
+  },
+  "GB": {
+    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "subdivisions": {}
+  },
+  "GD": {
+    "name": "Grenada",
+    "subdivisions": {}
+  },
+  "GE": {
+    "name": "Georgia",
+    "subdivisions": {}
+  },
+  "GF": {
+    "name": "French Guiana",
+    "subdivisions": {}
+  },
+  "GG": {
+    "name": "Guernsey",
+    "subdivisions": {}
+  },
+  "GH": {
+    "name": "Ghana",
+    "subdivisions": {}
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "subdivisions": {}
+  },
+  "GL": {
+    "name": "Greenland",
+    "subdivisions": {}
+  },
+  "GM": {
+    "name": "Gambia",
+    "subdivisions": {}
+  },
+  "GN": {
+    "name": "Guinea",
+    "subdivisions": {}
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "subdivisions": {}
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "subdivisions": {}
+  },
+  "GR": {
+    "name": "Greece",
+    "subdivisions": {}
+  },
+  "GS": {
+    "name": "South Georgia and the South Sandwich Islands",
+    "subdivisions": {}
+  },
+  "GT": {
+    "name": "Guatemala",
+    "subdivisions": {}
+  },
+  "GU": {
+    "name": "Guam",
+    "subdivisions": {}
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "subdivisions": {}
+  },
+  "GY": {
+    "name": "Guyana",
+    "subdivisions": {}
+  },
+  "HK": {
+    "name": "Hong Kong",
+    "subdivisions": {}
+  },
+  "HM": {
+    "name": "Heard Island and McDonald Islands",
+    "subdivisions": {}
+  },
+  "HN": {
+    "name": "Honduras",
+    "subdivisions": {}
+  },
+  "HR": {
+    "name": "Croatia",
+    "subdivisions": {}
+  },
+  "HT": {
+    "name": "Haiti",
+    "subdivisions": {}
+  },
+  "HU": {
+    "name": "Hungary",
+    "subdivisions": {}
+  },
+  "ID": {
+    "name": "Indonesia",
+    "subdivisions": {}
+  },
+  "IE": {
+    "name": "Ireland",
+    "subdivisions": {}
+  },
+  "IL": {
+    "name": "Israel",
+    "subdivisions": {}
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "subdivisions": {}
+  },
+  "IN": {
+    "name": "India",
+    "subdivisions": {}
+  },
+  "IO": {
+    "name": "British Indian Ocean Territory",
+    "subdivisions": {}
+  },
+  "IQ": {
+    "name": "Iraq",
+    "subdivisions": {}
+  },
+  "IR": {
+    "name": "Iran, Islamic Republic of",
+    "subdivisions": {}
+  },
+  "IS": {
+    "name": "Iceland",
+    "subdivisions": {}
+  },
+  "IT": {
+    "name": "Italy",
+    "subdivisions": {}
+  },
+  "JE": {
+    "name": "Jersey",
+    "subdivisions": {}
+  },
+  "JM": {
+    "name": "Jamaica",
+    "subdivisions": {}
+  },
+  "JO": {
+    "name": "Jordan",
+    "subdivisions": {}
+  },
+  "JP": {
+    "name": "Japan",
+    "subdivisions": {}
+  },
+  "KE": {
+    "name": "Kenya",
+    "subdivisions": {}
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "subdivisions": {}
+  },
+  "KH": {
+    "name": "Cambodia",
+    "subdivisions": {}
+  },
+  "KI": {
+    "name": "Kiribati",
+    "subdivisions": {}
+  },
+  "KM": {
+    "name": "Comoros",
+    "subdivisions": {}
+  },
+  "KN": {
+    "name": "Saint Kitts and Nevis",
+    "subdivisions": {}
+  },
+  "KP": {
+    "name": "Korea, Democratic People's Republic of",
+    "subdivisions": {}
+  },
+  "KR": {
+    "name": "Korea, Republic of",
+    "subdivisions": {}
+  },
+  "KW": {
+    "name": "Kuwait",
+    "subdivisions": {}
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "subdivisions": {}
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "subdivisions": {}
+  },
+  "LA": {
+    "name": "Lao People's Democratic Republic",
+    "subdivisions": {}
+  },
+  "LB": {
+    "name": "Lebanon",
+    "subdivisions": {}
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "subdivisions": {}
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "subdivisions": {}
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "subdivisions": {}
+  },
+  "LR": {
+    "name": "Liberia",
+    "subdivisions": {}
+  },
+  "LS": {
+    "name": "Lesotho",
+    "subdivisions": {}
+  },
+  "LT": {
+    "name": "Lithuania",
+    "subdivisions": {}
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "subdivisions": {}
+  },
+  "LV": {
+    "name": "Latvia",
+    "subdivisions": {}
+  },
+  "LY": {
+    "name": "Libya",
+    "subdivisions": {}
+  },
+  "MA": {
+    "name": "Morocco",
+    "subdivisions": {}
+  },
+  "MC": {
+    "name": "Monaco",
+    "subdivisions": {}
+  },
+  "MD": {
+    "name": "Moldova, Republic of",
+    "subdivisions": {}
+  },
+  "ME": {
+    "name": "Montenegro",
+    "subdivisions": {}
+  },
+  "MF": {
+    "name": "Saint Martin (French part)",
+    "subdivisions": {}
+  },
+  "MG": {
+    "name": "Madagascar",
+    "subdivisions": {}
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "subdivisions": {}
+  },
+  "MK": {
+    "name": "North Macedonia",
+    "subdivisions": {}
+  },
+  "ML": {
+    "name": "Mali",
+    "subdivisions": {}
+  },
+  "MM": {
+    "name": "Myanmar",
+    "subdivisions": {}
+  },
+  "MN": {
+    "name": "Mongolia",
+    "subdivisions": {}
+  },
+  "MO": {
+    "name": "Macao",
+    "subdivisions": {}
+  },
+  "MP": {
+    "name": "Northern Mariana Islands",
+    "subdivisions": {}
+  },
+  "MQ": {
+    "name": "Martinique",
+    "subdivisions": {}
+  },
+  "MR": {
+    "name": "Mauritania",
+    "subdivisions": {}
+  },
+  "MS": {
+    "name": "Montserrat",
+    "subdivisions": {}
+  },
+  "MT": {
+    "name": "Malta",
+    "subdivisions": {}
+  },
+  "MU": {
+    "name": "Mauritius",
+    "subdivisions": {}
+  },
+  "MV": {
+    "name": "Maldives",
+    "subdivisions": {}
+  },
+  "MW": {
+    "name": "Malawi",
+    "subdivisions": {}
+  },
+  "MX": {
+    "name": "Mexico",
+    "subdivisions": {}
+  },
+  "MY": {
+    "name": "Malaysia",
+    "subdivisions": {}
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "subdivisions": {}
+  },
+  "NA": {
+    "name": "Namibia",
+    "subdivisions": {}
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "subdivisions": {}
+  },
+  "NE": {
+    "name": "Niger",
+    "subdivisions": {}
+  },
+  "NF": {
+    "name": "Norfolk Island",
+    "subdivisions": {}
+  },
+  "NG": {
+    "name": "Nigeria",
+    "subdivisions": {}
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "subdivisions": {}
+  },
+  "NL": {
+    "name": "Netherlands",
+    "subdivisions": {}
+  },
+  "NO": {
+    "name": "Norway",
+    "subdivisions": {}
+  },
+  "NP": {
+    "name": "Nepal",
+    "subdivisions": {}
+  },
+  "NR": {
+    "name": "Nauru",
+    "subdivisions": {}
+  },
+  "NU": {
+    "name": "Niue",
+    "subdivisions": {}
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "subdivisions": {}
+  },
+  "OM": {
+    "name": "Oman",
+    "subdivisions": {}
+  },
+  "PA": {
+    "name": "Panama",
+    "subdivisions": {}
+  },
+  "PE": {
+    "name": "Peru",
+    "subdivisions": {}
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "subdivisions": {}
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "subdivisions": {}
+  },
+  "PH": {
+    "name": "Philippines",
+    "subdivisions": {}
+  },
+  "PK": {
+    "name": "Pakistan",
+    "subdivisions": {}
+  },
+  "PL": {
+    "name": "Poland",
+    "subdivisions": {}
+  },
+  "PM": {
+    "name": "Saint Pierre and Miquelon",
+    "subdivisions": {}
+  },
+  "PN": {
+    "name": "Pitcairn",
+    "subdivisions": {}
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "subdivisions": {}
+  },
+  "PS": {
+    "name": "Palestine, State of",
+    "subdivisions": {}
+  },
+  "PT": {
+    "name": "Portugal",
+    "subdivisions": {}
+  },
+  "PW": {
+    "name": "Palau",
+    "subdivisions": {}
+  },
+  "PY": {
+    "name": "Paraguay",
+    "subdivisions": {}
+  },
+  "QA": {
+    "name": "Qatar",
+    "subdivisions": {}
+  },
+  "RE": {
+    "name": "Réunion",
+    "subdivisions": {}
+  },
+  "RO": {
+    "name": "Romania",
+    "subdivisions": {}
+  },
+  "RS": {
+    "name": "Serbia",
+    "subdivisions": {}
+  },
+  "RU": {
+    "name": "Russian Federation",
+    "subdivisions": {
+      "AD": {
+        "name": "Adygeja, Respublika"
+      },
+      "AL": {
+        "name": "Altaj, Respublika"
+      },
+      "BA": {
+        "name": "Baškortostan, Respublika"
+      },
+      "BU": {
+        "name": "Burjatija, Respublika"
+      },
+      "CE": {
+        "name": "Čečenskaja Respublika"
+      },
+      "CU": {
+        "name": "Čuvašskaja Respublika"
+      },
+      "DA": {
+        "name": "Dagestan, Respublika"
+      },
+      "IN": {
+        "name": "Ingušetija, Respublika"
+      },
+      "KB": {
+        "name": "Kabardino-Balkarskaja Respublika"
+      },
+      "KL": {
+        "name": "Kalmykija, Respublika"
+      },
+      "KC": {
+        "name": "Karačaevo-Čerkesskaja Respublika"
+      },
+      "KR": {
+        "name": "Karelija, Respublika"
+      },
+      "KK": {
+        "name": "Hakasija, Respublika"
+      },
+      "KO": {
+        "name": "Komi, Respublika"
+      },
+      "ME": {
+        "name": "Marij Èl, Respublika"
+      },
+      "MO": {
+        "name": "Mordovija, Respublika"
+      },
+      "SA": {
+        "name": "Sakha, Respublika (Yakutiya)"
+      },
+      "SE": {
+        "name": "Severnaja Osetija, Respublika (Alanija)"
+      },
+      "TA": {
+        "name": "Tatarstan, Respublika"
+      },
+      "TY": {
+        "name": "Tyva, Respublika (Tuva)"
+      },
+      "UD": {
+        "name": "Udmurtskaja Respublika"
+      },
+      "ALT": {
+        "name": "Altajskij kraj"
+      },
+      "KAM": {
+        "name": "Kamčatskij kraj"
+      },
+      "KHA": {
+        "name": "Habarovskij kraj"
+      },
+      "KDA": {
+        "name": "Krasnodarskij kraj"
+      },
+      "KYA": {
+        "name": "Krasnojarskij kraj"
+      },
+      "PER": {
+        "name": "Permskij kraj"
+      },
+      "PRI": {
+        "name": "Primorskij kraj"
+      },
+      "STA": {
+        "name": "Stavropol'skij kraj"
+      },
+      "ZAB": {
+        "name": "Zabajkal'skij kraj"
+      },
+      "AMU": {
+        "name": "Amurskaja oblast'"
+      },
+      "ARK": {
+        "name": "Arhangel'skaja oblast'"
+      },
+      "AST": {
+        "name": "Astrahanskaja oblast'"
+      },
+      "BEL": {
+        "name": "Belgorodskaja oblast'"
+      },
+      "BRY": {
+        "name": "Brjanskaja oblast'"
+      },
+      "CHE": {
+        "name": "Čeljabinskaja oblast'"
+      },
+      "IRK": {
+        "name": "Irkutskaja oblast'"
+      },
+      "IVA": {
+        "name": "Ivanovskaja oblast'"
+      },
+      "KGD": {
+        "name": "Kaliningradskaja oblast'"
+      },
+      "KLU": {
+        "name": "Kalužskaja oblast'"
+      },
+      "KEM": {
+        "name": "Kemerovskaja oblast'"
+      },
+      "KIR": {
+        "name": "Kirovskaja oblast'"
+      },
+      "KOS": {
+        "name": "Kostromskaja oblast'"
+      },
+      "KGN": {
+        "name": "Kurganskaja oblast'"
+      },
+      "KRS": {
+        "name": "Kurskaja oblast'"
+      },
+      "LEN": {
+        "name": "Leningradskaja oblast'"
+      },
+      "LIP": {
+        "name": "Lipeckaja oblast'"
+      },
+      "MAG": {
+        "name": "Magadanskaja oblast'"
+      },
+      "MOS": {
+        "name": "Moskovskaja oblast'"
+      },
+      "MUR": {
+        "name": "Murmanskaja oblast'"
+      },
+      "NIZ": {
+        "name": "Nižegorodskaja oblast'"
+      },
+      "NGR": {
+        "name": "Novgorodskaja oblast'"
+      },
+      "NVS": {
+        "name": "Novosibirskaja oblast'"
+      },
+      "OMS": {
+        "name": "Omskaja oblast'"
+      },
+      "ORE": {
+        "name": "Orenburgskaja oblast'"
+      },
+      "ORL": {
+        "name": "Orlovskaja oblast'"
+      },
+      "PNZ": {
+        "name": "Penzenskaja oblast'"
+      },
+      "PSK": {
+        "name": "Pskovskaja oblast'"
+      },
+      "ROS": {
+        "name": "Rostovskaja oblast'"
+      },
+      "RYA": {
+        "name": "Rjazanskaja oblast'"
+      },
+      "SAK": {
+        "name": "Sahalinskaja oblast'"
+      },
+      "SAM": {
+        "name": "Samarskaja oblast'"
+      },
+      "SAR": {
+        "name": "Saratovskaja oblast'"
+      },
+      "SMO": {
+        "name": "Smolenskaja oblast'"
+      },
+      "SVE": {
+        "name": "Sverdlovskaja oblast'"
+      },
+      "TAM": {
+        "name": "Tambovskaja oblast'"
+      },
+      "TOM": {
+        "name": "Tomskaja oblast'"
+      },
+      "TUL": {
+        "name": "Tul'skaja oblast'"
+      },
+      "TVE": {
+        "name": "Tverskaja oblast'"
+      },
+      "TYU": {
+        "name": "Tjumenskaja oblast'"
+      },
+      "ULY": {
+        "name": "Ul'janovskaja oblast'"
+      },
+      "VLA": {
+        "name": "Vladimirskaja oblast'"
+      },
+      "VGG": {
+        "name": "Volgogradskaja oblast'"
+      },
+      "VLG": {
+        "name": "Vologodskaja oblast'"
+      },
+      "VOR": {
+        "name": "Voronežskaja oblast'"
+      },
+      "YAR": {
+        "name": "Jaroslavskaja oblast'"
+      },
+      "MOW": {
+        "name": "Moskva"
+      },
+      "SPE": {
+        "name": "Sankt-Peterburg"
+      },
+      "YE": {
+        "name": "Evrejskaja avtonomnaja oblast'"
+      },
+      "CHU": {
+        "name": "Čukotskij avtonomnyj okrug"
+      },
+      "KHM": {
+        "name": "Hanty-Mansijskij avtonomnyj okrug (Jugra)"
+      },
+      "NEN": {
+        "name": "Neneckij avtonomnyj okrug"
+      },
+      "YAN": {
+        "name": "Jamalo-Neneckij avtonomnyj okrug"
+      }
+    }
+  },
+  "RW": {
+    "name": "Rwanda",
+    "subdivisions": {}
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "subdivisions": {}
+  },
+  "SB": {
+    "name": "Solomon Islands",
+    "subdivisions": {}
+  },
+  "SC": {
+    "name": "Seychelles",
+    "subdivisions": {}
+  },
+  "SD": {
+    "name": "Sudan",
+    "subdivisions": {}
+  },
+  "SE": {
+    "name": "Sweden",
+    "subdivisions": {}
+  },
+  "SG": {
+    "name": "Singapore",
+    "subdivisions": {}
+  },
+  "SH": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "subdivisions": {}
+  },
+  "SI": {
+    "name": "Slovenia",
+    "subdivisions": {}
+  },
+  "SJ": {
+    "name": "Svalbard and Jan Mayen",
+    "subdivisions": {}
+  },
+  "SK": {
+    "name": "Slovakia",
+    "subdivisions": {}
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "subdivisions": {}
+  },
+  "SM": {
+    "name": "San Marino",
+    "subdivisions": {}
+  },
+  "SN": {
+    "name": "Senegal",
+    "subdivisions": {}
+  },
+  "SO": {
+    "name": "Somalia",
+    "subdivisions": {}
+  },
+  "SR": {
+    "name": "Suriname",
+    "subdivisions": {}
+  },
+  "SS": {
+    "name": "South Sudan",
+    "subdivisions": {}
+  },
+  "ST": {
+    "name": "Sao Tome and Principe",
+    "subdivisions": {}
+  },
+  "SV": {
+    "name": "El Salvador",
+    "subdivisions": {}
+  },
+  "SX": {
+    "name": "Sint Maarten",
+    "subdivisions": {}
+  },
+  "SY": {
+    "name": "Syrian Arab Republic",
+    "subdivisions": {}
+  },
+  "SZ": {
+    "name": "Eswatini",
+    "subdivisions": {}
+  },
+  "TC": {
+    "name": "Turks and Caicos Islands",
+    "subdivisions": {}
+  },
+  "TD": {
+    "name": "Chad",
+    "subdivisions": {}
+  },
+  "TF": {
+    "name": "French Southern Territories",
+    "subdivisions": {}
+  },
+  "TG": {
+    "name": "Togo",
+    "subdivisions": {}
+  },
+  "TH": {
+    "name": "Thailand",
+    "subdivisions": {}
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "subdivisions": {}
+  },
+  "TK": {
+    "name": "Tokelau",
+    "subdivisions": {}
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "subdivisions": {}
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "subdivisions": {}
+  },
+  "TN": {
+    "name": "Tunisia",
+    "subdivisions": {}
+  },
+  "TO": {
+    "name": "Tonga",
+    "subdivisions": {}
+  },
+  "TR": {
+    "name": "Turkey",
+    "subdivisions": {}
+  },
+  "TT": {
+    "name": "Trinidad and Tobago",
+    "subdivisions": {}
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "subdivisions": {}
+  },
+  "TW": {
+    "name": "Taiwan, Province of China",
+    "subdivisions": {}
+  },
+  "TZ": {
+    "name": "Tanzania, United Republic of",
+    "subdivisions": {}
+  },
+  "UA": {
+    "name": "Ukraine",
+    "subdivisions": {}
+  },
+  "UG": {
+    "name": "Uganda",
+    "subdivisions": {}
+  },
+  "UM": {
+    "name": "United States Minor Outlying Islands",
+    "subdivisions": {}
+  },
+  "US": {
+    "name": "United States of America",
+    "subdivisions": {}
+  },
+  "UY": {
+    "name": "Uruguay",
+    "subdivisions": {}
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "subdivisions": {}
+  },
+  "VA": {
+    "name": "Holy See",
+    "subdivisions": {}
+  },
+  "VC": {
+    "name": "Saint Vincent and the Grenadines",
+    "subdivisions": {}
+  },
+  "VE": {
+    "name": "Venezuela, Bolivarian Republic of",
+    "subdivisions": {}
+  },
+  "VG": {
+    "name": "Virgin Islands (British)",
+    "subdivisions": {}
+  },
+  "VI": {
+    "name": "Virgin Islands (U.S.)",
+    "subdivisions": {}
+  },
+  "VN": {
+    "name": "Vietnam",
+    "subdivisions": {}
+  },
+  "VU": {
+    "name": "Vanuatu",
+    "subdivisions": {}
+  },
+  "WF": {
+    "name": "Wallis and Futuna",
+    "subdivisions": {}
+  },
+  "WS": {
+    "name": "Samoa",
+    "subdivisions": {}
+  },
+  "YE": {
+    "name": "Yemen",
+    "subdivisions": {}
+  },
+  "YT": {
+    "name": "Mayotte",
+    "subdivisions": {}
+  },
+  "ZA": {
+    "name": "South Africa",
+    "subdivisions": {}
+  },
+  "ZM": {
+    "name": "Zambia",
+    "subdivisions": {}
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "subdivisions": {}
+  }
+}

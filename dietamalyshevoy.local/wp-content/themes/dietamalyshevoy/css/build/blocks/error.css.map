@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/blocks/error.scss"],"names":[],"mappings":"AAEA,OACE,WAAA,MACA,cAAA,MAFF,gBAKI,MAAA","file":"error.css","sourcesContent":["@import '../options';\r\n\r\n.error {\r\n  margin-top: $x * 31;\r\n  margin-bottom: $x * 31;\r\n\r\n  & > .content {\r\n    width: $x * 164;\r\n  }\r\n}"]}

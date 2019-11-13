@@ -1,0 +1,83 @@
+@import '../options';
+
+@keyframes chart-offset--progress {
+  from {
+    stroke-dashoffset: 256px;
+  }
+}
+
+@keyframes chart-offset--columns {
+  from {
+    stroke-dashoffset: 34px;
+  }
+}
+
+@keyframes chart-offset--circle {
+  from {
+    stroke-dashoffset: 327px;
+  }
+}
+
+.chart {
+  display: block;
+
+  &_progress {
+    &.chart_flip {
+      transform: scaleX(-1);
+    }
+
+    &.chart_hidden {
+      & > path,
+      & > line {
+        stroke-dashoffset: 256px;
+      }
+    }
+
+    &:not(.chart_hidden) {
+      & > path,
+      & > line {
+        animation: chart-offset--progress $animation;
+      }
+    }
+  }
+
+  &_columns {
+    &.chart_hidden {
+      & > path,
+      & > line {
+        stroke-dashoffset: 34px;
+      }
+    }
+
+    &:not(.chart_hidden) {
+      & > path,
+      & > line {
+        animation: chart-offset--columns $animation;
+      }
+    }
+  }
+
+  &_circle {
+    &.chart_hidden {
+      & > path,
+      & > line {
+        stroke-dashoffset: 327px;
+      }
+    }
+
+    &:not(.chart_hidden) {
+      & > path,
+      & > line {
+        animation: chart-offset--circle $animation;
+      }
+    }
+  }
+
+  &__background {
+    fill: $color--aside_border;
+  }
+
+  &__value {
+    stroke: $color--text_active;
+  }
+}

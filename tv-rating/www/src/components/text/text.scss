@@ -1,0 +1,95 @@
+@import '../../scss/options';
+
+// TODO: adjust padding
+
+%text_h1 { @extend %h1; };
+%text_h2 { @extend %h2; };
+%text_h3 { @extend %h3; };
+%text_h4 { @extend %h4; };
+%text_h5 { @extend %h5; };
+%text_h6 { @extend %h6; };
+
+%text_p { @extend %text--normal; };
+
+$text_width: $x * 84;
+
+$text__h2_margin: $x * 6 auto;
+$text__h6_margin: $x * 2 auto;
+
+$text__p_margin: $x * 3 auto;
+
+$text__a_color:        $color--blue;
+$text__a_color_active: $color--blue_alt;
+
+.text {
+  display: block;
+  flex-shrink: 0;
+  margin: auto;
+  max-width: $text_width;
+
+  h1 {
+    @extend %text_h1;
+
+    display: block;
+  }
+
+  h2 {
+    @extend %text_h2;
+
+    display: block;
+    margin: $text__h2_margin;
+    text-align: left;
+  }
+
+  h3 {
+    @extend %text_h3;
+
+    display: block;
+  }
+
+  h4 {
+    @extend %text_h4;
+
+    display: block;
+  }
+
+  h5 {
+    @extend %text_h5;
+
+    display: block;
+  }
+
+  h6 {
+    @extend %text_h6;
+
+    display: block;
+    margin: $text__h6_margin;
+    text-align: left;
+  }
+
+  p {
+    @extend %text_p;
+
+    display: block;
+    margin: $text__p_margin;
+    text-align: left;
+  }
+
+  a {
+    transition: color $transition;
+
+    &:not(:hover):not(:active):not(:focus),
+    &:link:not(:hover):not(:active):not(:focus),
+    &:visited:not(:hover):not(:active):not(:focus) {
+      color: $text__a_color;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $text__a_color_active;
+      text-decoration: underline;
+    }
+  }
+}

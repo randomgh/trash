@@ -1,0 +1,27 @@
+@import '../options';
+
+@keyframes loader-spin {
+  0% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
+
+
+.loader {
+  display: block;
+  width: $x * 5;
+  height: $x * 5;
+
+  & > path {
+    animation: loader-spin $animation infinite;
+
+    @for $i from 1 to 8 {
+      &:nth-child(#{$i}) {
+        animation-delay: -$i * nth($animation, 1) / 8;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[debug] [2019-08-12T01:48:41.417Z] ----------------------------------------------------------------------
+[debug] [2019-08-12T01:48:41.421Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\random\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-12T01:48:41.422Z] CLI Version:   7.2.2
+[debug] [2019-08-12T01:48:41.422Z] Platform:      win32
+[debug] [2019-08-12T01:48:41.423Z] Node Version:  v10.15.3
+[debug] [2019-08-12T01:48:41.425Z] Time:          Mon Aug 12 2019 04:48:41 GMT+0300 (GMT+03:00)
+[debug] [2019-08-12T01:48:41.425Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-12T01:48:41.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-12T01:48:41.442Z] > authorizing via signed-in user
+[debug] [2019-08-12T01:48:41.443Z] [iam] checking project ma-intelligo for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-08-12T01:48:41.446Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-12T01:48:41.447Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-12T01:48:41.840Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-12T01:48:41.882Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ma-intelligo:testIamPermissions  
+
+[debug] [2019-08-12T01:48:43.097Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-12T01:48:43.100Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ma-intelligo  
+ 
+[debug] [2019-08-12T01:48:43.582Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ma-intelligo'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-08-12T01:48:43.594Z] >>> HTTP REQUEST PUT https://ma-intelligo.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-08-12T01:48:44.651Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database ma-intelligo is valid
+[debug] [2019-08-12T01:48:44.656Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:125:11)
+    at Object.join (path.js:427:7)
+    at Config.path (C:\Users\random\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at module.exports (C:\Users\random\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\prepare.js:12:36)
+    at _chain (C:\Users\random\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:22:40)
+    at C:\Users\random\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:25:20
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.

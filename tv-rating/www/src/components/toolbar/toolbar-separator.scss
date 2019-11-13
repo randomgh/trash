@@ -1,0 +1,15 @@
+@import '../../scss/options';
+
+$toolbar-separator_margin: $x / 4 $x * 1.5;
+$toolbar-separator_width:  1px;
+$toolbar-separator_color:  $color--breadcrumbs_separator;
+
+.toolbar-separator {
+  @extend %text--none;
+
+  display: block;
+  align-self: stretch;
+  margin: $toolbar-separator_margin;
+  width: $toolbar-separator_width;
+  background-color: $toolbar-separator_color;
+}

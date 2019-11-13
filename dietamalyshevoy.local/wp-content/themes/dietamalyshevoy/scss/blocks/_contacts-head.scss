@@ -1,0 +1,31 @@
+@import '../options';
+
+.contacts-head {
+  margin-top: $x * 16;
+  margin-bottom: $x * 16;
+
+  & > .content {
+    max-width: $x * 228;
+  }
+
+  &__title,
+  &__subtitle {
+    display: block;
+    margin: $x * 3 auto;
+    font-family: $font-family_MW;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__title {
+    @include text(big);
+
+    color: $color--red1;
+  }
+
+  &__subtitle {
+    @include text(h1);
+
+    color: $color--black;
+  }
+}

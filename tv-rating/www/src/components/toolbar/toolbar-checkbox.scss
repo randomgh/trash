@@ -1,0 +1,55 @@
+@import '../../scss/options';
+
+.toolbar-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+
+  &:not(:first-child) {
+    margin-left: $x / 2;
+  }
+
+  &__check {
+    display: block;
+    border: 1px solid $color--checkbox_border;
+    border-radius: $x / 2;
+    padding: $x / 4 - 1;
+    width: $x * 2;
+    height: $x * 2;
+    color: $color--white;
+    transition: border-color $transition,
+                color $transition;
+
+    .toolbar-checkbox:hover > &,
+    .toolbar-checkbox:active > &,
+    .toolbar-checkbox:focus > & {
+      border-color: $color--white;
+      color: $color--blue;
+    }
+
+    svg {
+      opacity: 0;
+      transition: opacity $transition;
+
+      .toolbar-checkbox_checked & {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__label {
+    @extend %text--medium;
+
+    margin-left: $x;
+    color: $color--white;
+    transition: color $transition;
+
+    .toolbar-checkbox:hover > &,
+    .toolbar-checkbox:active > &,
+    .toolbar-checkbox:focus > & {
+      color: $color--blue;
+    }
+  }
+}

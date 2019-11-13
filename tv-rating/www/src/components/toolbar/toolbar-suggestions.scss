@@ -1,0 +1,78 @@
+@import '../../scss/options';
+
+.toolbar-suggestions {
+  @extend %shadow--ui;
+
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-height: $x * 15;
+  top: 100%;
+  left: 0;
+  border-top: 1px solid $color--button_white_border;
+  border-radius: 0 0 $x / 2 $x / 2;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: auto;
+  background-color: $color--white;
+  transition: opacity $transition;
+
+  &:hover {
+    pointer-events: auto;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $x;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color $transition;
+
+    &:hover {
+      background-color: $color--background_white;
+    }
+
+    & > * {
+      margin: 0 $x / 2;
+    }
+
+    &__image {
+      @extend %text--none;
+
+      box-sizing: border-box;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: background-color $transition,
+                  color $transition;
+
+      background-color: $color--background_gray;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: $x;
+      width: $x * 3;
+      height: $x * 3;
+      overflow: hidden;
+    }
+
+    &__text {
+      display: block;
+      flex-grow: 1;
+      margin-right: $x;
+    }
+  }
+
+  &__empty {
+    display: block;
+    padding: $x * 1.25 + 1  $x * 2  $x * 1.25 - 1  $x * 2;
+    color: $color--text_light;
+    background-color: $color--white;
+  }
+}

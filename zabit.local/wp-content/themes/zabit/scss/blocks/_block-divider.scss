@@ -1,0 +1,31 @@
+@import '../options';
+
+.divider {
+  display: block;
+  margin: $x * 7 auto;
+  height: 0;
+  border: none;
+  border-bottom: 1px solid $color--aside_border;
+  background: transparent;
+
+  &_short {
+    width: $x * 10;
+  }
+
+  &_style {
+    &_dashed {
+      border-bottom-style: dashed;
+      border-bottom-width: $x / 4;
+    }
+
+    &_double {
+      border-bottom-style: double;
+      border-bottom-width: $x * .75;
+    }
+
+    &_dotted {
+      border-bottom-style: dotted;
+      border-bottom-width: $x / 2;
+    }
+  }
+}

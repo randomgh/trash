@@ -1,0 +1,121 @@
+@import '../options';
+
+.meta {
+  display: block;
+  margin: $x * 4.5 0;
+
+  &__title {
+    display: block;
+    margin: $x * 5 auto;
+    font-weight: 500;
+    text-align: center;
+    text-transform: lowercase;
+
+    .app_ru .section_product & {
+      text-transform: none;
+    }
+
+    @include adaptation(desktop-l) {
+      font-size: 40px;
+      line-height: 56px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 34px;
+      line-height: 41px;
+    }
+  }
+
+  &__excerpt {
+    display: block;
+    margin: 0;
+    font-weight: 500;
+    color: $color--white;
+
+    @include adaptation(desktop-l) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    b,
+    strong {
+      font-weight: 500;
+      color: $color--text_active;
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__date {
+    display: block;
+    color: $color--text_disabled;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

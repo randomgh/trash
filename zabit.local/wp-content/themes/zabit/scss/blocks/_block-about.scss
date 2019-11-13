@@ -1,0 +1,315 @@
+@import '../options';
+
+.about {
+  display: block;
+
+  &:not(:last-child) {
+    padding-bottom: $x * 2.5;
+  }
+
+  &__name {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+
+    @include adaptation(desktop-l) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    b,
+    strong {
+      font-weight: normal;
+      color: $color--text_active;
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .video ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+        transform $show;
+
+        transition-delay: .6s;
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+        transform $show;
+
+        transition-delay: .6s;
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+        transform $show;
+
+        transition-delay: .6s;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    .video.video_ready ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: $x * .75 auto $x * 2 auto;
+    padding-right: $x * 5;
+    font-size: 17px;
+    line-height: 24px;
+    color: $color--text;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .video ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: .9s;
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: .9s;
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: .9s;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    .video.video_ready ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    outline: none;
+    color: $color--text_active;
+    transition: color $transition;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: $color--text;
+    }
+
+    .video ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: 1s;
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: 1s;
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity $show,
+                    transform $show;
+
+        transition-delay: 1s;
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+
+    .video.video_ready ~ .aside_left & {
+      @include adaptation(desktop-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(desktop-s) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(tablet-l) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @include adaptation(mobile-l) {
+
+      }
+
+      @include adaptation(mobile-s) {
+
+      }
+    }
+  }
+}

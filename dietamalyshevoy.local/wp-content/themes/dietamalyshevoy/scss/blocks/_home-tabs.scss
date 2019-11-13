@@ -1,0 +1,248 @@
+@import '../options';
+
+.home-tabs {
+  margin-top: $x * 37;
+  margin-bottom: $x * 37;
+
+  &__title {
+    @include text(h3);
+
+    display: block;
+    margin: $x * 4 auto;
+    font-family: $font-family_MW;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: $color--red1;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $x * 4 auto;
+
+    &__link {
+      @include text(normal);
+
+      box-sizing: border-box;
+      display: block;
+      min-width: $x * 36;
+      margin: $x;
+      padding: $x * 3 $x * 6;
+      border-radius: $x * 10;
+      background-color: transparent;
+      font-family: $font-family_OS;
+      text-decoration: none;
+      text-align: center;
+      color: $color--dark_gray;
+      outline: none;
+      cursor: pointer;
+      transition: background-color $transition, color $transition;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &_active {
+        background-color: $bg_color--blue_alt;
+        color: $color--blue1;
+      }
+
+      &_active {
+        pointer-events: none;
+        cursor: auto;
+      }
+    }
+  }
+
+  &__tabs {
+    position: relative;
+    display: block;
+    margin-top: $x * 8;
+  }
+
+  &__tab {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+//    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition;
+
+    &_active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &__product {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: $x * 3;
+      border-radius: $x * 4;
+      width: $x * 88;
+      background-color: $color--white;
+      text-decoration: none;
+      outline: none;
+      overflow: hidden;
+      box-shadow: $shadow--card;
+
+      &__figure {
+        display: block;
+      }
+
+      &__image {
+        position: relative;
+        display: block;
+        height: $x * 45;
+        overflow: hidden;
+
+        &__img {
+          display: block;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        &__badge {
+          @include text(normal);
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-sizing: border-box;
+          display: block;
+          margin: $x * 4;
+          padding: $x $x * 4;
+          border-radius: $x * 4;
+          min-width: $x * 27;
+          background-color: $color--white;
+          font-family: $font-family_OS;
+          font-weight: 600;
+          color: $color--black;
+          text-align: center;
+        }
+      }
+
+      &__caption {
+        display: block;
+        padding: $x * 6;
+
+        & > * {
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &__title,
+      &__description {
+        display: block;
+        margin: $x * 2 auto;
+        font-family: $font-family_MW;
+        font-style: italic;
+        text-align: center;
+      }
+
+      &__title {
+        @include text(h5);
+
+        font-weight: bold;
+      }
+
+      &__description {
+        @include text(normal);
+
+        font-weight: 300;
+      }
+
+      &__footer {
+        display: block;
+        margin-top: auto;
+        padding: 0 $x * 6 $x * 6 $x * 6;
+
+        & > * {
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &__tag {
+        @include text(normal);
+
+        box-sizing: border-box;
+        display: block;
+        margin: $x * 2 auto;
+        padding: $x * 4 $x * 6;
+        border-radius: $x * 10;
+        background-color: $bg_color--blue_alt;
+        font-family: $font-family_OS;
+        font-weight: 600;
+        color: $color--blue1;
+        text-align: center;
+      }
+
+      &__button {
+        @include text(normal);
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: $x * 2 auto;
+        border-radius: $x * 10;
+        font-family: $font-family_OS;
+        font-weight: 600;
+        overflow: hidden;
+
+        &__label,
+        &__price {
+          @include text(normal);
+
+          box-sizing: border-box;
+          display: block;
+          padding: $x * 4 $x * 5;
+          color: $color--white;
+          text-align: center;
+          transition: background-color $transition;
+        }
+
+        &__label {
+          flex-shrink: 0;
+          background-color: $color--red1;
+
+          .home-tabs__tab__product:hover &,
+          .home-tabs__tab__product:focus &,
+          .home-tabs__tab__product:active & {
+            background-color: $color--green1;
+          }
+        }
+
+        &__price {
+          flex-grow: 1;
+          background-color: $color--red4;
+
+          .home-tabs__tab__product:hover &,
+          .home-tabs__tab__product:focus &,
+          .home-tabs__tab__product:active & {
+            background-color: $color--green2;
+          }
+        }
+      }
+    }
+  }
+}

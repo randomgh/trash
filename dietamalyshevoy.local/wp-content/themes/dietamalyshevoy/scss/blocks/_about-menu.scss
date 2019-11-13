@@ -1,0 +1,40 @@
+@import '../options';
+
+.about-menu {
+  display: block;
+  margin: $x * 16 0 $x * 28 0;
+  padding: 0 $x * 14;
+
+  & > .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    background-color: $bg_color--green;
+    border-radius: $x * 17 / 2;
+    height: $x * 17;
+    padding: $x * 6;
+    max-width: unset;
+  }
+
+  &__link {
+    @include text(normal);
+
+    color: $color--white;
+    text-decoration: none;
+    font-family: $font-family_OS;
+    font-weight: 600;
+    margin: 0  $x * 4;
+    transition: color $transition;
+    outline: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--red1;
+    }
+
+  }
+}

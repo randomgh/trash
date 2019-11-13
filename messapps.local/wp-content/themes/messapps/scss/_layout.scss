@@ -1,0 +1,177 @@
+@import 'options';
+@import 'utilities/clear';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header {
+  display: block;
+  max-width: $x * 170;
+  width: 100%;
+  padding-top: $x * 4;
+  margin: auto;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__logo {
+    height: $x * 2.5;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: $color--grey;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--purple;
+    }
+  }
+
+  &__nav {
+    padding: 0 $x * 2.5;
+    display: block;
+
+    &__list {
+      @include clear_list();
+    }
+
+    &__item {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color--grey;
+    margin: 0 $x * 2.5;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--purple;
+    }
+  }
+
+  &__proposal {
+    position: fixed;
+    display: block;
+    right: $x * 5;
+    top: $x * 3;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: $color--grey;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--grey;
+    }
+  }
+}
+
+.footer {
+  display: block;
+  max-width: $x * 170;
+  width: 100%;
+  padding-bottom: $x * 3;
+  margin: auto;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: $x * 2.5;
+    width: 20%;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: $color--grey;
+    transition: color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color--purple;
+    }
+  }
+
+  &__text {
+    display: block;
+    color: $color--grey;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    color: $color--grey;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  &__soc {
+    display: block;
+    width: 20%;
+    text-align: right;
+
+    &__link {
+      display: inline-block;
+      margin: 0 2px;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+
+      & > svg > path:first-child {
+        transition: fill $transition;
+      }
+
+      &:hover path:first-child,
+      &:focus path:first-child,
+      &:active path:first-child {
+        fill: $color--purple;
+      }
+    }
+  }
+}

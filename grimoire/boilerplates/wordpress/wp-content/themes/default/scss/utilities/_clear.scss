@@ -1,0 +1,48 @@
+@mixin clear($clear: both) {
+  clear: $clear;
+}
+
+@mixin clear_pseudo($clear: both, $pseudo: after) {
+  &:#{$pseudo} {
+    content: '\00a0';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    @include clear($clear);
+  }
+}
+
+@mixin clear_list() {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+
+  & > * {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+@mixin clear_input() {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  outline: none;
+}
+
+@mixin clear_search() {
+  @include clear_input();
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}

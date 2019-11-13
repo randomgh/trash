@@ -1,0 +1,125 @@
+@import '../options';
+
+.news-list {
+  display: block;
+  margin-top: auto;
+
+  &:not(:first-child) {
+    padding-top: $x * 2.5;
+  }
+
+  & > .news-excerpt {
+    margin: $x * 2 0;
+
+    &:first-of-type {
+      @include adaptation(desktop-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(desktop-s) {
+        margin-top: 0;
+      }
+
+      @include adaptation(tablet-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(mobile-l) {
+        display: none;
+      }
+
+      @include adaptation(mobile-s) {
+        display: none;
+      }
+    }
+
+    &:nth-of-type(2) {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(mobile-s) {
+        margin-top: 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    display: block;
+
+    @include adaptation(desktop-l) {
+      margin-top: $x * 4;
+    }
+
+    @include adaptation(desktop-s) {
+      margin-top: $x * 4;
+    }
+
+    @include adaptation(tablet-l) {
+      margin-top: $x * 2;
+    }
+
+    @include adaptation(mobile-l) {
+      margin-top: $x * 3;
+    }
+
+    @include adaptation(mobile-s) {
+      margin-top: $x * 3;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    outline: none;
+    color: $color--text_active;
+    transition: color $transition;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: $color--text;
+    }
+  }
+}

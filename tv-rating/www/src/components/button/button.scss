@@ -1,0 +1,253 @@
+@import '../../scss/options';
+
+%button--small  { @extend %text--small; };
+%button--medium { @extend %text--medium; };
+%button--normal { @extend %text--normal; };
+%button--big    { @extend %text--big; };
+
+$button_padding--small:  0;
+$button_padding--medium: $x $x * 2;
+$button_padding--normal: $x * 2 $x * 3;
+$button_padding--big:    $x $x * 2;
+
+$button_color_blue: $color--blue;
+$button_color_active_blue: $color--blue_alt;
+
+$button_color_green: $color--green;
+$button_color_active_green: $color--green_alt;
+
+$button_color_red: $color--red;
+$button_color_active_red: $color--red_alt;
+
+$button_regular_color_white: $color--text_black;
+$button_regular_color_active_white: $color--blue;
+$button_alternative_color_white: $color--white;
+$button_alternative_color_active_white: $color--blue;
+$button_color_white_background: $color--white;
+$button_color_white_border: $color--button_white_border;
+
+$button_regular_text: $color--white;
+
+$button_disabled_text:       $color--button_disabled_text;
+$button_disabled_background: $color--button_disabled_background;
+
+$button_svg--small:  $x * 2.25;
+$button_svg--medium: $x * 2.5;
+$button_svg--normal: $x * 2.75;
+$button_svg--big:    $x * 3.25;
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border-radius: $x / 2;
+  border: 1px solid transparent;
+  background: transparent;
+  font-weight: bold;
+  pointer-events: auto;
+  cursor: pointer;
+  outline: none;
+  transition: color $transition,
+              border-color $transition,
+              background-color $transition;
+
+  &_size {
+    &_small {
+      @extend %button--small;
+
+      padding: $button_padding--small;
+    }
+
+    &_medium {
+      @extend %button--medium;
+
+      padding: $button_padding--medium;
+    }
+
+    &_normal {
+      @extend %button--normal;
+
+      padding: $button_padding--normal;
+    }
+
+    &_big {
+      @extend %button--big;
+
+      padding: $button_padding--big;
+    }
+  }
+
+  &_style {
+    &_regular {
+      color: $button_regular_text;
+
+      &.button_color{
+        &_blue {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            background-color: $button_color_blue;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $button_color_active_blue;
+          }
+        }
+
+        &_green {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            background-color: $button_color_green;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $button_color_active_green;
+          }
+        }
+
+        &_red {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            background-color: $button_color_red;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $button_color_active_red;
+          }
+        }
+
+        &_white {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            color: $button_regular_color_white;
+            border-color: $button_color_white_border;
+            background-color: $button_color_white_background;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $button_regular_color_active_white;
+          }
+        }
+      }
+
+      &.button_disabled {
+        color: $button_disabled_text;
+        background-color: $button_disabled_background;
+      }
+    }
+
+    &_alternative {
+      &.button_color{
+        &_blue {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            color: $button_color_blue;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $button_color_active_blue;
+          }
+        }
+
+        &_green {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            color: $button_color_green;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $button_color_active_green;
+          }
+        }
+
+        &_red {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            color: $button_color_red;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $button_color_active_red;
+          }
+        }
+
+        &_white {
+          &:not(:hover):not(:active):not(:focus),
+          &:link:not(:hover):not(:active):not(:focus),
+          &:visited:not(:hover):not(:active):not(:focus) {
+            color: $button_alternative_color_white;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            color: $button_alternative_color_active_white;
+          }
+        }
+      }
+
+      &.button_disabled {
+        color: $button_disabled_text;
+      }
+    }
+  }
+
+  &_disabled,
+  &_active {
+    pointer-events: none;
+    cursor: auto;
+  }
+
+  &__label {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  & > svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &_size {
+    &_small > svg {
+      width: $button_svg--small;
+      height: $button_svg--small;
+    }
+
+    &_medium > svg {
+      width: $button_svg--medium;
+      height: $button_svg--medium;
+    }
+
+    &_normal > svg {
+      width: $button_svg--normal;
+      height: $button_svg--normal;
+    }
+
+    &_big > svg {
+      width: $button_svg--big;
+      height: $button_svg--big;
+    }
+  }
+}

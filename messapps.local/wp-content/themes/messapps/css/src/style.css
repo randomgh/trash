@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Thin.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Thin.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Thin.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ThinItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ThinItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-ThinItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-ThinItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-UltraLight.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-UltraLight.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-UltraLight.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-UltraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-UltraLightItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-UltraLightItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-UltraLightItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-UltraLightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Light.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Light.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Light.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-LightItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-LightItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-LightItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Regular.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Regular.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Regular.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Italic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Italic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Italic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-SemiBold.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-SemiBold.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-SemiBold.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-SemiBoldItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-SemiBoldItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-SemiBoldItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-SemiBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Bold.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Bold.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Bold.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-BoldItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-BoldItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-BoldItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ExtraBold.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ExtraBold.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-ExtraBold.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ExtraBoldItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-ExtraBoldItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-ExtraBoldItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-ExtraBoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Black.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-Black.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-Black.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../../fonts/Proxima_Nova/ProximaNova-BlackItalic.eot");
+  src: url("../../fonts/Proxima_Nova/ProximaNova-BlackItalic.eot?#iefix") format("eot"), url("../../fonts/Proxima_Nova/ProximaNova-BlackItalic.woff") format("woff"), url("../../fonts/Proxima_Nova/ProximaNova-BlackItalic.ttf") format("truetype"); }
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal; }
+
+html,
+body,
+input,
+textarea,
+select,
+button {
+  font-size: 1em;
+  line-height: 1.2em; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: 1px;
+  height: 1px; }
+
+svg {
+  fill: currentColor;
+  color-interpolation-filters: sRGB; }
+
+a {
+  color: inherit; }
+
+figure {
+  margin: 0; }
+
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+html {
+  font-size: 0;
+  line-height: 0;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body {
+  color: #000;
+  background-color: #fff; }
+
+.state {
+  display: none; }
+
+.iconset {
+  display: none; }
+
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.header {
+  display: block;
+  max-width: 1360px;
+  width: 100%;
+  padding-top: 32px;
+  margin: auto; }
+  .header__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; }
+  .header__logo {
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #383841;
+    transition: color 0.3s ease-out 0s; }
+    .header__logo:hover, .header__logo:focus, .header__logo:active {
+      color: #951d97; }
+  .header__nav {
+    padding: 0 20px;
+    display: block; }
+    .header__nav__list {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .header__nav__list li {
+        display: inline-block; }
+  .header__link {
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #383841;
+    margin: 0 20px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s ease-out 0s; }
+    .header__link:hover, .header__link:focus, .header__link:active {
+      color: #951d97; }
+  .header__proposal {
+    position: fixed;
+    display: block;
+    right: 40px;
+    top: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #383841;
+    transition: color 0.3s ease-out 0s; }
+    .header__proposal:hover, .header__proposal:focus, .header__proposal:active {
+      color: #383841; }
+
+.footer {
+  display: block;
+  max-width: 1360px;
+  width: 100%;
+  padding-bottom: 24px;
+  margin: auto; }
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__logo {
+    height: 20px;
+    width: 20%;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #383841;
+    transition: color 0.3s ease-out 0s; }
+    .footer__logo:hover, .footer__logo:focus, .footer__logo:active {
+      color: #951d97; }
+  .footer__text {
+    display: block;
+    color: #383841;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center; }
+  .footer__link {
+    display: block;
+    color: #383841;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    text-align: center; }
+    .footer__link:hover, .footer__link:focus, .footer__link:active {
+      text-decoration: underline; }
+  .footer__soc {
+    display: block;
+    width: 20%;
+    text-align: right; }
+    .footer__soc__link {
+      display: inline-block;
+      margin: 0 2px;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer; }
+      .footer__soc__link > svg > path:first-child {
+        transition: fill 0.3s ease-out 0s; }
+      .footer__soc__link:hover path:first-child,
+      .footer__soc__link:focus path:first-child,
+      .footer__soc__link:active path:first-child {
+        fill: #951d97; }
+
+/*# sourceMappingURL=style.css.map */

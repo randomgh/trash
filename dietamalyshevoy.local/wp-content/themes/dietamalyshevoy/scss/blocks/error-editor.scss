@@ -1,0 +1,11 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.editor-styles-wrapper {
+  .wp-block[data-type="dem/error"] {
+    max-width: unset;
+
+    @import 'error';
+  }
+}

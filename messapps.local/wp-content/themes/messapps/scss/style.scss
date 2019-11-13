@@ -1,0 +1,28 @@
+@import 'utilities/font';
+
+@include font('../../fonts', 'Proxima Nova',
+  'thin' 'ultra_light' 'light' 'normal' 'semi_bold' 'bold' 'extra_bold' 'black', 'normal' 'italic', eot woff ttf);
+
+@import 'defaults';
+@import 'options';
+
+html {
+  @include text(normal);
+
+  font-family: $font-family;
+}
+
+body {
+  color: $color--black;
+  background-color: $color--white;
+}
+
+.state {
+  display: none;
+}
+
+.iconset {
+  display: none;
+}
+
+@import 'layout';

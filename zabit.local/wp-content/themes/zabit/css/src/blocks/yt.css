@@ -1,0 +1,16 @@
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+.yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto; }
+  .yt__video {
+    display: block;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=yt.css.map */

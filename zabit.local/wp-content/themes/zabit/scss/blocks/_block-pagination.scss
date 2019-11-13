@@ -1,0 +1,21 @@
+@import '../options';
+
+.pagination {
+  display: block;
+  padding: $x * 4 0 0 0;
+  color: $color--text_active;
+  opacity: 1;
+  transition: opacity $transition;
+
+  &_hidden {
+    opacity: 0;
+  }
+
+  &_completed {
+    display: none;
+  }
+
+  & > .loader {
+    margin: 0 auto;
+  }
+}

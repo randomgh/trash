@@ -1,0 +1,23 @@
+@import '../options';
+
+.contacts-legal {
+  & > .content {
+    @include text(medium);
+
+    box-sizing: border-box;
+    padding: $x * 18 $x * 32;
+    border-top: 1px solid $color--dark_gray;
+    border-bottom: 1px solid $color--dark_gray;
+    max-width: $x * 228;
+    font-family: $font-family_OS;
+    text-align: center;
+  }
+
+  &:first-child > .content {
+    border-top: none;
+  }
+
+  &:last-child > .content {
+    border-bottom: none;
+  }
+}

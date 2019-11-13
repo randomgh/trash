@@ -1,0 +1,120 @@
+@import '../options';
+
+.news-excerpt {
+  display: block;
+  border-bottom: 1px solid $color--aside_border;
+  text-decoration: none;
+  outline: none;
+
+  @include adaptation(desktop-l) {
+    padding: $x * 3 0;
+  }
+
+  @include adaptation(desktop-s) {
+    padding: $x * 2 0;
+  }
+
+  @include adaptation(tablet-l) {
+    padding: $x * 2 0;
+  }
+
+  @include adaptation(mobile-l) {
+    padding: $x * 3 0;
+  }
+
+  @include adaptation(mobile-s) {
+    padding: $x * 3 0;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto $x auto;
+    font-weight: 500;
+    color: $color--text;
+    transition: color $transition;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    .news-excerpt:hover &,
+    .news-excerpt:active &,
+    .news-excerpt:focus & {
+      color: $color--text_active
+    }
+
+    b,
+    strong {
+      font-weight: normal;
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__date {
+    display: block;
+    margin: $x auto 0 auto;
+    color: $color--text_disabled;
+    transition: color $transition;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .news-excerpt:hover &,
+    .news-excerpt:active &,
+    .news-excerpt:focus & {
+      color: $color--text_disabled_active
+    }
+  }
+}

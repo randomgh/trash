@@ -1,0 +1,486 @@
+@import '../../scss/options';
+
+%modal-comparison-picker__search { @extend %text--medium; };
+
+%modal-comparison-picker__placeholder { @extend %text--big; };
+
+%modal-comparison-picker__item__title { @extend %text--medium; };
+
+%modal-comparison-picker__selected__header { @extend %text--medium; };
+
+$modal-comparison-picker_width:  $x * 84;
+$modal-comparison-picker_height: $x * 82;
+
+$modal-comparison-picker__column_width--right: $x * 30;
+
+$modal-comparison-picker__header_border_color: $color--background_gray;
+
+$modal-comparison-picker__search_padding: $x * 2.5 $x * 3;
+
+$modal-comparison-picker__input_margin:            $x * .75 $x $x * .75 $x * 2;
+$modal-comparison-picker__input_color:             $color--text_black;
+$modal-comparison-picker__input_background:        $color--white;
+$modal-comparison-picker__input_placeholder_color: $color--text_light;
+
+
+$modal-comparison-picker__submit_padding:           $x;
+$modal-comparison-picker__submit_size:              $x * 4;
+$modal-comparison-picker__submit_color:             $color--black;
+$modal-comparison-picker__submit_color_active:      $color--white;
+$modal-comparison-picker__submit_background:        $color--background_gray;
+$modal-comparison-picker__submit_background_active: $color--black;
+
+$modal-comparison-picker__reset_size:         $x * 2;
+$modal-comparison-picker__reset_color:        $color--text_light;
+$modal-comparison-picker__reset_color_active: $color--black;
+
+$modal-comparison-picker__placeholder_padding: $x * 2.5 $x * 3;
+
+$modal-comparison-picker__placeholder__icon_padding:           $x;
+$modal-comparison-picker__placeholder__icon_margin:            $x;
+$modal-comparison-picker__placeholder__icon_size:              $x * 4;
+$modal-comparison-picker__placeholder__icon_color:             $color--black;
+$modal-comparison-picker__placeholder__icon_color_active:      $color--white;
+$modal-comparison-picker__placeholder__icon_background:        $color--background_gray;
+$modal-comparison-picker__placeholder__icon_background_active: $color--black;
+
+$modal-comparison-picker__close_padding:      $x * 3;
+$modal-comparison-picker__close_size:         $x * 3;
+$modal-comparison-picker__close_color:        $color--black;
+$modal-comparison-picker__close_color_active: $color--blue;
+
+$modal-comparison-picker__item_margin:            -1px 0 (-1px) $x * 3;
+$modal-comparison-picker__item_padding:           $x * 1.5 $x * 3 $x * 1.5 0;
+$modal-comparison-picker__item_border_color:      $color--table-border-even;
+$modal-comparison-picker__item_background:        $color--white;
+$modal-comparison-picker__item_background_active: $color--input_hover_background;
+
+$modal-comparison-picker__item__image_margin:            $x;
+$modal-comparison-picker__item__image_size:              $x * 4;
+$modal-comparison-picker__item__image_background:        $color--background_image;
+$modal-comparison-picker__item__image_background_active: $color--white;
+
+$modal-comparison-picker__item__title_margin: $x * .75 + 1 auto  $x * .75 - 1 auto;
+
+$modal-comparison-picker__item__action_padding:      $x / 2;
+$modal-comparison-picker__item__action_size:         $x * 2;
+$modal-comparison-picker__item__action_color:        $color--text_light;
+$modal-comparison-picker__item_active__action_color: $color--black;
+$modal-comparison-picker__item__action_color_active: $color--white;
+
+$modal-comparison-picker__item__action_background_active--success: $color--green;
+$modal-comparison-picker__item__action_background_active--warning: $color--yellow;
+$modal-comparison-picker__item__action_background_active--danger:  $color--red;
+$modal-comparison-picker__item__action_background_active--info:    $color--blue;
+$modal-comparison-picker__item__action_background_active--ui:      $color--background_gray;
+
+$modal-comparison-picker__selected__header_margin:       $x * 3;
+$modal-comparison-picker__selected__header_padding:      $x * 2.25 + 1  $x * 3  $x * 2.25 - 1 0;
+$modal-comparison-picker__selected__header_border_color: $color--table-border-even;
+
+$modal-comparison-picker__selected__item_padding: $x * 2;
+
+.modal-comparison-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: $modal-comparison-picker_width;
+  height: $modal-comparison-picker_height;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: stretch;
+
+    &_left {
+      flex-grow: 1;
+    }
+
+    &_right {
+      flex-shrink: 0;
+      width: $modal-comparison-picker__column_width--right;
+    }
+  }
+
+  &__header,
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__header {
+    flex-shrink: 0;
+    border-bottom: 1px solid $modal-comparison-picker__header_border_color;
+  }
+
+  &__header > &__column_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__body {
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  &__search {
+    @extend %modal-comparison-picker__search;
+
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: $modal-comparison-picker__search_padding;
+
+    &__input {
+      box-sizing: border-box;
+      display: block;
+      align-self: stretch;
+      flex-grow: 1;
+      margin: $modal-comparison-picker__input_margin;
+      width: auto;
+      border: none;
+      outline: none;
+      z-index: 2;
+      color: $modal-comparison-picker__input_color;
+      opacity: 0;
+      pointer-events: none;
+      background-color: $modal-comparison-picker__input_background;
+      transition: color $transition,
+                  opacity $transition;
+
+      &:-webkit-autofill {
+        border: none;
+        -webkit-text-fill-color: $modal-comparison-picker__input_color;
+        -webkit-box-shadow: 0 0 0 100px $modal-comparison-picker__input_background inset;
+      }
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+      }
+
+      &::placeholder {
+        color: $modal-comparison-picker__input_placeholder_color;
+        transition: color $transition;
+      }
+
+      &:not([value=""]),
+      &:focus {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    &__submit,
+    &__reset {
+      @extend %text--none;
+
+      box-sizing: border-box;
+      display: block;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity $transition,
+                  background-color $transition,
+                  color $transition;
+
+      .modal-comparison-picker__search__input:not([value=""]) ~ &,
+      .modal-comparison-picker__search__input:focus ~ & {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    &__submit {
+      order: -1;
+      padding: $modal-comparison-picker__submit_padding;
+      width: $modal-comparison-picker__submit_size;
+      height: $modal-comparison-picker__submit_size;
+      color: $modal-comparison-picker__submit_color;
+      background-color: $modal-comparison-picker__submit_background;
+
+      &:hover,
+      &:focus {
+        color: $modal-comparison-picker__submit_color_active;
+        background-color: $modal-comparison-picker__submit_background_active;
+      }
+    }
+
+    &__reset {
+      padding: 0;
+      width: $modal-comparison-picker__reset_size;
+      height: $modal-comparison-picker__reset_size;
+      color: $modal-comparison-picker__reset_color;
+      background-color: transparent;
+
+      &:hover,
+      &:focus {
+        color: $modal-comparison-picker__reset_color_active;
+      }
+    }
+
+    &__placeholder {
+      position: absolute;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: $modal-comparison-picker__placeholder_padding;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity $transition;
+
+      .modal-comparison-picker__search__input:not([value=""]) ~ &,
+      .modal-comparison-picker__search__input:focus ~ & {
+        opacity: 0;
+      }
+
+      &__text {
+        @extend %modal-comparison-picker__placeholder;
+
+        display: block;
+      }
+
+      &__icon {
+        box-sizing: border-box;
+        display: block;
+        flex-shrink: 0;
+        border-radius: 50%;
+        padding: $modal-comparison-picker__placeholder__icon_padding;
+        margin-left: $modal-comparison-picker__placeholder__icon_margin;
+        width: $modal-comparison-picker__placeholder__icon_size;
+        height: $modal-comparison-picker__placeholder__icon_size;
+        text-decoration: none;
+        outline: none;
+        transition: color $transition,
+                    background-color $transition;
+
+        &:not(:hover):not(:active):not(:focus),
+        &:link:not(:hover):not(:active):not(:focus),
+        &:visited:not(:hover):not(:active):not(:focus) {
+          color: $modal-comparison-picker__placeholder__icon_color;
+          background-color: $modal-comparison-picker__placeholder__icon_background;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $modal-comparison-picker__placeholder__icon_color_active;
+          background-color: $modal-comparison-picker__placeholder__icon_background_active;
+        }
+      }
+    }
+  }
+
+  &__close {
+    display: block;
+    padding: $modal-comparison-picker__close_padding;
+    width: $modal-comparison-picker__close_size;
+    height: $modal-comparison-picker__close_size;
+    text-decoration: none;
+    outline: none;
+    transition: color $transition;
+
+    &:not(:hover):not(:active):not(:focus),
+    &:link:not(:hover):not(:active):not(:focus),
+    &:visited:not(:hover):not(:active):not(:focus) {
+      color: $modal-comparison-picker__close_color;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $modal-comparison-picker__close_color_active;
+    }
+  }
+
+  &__list {
+    display: block;
+    flex-grow: 1;
+    overflow: auto;
+
+    &__item {
+      display: block;
+      text-decoration: none;
+      transition: background-color $transition;
+
+      &:not(:hover):not(:active):not(:focus),
+      &:link:not(:hover):not(:active):not(:focus),
+      &:visited:not(:hover):not(:active):not(:focus) {
+        background-color: $modal-comparison-picker__item_background;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $modal-comparison-picker__item_background_active;
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: $modal-comparison-picker__item_margin;
+        padding: $modal-comparison-picker__item_padding;
+        border-top: 1px solid $modal-comparison-picker__item_border_color;
+        border-bottom: 1px solid $modal-comparison-picker__item_border_color;
+      }
+
+      &__image {
+        @extend %text--none;
+
+        display: block;
+        border-radius: 50%;
+        margin-right: $modal-comparison-picker__item__image_margin;
+        width: $modal-comparison-picker__item__image_size;
+        height: $modal-comparison-picker__item__image_size;
+        background-color: $modal-comparison-picker__item__image_background;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        transition: background-color $transition;
+
+        .modal-comparison-picker__list__item:hover &,
+        .modal-comparison-picker__list__item:active &,
+        .modal-comparison-picker__list__item:focus & {
+          background-color: $modal-comparison-picker__item__image_background_active;
+        }
+      }
+
+      &__title {
+        @extend %modal-comparison-picker__item__title;
+
+        display: block;
+        flex-grow: 1;
+        margin: $modal-comparison-picker__item__title_margin;
+      }
+
+      &__action {
+        @extend %text--none;
+        @extend %shadow--none;
+
+        display: block;
+        border-radius: 50%;
+        padding: $modal-comparison-picker__item__action_padding;
+        width: $modal-comparison-picker__item__action_size;
+        height: $modal-comparison-picker__item__action_size;
+        color: $modal-comparison-picker__item__action_color;
+        background-color: transparent;
+        overflow: hidden;
+        transition: color $transition,
+                    background-color $transition,
+                    box-shadow $transition;
+
+        .modal-comparison-picker__list__item:hover &,
+        .modal-comparison-picker__list__item:active &,
+        .modal-comparison-picker__list__item:focus & {
+          color: $modal-comparison-picker__item_active__action_color;
+
+          &:hover,
+          &:active,
+          &:focus {
+            @extend %shadow--ui;
+
+            color: $modal-comparison-picker__item__action_color_active;
+          }
+        }
+
+        &_type {
+          &_success {
+            &:hover,
+            &:active,
+            &:focus {
+              .modal-comparison-picker__list__item:hover &,
+              .modal-comparison-picker__list__item:active &,
+              .modal-comparison-picker__list__item:focus & {
+                background-color: $modal-comparison-picker__item__action_background_active--success;
+              }
+            }
+          }
+
+          &_warning {
+            &:hover,
+            &:active,
+            &:focus {
+              .modal-comparison-picker__list__item:hover &,
+              .modal-comparison-picker__list__item:active &,
+              .modal-comparison-picker__list__item:focus & {
+                background-color: $modal-comparison-picker__item__action_background_active--warning;
+              }
+            }
+          }
+
+          &_danger {
+            &:hover,
+            &:active,
+            &:focus {
+              .modal-comparison-picker__list__item:hover &,
+              .modal-comparison-picker__list__item:active &,
+              .modal-comparison-picker__list__item:focus & {
+                background-color: $modal-comparison-picker__item__action_background_active--danger;
+              }
+            }
+          }
+
+          &_info {
+            &:hover,
+            &:active,
+            &:focus {
+              .modal-comparison-picker__list__item:hover &,
+              .modal-comparison-picker__list__item:active &,
+              .modal-comparison-picker__list__item:focus & {
+                background-color: $modal-comparison-picker__item__action_background_active--info;
+              }
+            }
+          }
+
+          &_ui {
+            &:hover,
+            &:active,
+            &:focus {
+              .modal-comparison-picker__list__item:hover &,
+              .modal-comparison-picker__list__item:active &,
+              .modal-comparison-picker__list__item:focus & {
+                background-color: $modal-comparison-picker__item__action_background_active--ui;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__resources {
+    .modal-comparison-picker__list__item:not(.modal-comparison-picker__list__item_filtered) {
+      display: none;
+    }
+  }
+
+  &__selected {
+    &__header {
+      @extend %modal-comparison-picker__selected__header;
+
+      box-sizing: border-box;
+      display: block;
+      margin-left: $modal-comparison-picker__selected__header_margin;
+      padding: $modal-comparison-picker__selected__header_padding;
+      border-bottom: 1px solid $modal-comparison-picker__selected__header_border_color;
+    }
+
+    .modal-comparison-picker__list__item__body {
+      padding-right: $modal-comparison-picker__selected__item_padding;
+    }
+  }
+}

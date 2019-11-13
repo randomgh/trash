@@ -1,0 +1,36 @@
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+.media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px -8px; }
+  .media__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    border: 1px solid transparent;
+    width: 432px;
+    height: 240px;
+    background-color: #8b8b8b;
+    overflow: hidden; }
+    .media__item__content {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .media__item__content > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; }
+
+/*# sourceMappingURL=media.css.map */

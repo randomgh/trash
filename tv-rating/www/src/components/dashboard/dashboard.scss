@@ -1,0 +1,11 @@
+@import '../../scss/options';
+
+.dashboard {
+  @extend %text--normal;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}

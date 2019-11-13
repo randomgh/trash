@@ -1,0 +1,176 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.header {
+  position: relative;
+  display: block;
+
+  & > .content {
+    display: flex;
+    flex-direction: row;
+    max-width: unset;
+    flex-wrap: nowrap;
+    padding-top: $x * 5;
+    padding-bottom: $x * 5;
+  }
+
+  &__logo {
+    display: block;
+    flex-shrink: 0;
+    outline: none;
+    cursor: pointer;
+    padding: $x 0;
+    height: $x * 10;
+
+    & > svg {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: $x * 14;
+    margin-right: $x * 14;
+
+    &__ul {
+      @include clear_list;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__li {
+      display: block;
+      margin: 0 $x * 4;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      @include text(normal);
+
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      font-weight: 500;
+      color: $color--gray1;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      transition: color $transition;
+
+      &:hover,
+      &:focus {
+        color: $color--black;
+      }
+
+      &:active,
+      &_active {
+        color: $color--red1;
+      }
+
+      &_active {
+        pointer-events: none;
+        cursor: auto;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+
+    &__link {
+      @include text(normal);
+
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 $x;
+      padding: $x * 3;
+      border: 1px solid transparent;
+      border-radius: $x * 40;
+      height: $x * 12;
+      font-weight: 500;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color $transition, color $transition;
+
+      &_sized {
+        min-width: $x * 51;
+      }
+
+      &_light {
+        color: $color--blue1;
+        background-color: $color--light_blue1;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $color--light_blue2;
+        }
+      }
+
+      &_dark {
+        color: $color--white;
+        background-color: $color--blue1;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $color--blue3;
+        }
+      }
+
+      &_gray {
+        color: $color--gray1;
+        background-color: $color--gray4;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color--black;
+          background-color: $color--gray4;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & > svg {
+        display: block;
+        flex-shrink: 0;
+        height: $x * 5;
+
+        & + span {
+          margin-left: $x * 2;
+        }
+      }
+    }
+  }
+}

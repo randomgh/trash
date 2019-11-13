@@ -1,0 +1,43 @@
+@import '../options';
+
+.matchup {
+  display: block;
+
+  .table__cell:nth-child(1),
+  .table__cell:nth-child(2) {
+    & .table__indicator__value {
+      color: $color--red;
+    }
+  }
+
+  .table__cell:nth-child(1) {
+    .chart__value {
+      stroke: $color--red;
+    }
+  }
+
+  .table__cell:nth-last-child(1),
+  .table__cell:nth-last-child(2) {
+    & .table__indicator__value {
+      color: $color--text_active;
+    }
+  }
+
+  .table__cell:nth-last-child(1) {
+    .chart__value {
+      stroke: $color--text_active;
+    }
+  }
+
+  .table__cell:nth-child(2) {
+    .chart__value {
+      &_first {
+        stroke: $color--text_active;
+      }
+
+      &_last {
+        stroke: $color--red;
+      }
+    }
+  }
+}

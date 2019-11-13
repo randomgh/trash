@@ -1,0 +1,327 @@
+@import '../../scss/options';
+
+%toolbar-button_text--none   { @extend %text--none; };
+%toolbar-button_text--small  { @extend %text--small; };
+%toolbar-button_text--medium { @extend %text--medium; };
+%toolbar-button_text--normal { @extend %text--normal; };
+%toolbar-button_text--big    { @extend %text--big; };
+
+%toolbar-button__subtitle_size--small  { @extend %text--small; };
+%toolbar-button__subtitle_size--medium { @extend %text--small; };
+%toolbar-button__subtitle_size--normal { @extend %text--small; };
+%toolbar-button__subtitle_size--big    { @extend %text--normal; };
+
+$toolbar-button_radius: $x / 2;
+
+$toolbar-button--small:  0;
+$toolbar-button--medium: $x * 5;
+$toolbar-button--normal: 0;
+$toolbar-button--big:    0;
+
+$toolbar-button_padding--small:  0;
+$toolbar-button_padding--medium: $x * .75 $x;
+$toolbar-button_padding--normal: 0;
+$toolbar-button_padding--big:    0;
+
+$toolbar-button_color:         $color--white;
+$toolbar-button_color--active: $color--white;
+
+$toolbar-button_background:         transparent;
+$toolbar-button_background--active: $color--blue;
+
+$toolbar-button__items_margin: 0 $x / 2;
+
+$toolbar-button__image--small:  0;
+$toolbar-button__image--medium: $x * 3.5;
+$toolbar-button__image--normal: $x * 5;
+$toolbar-button__image--big:    0;
+
+$toolbar-button__image_padding--small:  0;
+$toolbar-button__image_padding--medium: $x * .75 - 1;
+$toolbar-button__image_padding--normal: $x - 1;
+$toolbar-button__image_padding--big:    0;
+
+$toolbar-button__image_padding--circle--small:  0;
+$toolbar-button__image_padding--circle--medium: $x * 1.25;
+$toolbar-button__image_padding--circle--normal: 0;
+$toolbar-button__image_padding--circle--big:    0;
+
+$toolbar-button__image_color:         $color--white;
+$toolbar-button__image_color--active: $color--white;
+
+$toolbar-button__image_background:           $color--background_black_alt;
+$toolbar-button__image_background--active:   $color--background_active_icon;
+$toolbar-button__image_background--disabled: $color--background_hover;
+$toolbar-button__image_background--circle:   $color--button_disabled_background;
+
+.toolbar-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: $toolbar-button_radius;
+  text-decoration: none;
+  outline: none;
+  color: $toolbar-button_color;
+  background-color: $toolbar-button_background;
+  transition: background-color $transition,
+              color $transition;
+
+  &_size {
+    &_small {
+      @extend %toolbar-button_text--small;
+
+      .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled {
+        padding: $toolbar-button_padding--small;
+      }
+    }
+
+    &_medium {
+      @extend %toolbar-button_text--medium;
+
+      .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled {
+        padding: $toolbar-button_padding--medium;
+      }
+    }
+
+    &_normal {
+      @extend %toolbar-button_text--normal;
+
+      .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled {
+        padding: $toolbar-button_padding--normal;
+      }
+    }
+
+    &_big {
+      @extend %toolbar-button_text--big;
+
+      .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled {
+        padding: $toolbar-button_padding--big;
+      }
+    }
+  }
+
+  &:not(.toolbar-button_imaged):not(.toolbar-button_labeled) {
+    @extend %toolbar-button_text--none;
+
+    border-radius: 50%;
+    background-color: $toolbar-button__image_background;
+
+    &.toolbar-button_size {
+      &_small {
+        width: $toolbar-button--small;
+        height: $toolbar-button--small;
+      }
+
+      &_medium {
+        width: $toolbar-button--medium;
+        height: $toolbar-button--medium;
+      }
+
+      &_normal {
+        width: $toolbar-button--normal;
+        height: $toolbar-button--normal;
+      }
+
+      &_big {
+        width: $toolbar-button--big;
+        height: $toolbar-button--big;
+      }
+    }
+
+    &.toolbar-button_active:not(.toolbar-button_disabled),
+    &:not(.toolbar-button_disabled):hover,
+    &:not(.toolbar-button_disabled):focus {
+      background-color: $toolbar-button_background--active;
+    }
+  }
+
+  .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled.toolbar-button_active:not(.toolbar-button_disabled),
+  .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled:not(.toolbar-button_disabled):hover,
+  .toolbar:not(.toolbar_size_medium) &.toolbar-button_labeled:not(.toolbar-button_disabled):focus {
+    background-color: $toolbar-button_background--active;
+  }
+
+  &_active,
+  &_disabled {
+    pointer-events: none;
+  }
+
+  &:not(.toolbar-button_disabled):hover,
+  &:not(.toolbar-button_disabled):focus {
+    color: $toolbar-button_color--active;
+  }
+
+  &__image {
+    @extend %toolbar-button_text--none;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color $transition,
+                color $transition;
+
+    .toolbar-button_size_small:not(.toolbar-button_labeled) & {
+      width: $toolbar-button--small;
+      height: $toolbar-button--small;
+    }
+
+    .toolbar-button_size_medium:not(.toolbar-button_labeled) & {
+      width: $toolbar-button--medium;
+      height: $toolbar-button--medium;
+    }
+
+    .toolbar-button_size_normal:not(.toolbar-button_labeled) & {
+      width: $toolbar-button--normal;
+      height: $toolbar-button--normal;
+    }
+
+    .toolbar-button_size_big:not(.toolbar-button_labeled) & {
+      width: $toolbar-button--big;
+      height: $toolbar-button--big;
+    }
+
+    .toolbar-button_size_small.toolbar-button_labeled & {
+      width: $toolbar-button__image--small;
+      height: $toolbar-button__image--small;
+    }
+
+    .toolbar-button_size_medium.toolbar-button_labeled & {
+      width: $toolbar-button__image--medium;
+      height: $toolbar-button__image--medium;
+    }
+
+    .toolbar-button_size_normal.toolbar-button_labeled & {
+      width: $toolbar-button__image--normal;
+      height: $toolbar-button__image--normal;
+    }
+
+    .toolbar-button_size_big.toolbar-button_labeled & {
+      width: $toolbar-button__image--big;
+      height: $toolbar-button__image--big;
+    }
+
+    .toolbar-button_circle:not(.toolbar-button_labeled) & {
+      background-color: $toolbar-button__image_background--circle;
+    }
+
+    .toolbar-button_labeled & {
+      color: $toolbar-button__image_color;
+      background-color: $toolbar-button__image_background;
+    }
+
+    .toolbar:not(.toolbar_size_medium) .toolbar-button_labeled.toolbar-button_active:not(.toolbar-button_disabled) &,
+    .toolbar:not(.toolbar_size_medium) .toolbar-button_labeled:not(.toolbar-button_disabled):hover &,
+    .toolbar:not(.toolbar_size_medium) .toolbar-button_labeled:not(.toolbar-button_disabled):focus & {
+      color: $toolbar-button__image_color--active;
+      background-color: $toolbar-button__image_background--active;
+    }
+
+    .toolbar-button_labeled.toolbar-button_disabled & {
+      background-color: $toolbar-button__image_background--disabled;
+    }
+
+    &_svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      .toolbar-button_size_small.toolbar-button_circle:not(.toolbar-button_label) & {
+        padding: $toolbar-button__image_padding--circle--small;
+      }
+      .toolbar-button_size_medium.toolbar-button_circle:not(.toolbar-button_label) & {
+        padding: $toolbar-button__image_padding--circle--medium;
+      }
+      .toolbar-button_size_normal.toolbar-button_circle:not(.toolbar-button_label) & {
+        padding: $toolbar-button__image_padding--circle--normal;
+      }
+      .toolbar-button_size_big.toolbar-button_circle:not(.toolbar-button_label) & {
+        padding: $toolbar-button__image_padding--circle--big;
+      }
+
+      .toolbar-button_size_small.toolbar-button_labeled & {
+        padding: $toolbar-button__image_padding--small;
+      }
+
+      .toolbar-button_size_medium.toolbar-button_labeled & {
+        padding: $toolbar-button__image_padding--medium;
+      }
+
+      .toolbar-button_size_normal.toolbar-button_labeled & {
+        padding: $toolbar-button__image_padding--normal;
+      }
+
+      .toolbar-button_size_big.toolbar-button_labeled & {
+        padding: $toolbar-button__image_padding--big;
+      }
+
+      & > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_img {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      & > * {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__title,
+  &__subtitle {
+    display: block;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+    .toolbar-button_size_small & {
+      @extend %toolbar-button__subtitle_size--small;
+    }
+
+    .toolbar-button_size_medium & {
+      @extend %toolbar-button__subtitle_size--medium;
+    }
+
+    .toolbar-button_size_normal & {
+      @extend %toolbar-button__subtitle_size--normal;
+    }
+
+    .toolbar-button_size_big & {
+      @extend %toolbar-button__subtitle_size--big;
+    }
+  }
+
+  &.toolbar-button_imaged.toolbar-button_labeled > * {
+    margin: $toolbar-button__items_margin;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

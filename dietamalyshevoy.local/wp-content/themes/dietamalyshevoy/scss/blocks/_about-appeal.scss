@@ -1,0 +1,61 @@
+@import '../options';
+
+.about-appeal {
+    margin: $x * 23 0 $x * 20 0;
+
+  & > .content {
+    position: relative;
+    padding: $x * 11.5 $x * 14;
+    border-radius: $x * 4;
+    background: $color--red1;
+    width: $x * 284.5;
+    height: $x * 68;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &__title {
+    @include text(h3);
+
+    display: block;
+    font-family: $font-family_OS;
+    font-style: italic;
+    font-weight: bold;
+    line-height: $x * 12;
+    color: $color--white;
+    margin: 0 0 $x * 7 0;
+  }
+
+  &__btn {
+    @include text(normal);
+
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: $font-family_OS;
+    font-weight: 600;
+    text-align: center;
+    color: $color--white;
+    background-color: $color--yellow1;
+    border-radius: $x * 15;
+    padding: $x * 3.5;
+    width: $x * 66.5;
+    text-decoration: none;
+    outline: none;
+    transition: color $transition;
+
+    .content:hover &,
+    .content:focus &,
+    .content:active & {
+      color: $color--red2;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

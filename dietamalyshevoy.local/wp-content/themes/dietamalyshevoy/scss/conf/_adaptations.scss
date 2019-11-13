@@ -1,0 +1,66 @@
+@import '../utilities/list';
+
+$breakpoints: (
+  xxxxxs: 320px,
+  xxxxs: 375px,
+  xxxs: 425px,
+  xxs: 480px,
+  xs: 640px,
+  s: 768px,
+  m: 960px,
+  l: 1024px,
+  xl: 1280px,
+  xxl: 1440px,
+  xxxl: 1600px,
+  xxxxl: 1920px,
+  xxxxxl: 2560px,
+);
+
+$adaptations: (
+  mobile-s: (
+    max-width: xxxxs
+  ),
+  mobile-m: (
+    min-width: xxxxs,
+    max-width: xs
+  ),
+  mobile-l: (
+    min-width: xs,
+    max-width: m
+  ),
+  desktop-s: (
+    min-width: m,
+    max-width: xl
+  ),
+  desktop-m: (
+    min-width: xl,
+    max-width: xxl
+  ),
+  desktop-l: (
+    min-width: xxl
+  )
+);
+
+@mixin adaptation($medias...) {
+  @each $media in $medias {
+    @if not map-has-key($adaptations, $media) {
+      @error "Unknown adaptation '#{$media}'";
+    }
+
+    $adaptation: map-get($adaptations, $media);
+
+    $options: ("screen");
+    @each $option in (min-width, max-width) {
+      @if map-has-key($adaptation, $option) {
+        $value: map-get($breakpoints, map-get($adaptation, $option));
+        @if $option == max-width and map-has-key($adaptation, min-width) {
+          $value: $value + .1;
+        }
+
+        $options: append($options, unquote("(#{$option}: #{$value})"));
+      }
+    }
+
+    @media only #{implode($options, ' and ')} { @content; }
+  }
+}

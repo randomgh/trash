@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "atom",
+    "name": "Atomweight",
+    "weight": {
+      "pounds": 105,
+      "kg": 48
+    }
+  },
+  {
+    "slug": "straw",
+    "name": "Strawweight",
+    "weight": {
+      "pounds": 115,
+      "kg": 52.2
+    }
+  },
+  {
+    "slug": "fly",
+    "name": "Flyweight",
+    "weight": {
+      "pounds": 125,
+      "kg": 56.7
+    }
+  },
+  {
+    "slug": "bantam",
+    "name": "Bantamweight",
+    "weight": {
+      "pounds": 135,
+      "kg": 61.2
+    }
+  },
+  {
+    "slug": "feather",
+    "name": "Featherweight",
+    "weight": {
+      "pounds": 145,
+      "kg": 65.8
+    }
+  },
+  {
+    "slug": "light",
+    "name": "Lightweight",
+    "weight": {
+      "pounds": 155,
+      "kg": 70.3
+    }
+  },
+  {
+    "slug": "super_light",
+    "name": "Super lightweight",
+    "weight": {
+      "pounds": 165,
+      "kg": 74.8
+    }
+  },
+  {
+    "slug": "welter",
+    "name": "Welterweight",
+    "weight": {
+      "pounds": 170,
+      "kg": 77.1
+    }
+  },
+  {
+    "slug": "super_welter",
+    "name": "Super welterweight",
+    "weight": {
+      "pounds": 175,
+      "kg": 79.4
+    }
+  },
+  {
+    "slug": "middle",
+    "name": "Middleweight",
+    "weight": {
+      "pounds": 185,
+      "kg": 83.9
+    }
+  },
+  {
+    "slug": "super_middle",
+    "name": "Super middleweight",
+    "weight": {
+      "pounds": 195,
+      "kg": 88.5
+    }
+  },
+  {
+    "slug": "light_heavy",
+    "name": "Light heavyweight",
+    "weight": {
+      "pounds": 205,
+      "kg": 93.0
+    }
+  },
+  {
+    "slug": "cruiser",
+    "name": "Cruiserweight",
+    "weight": {
+      "pounds": 225,
+      "kg": 102.1
+    }
+  },
+  {
+    "slug": "heavy",
+    "name": "Heavyweight",
+    "weight": {
+      "pounds": 265,
+      "kg": 120.2
+    }
+  },
+  {
+    "slug": "super_heavy",
+    "name": "Super heavyweight"
+  }
+]

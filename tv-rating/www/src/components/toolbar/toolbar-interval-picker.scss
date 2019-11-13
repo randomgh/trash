@@ -1,0 +1,105 @@
+@import '../../scss/options';
+
+.toolbar-interval-picker {
+  @extend %text--medium;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: $x * 32.5;
+  border-radius: $x / 2;
+  background-color: $color--background_hover;
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: $color--picker_background;
+  }
+
+  &__value {
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    align-self: stretch;
+    margin: 0 $x * .75 0 0;
+  }
+
+  &__list {
+    position: absolute;
+    display: block;
+    flex-grow: 1;
+    align-self: stretch;
+    margin: 0 $x / 4;
+    width: 100%;
+    max-height: $x * 15;
+    border-radius: $x / 4;
+    overflow: auto;
+    z-index: 1;
+
+    .toolbar-interval-picker_shown & {
+      @extend %shadow--ui;
+    }
+  }
+
+  &__option {
+    display: none;
+    padding: $x * 1.25 + 1 $x $x * 1.25 - 1 $x * 1.5;
+    color: $color--white;
+    text-decoration: none;
+
+    &_current {
+      display: block;
+    }
+
+    .toolbar-interval-picker:not(.toolbar-interval-picker_shown):hover & {
+      color: $color--picker_text;
+    }
+
+    .toolbar-interval-picker_shown & {
+      display: block;
+      color: $color--text_black;
+      background-color: $color--white;
+
+      &_current,
+      &:hover {
+        background-color: $color--background_white;
+      }
+    }
+  }
+
+  &__control {
+    @extend %text--none;
+
+    display: block;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: $color--white;
+    background-color: $color--background_black;
+    transition: background-color $transition;
+    text-decoration: none;
+    outline: none;
+
+    &_drop {
+      margin: $x $x * 1.5 $x $x * .75;
+      padding: $x;
+      width: $x * 3;
+      height: $x * 3;
+    }
+
+    &_previous,
+    &_next {
+      margin: $x / 2 $x / 4;
+      padding: $x * 1.25;
+      width: $x * 4;
+      height: $x * 4;
+    }
+
+    .toolbar-interval-picker:hover &:not(:hover) {
+      background-color: $color--black;
+    }
+
+    &:hover {
+      background-color: $color--background_icon;
+    }
+  }
+}

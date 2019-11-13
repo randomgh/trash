@@ -1,0 +1,141 @@
+@import '../options';
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include adaptation(desktop-l) {
+    margin: $x * 4 0;
+  }
+
+  @include adaptation(desktop-s) {
+    margin: $x * 3 0;
+  }
+
+  @include adaptation(tablet-l) {
+    margin: $x * 1.5 0;
+  }
+
+  @include adaptation(mobile-l) {
+    margin: $x * 2 0;
+  }
+
+  @include adaptation(mobile-s) {
+    margin: $x * 2 0;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $color--text_disabled_active;
+
+    @include adaptation(desktop-l) {
+      margin: $x * 4;
+      width: $x * 25;
+      height: $x * 25;
+      border-width: 10px;
+    }
+
+    @include adaptation(desktop-s) {
+      margin: $x * 3;
+      width: $x * 21;
+      height: $x * 21;
+      border-width: 8px;
+    }
+
+    @include adaptation(tablet-l) {
+      margin: $x * 1.5;
+      width: $x * 15;
+      height: $x * 15;
+      border-width: 6px;
+    }
+
+    @include adaptation(mobile-l) {
+      margin: $x * 2;
+      width: $x * 17;
+      height: $x * 17;
+      border-width: 6px;
+    }
+
+    @include adaptation(mobile-s) {
+      margin: $x * 2;
+      width: $x * 17;
+      height: $x * 17;
+      border-width: 6px;
+    }
+  }
+
+  &__content {
+    display: block;
+  }
+
+  &__title {
+    display: block;
+    margin: $x / 2 0;
+    text-align: center;
+    color: $color--text;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__values {
+    display: block;
+    margin: $x / 2 0;
+    text-align: center;
+    color: $color--text_disabled_active;
+
+    @include adaptation(desktop-l) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

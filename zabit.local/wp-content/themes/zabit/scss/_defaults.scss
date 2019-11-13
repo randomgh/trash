@@ -1,0 +1,33 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, input, textarea, select, button {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: 1px;
+  height: 1px;
+}
+
+svg {
+  fill: currentColor;
+  color-interpolation-filters: sRGB;
+}
+
+a {
+  color: inherit;
+}
+
+figure {
+  margin: 0;
+}
