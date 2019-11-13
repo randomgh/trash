@@ -1,0 +1,76 @@
+@import '../scss/utilities/font';
+
+@include font('../fonts', 'Roboto', 'thin' 'light' 'normal' 'medium' 'bold' 'black', 'normal' 'italic', eot woff2 woff ttf);
+
+@import '../scss/defaults';
+@import '../scss/options';
+
+html {
+  @extend %text--normal;
+
+  font-family: $font-family;
+}
+
+body {
+  color: $color--text_black;
+  background-color: $color--background_white;
+}
+
+.state {
+  display: none;
+}
+
+.iconset {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: $color--background_gray;
+}
+
+.header {
+  &__toolbar {
+    &__logo {
+      .toolbar-button__image {
+        border-radius: unset;
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  align-items: center;
+}
+
+.modals {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  padding: $x * 2;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: auto;
+
+  & > *:not(&__background) {
+    z-index: 2;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color--black, .8);
+    z-index: 1;
+  }
+}

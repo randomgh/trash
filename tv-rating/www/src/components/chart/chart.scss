@@ -1,0 +1,38 @@
+@import '../../scss/utilities/font';
+
+@include font('../../fonts', 'Roboto', 'thin' 'light' 'normal' 'medium' 'bold' 'black', 'normal' 'italic', eot woff2 woff ttf);
+
+@import '../../scss/options';
+
+.chart {
+  @extend %text--normal;
+
+  display: block;
+  margin: $x * 3;
+  width: $x * 86;
+  border-radius: $x / 2;
+  background-color: $color--white;
+  padding-bottom: $x * 2.25;
+
+  &__header {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-grow: 1;
+      padding: $x * 2 + 1 $x * 3 $x * 3 $x * 3;
+      font-weight: bold;
+  }
+  .recharts-surface{
+    padding: 0 $x * 3 0 $x * 3 ;
+  }
+  .recharts-text{
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.24px;
+    color: #313131;
+  }
+}

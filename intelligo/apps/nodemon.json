@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    ".idea",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "watch": [
+    "./"
+  ],
+  "ext": "*"
+}

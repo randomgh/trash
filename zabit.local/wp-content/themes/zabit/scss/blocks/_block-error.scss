@@ -1,0 +1,39 @@
+@import '../options';
+
+.error {
+  display: flex;
+  flex-direction: column;
+  opacity: $error_opacity;
+  transition: opacity $transition;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    font-size: 160px;
+    line-height: 160px;
+    font-weight: normal;
+    color: $color--text_disabled;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+    outline: none;
+    color: $color--text_active;
+    transition: color $transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+      color: $color--text;
+    }
+  }
+}

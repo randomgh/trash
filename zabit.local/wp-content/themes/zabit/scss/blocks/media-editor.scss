@@ -1,0 +1,27 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.editor-styles-wrapper {
+  .wp-block[data-type="zabit/media"] {
+    max-width: unset;
+
+    @import 'media';
+
+    .media {
+      margin: 0;
+      min-height: $x * 30;
+      background-color: $color--text_disabled_active;
+
+      &__item {
+        &__content {
+          &_youtube {
+            width: unset;
+            height: unset;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+bin/
+app/
+uploads/
+temp/
+.env

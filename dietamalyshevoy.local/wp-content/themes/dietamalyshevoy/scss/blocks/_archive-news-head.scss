@@ -1,0 +1,42 @@
+@import '../options';
+
+.archive-news-head {
+  margin-top: $x * 16;
+  margin-bottom: $x * 16;
+
+  & > .content {
+    position: relative;
+    max-width: $x * 228;
+  }
+
+  &__title,
+  &__subtitle {
+    display: block;
+    margin: $x * 3 auto;
+    font-family: $font-family_MW;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__title {
+    @include text(big);
+
+    color: $color--red1;
+  }
+
+  &__subtitle {
+    @include text(h1);
+
+    margin-right: $x * 105;
+    color: $color--black;
+  }
+
+  & svg {
+    position: absolute;
+    bottom: $x * 5;
+    right: $x * 43;
+    display: block;
+    width: $x * 87;
+    height: $x * 19;
+  }
+}

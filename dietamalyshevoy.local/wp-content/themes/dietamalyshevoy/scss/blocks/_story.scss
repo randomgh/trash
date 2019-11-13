@@ -1,0 +1,215 @@
+@import '../options';
+
+.story {
+  margin-top: $x * 16;
+  margin-bottom: $x * 16;
+
+  & > .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    max-width: $x * 228;
+  }
+
+  &__main {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  &__header {
+    display: block;
+    margin-bottom: $x * 12;
+
+    &__name,
+    &__bio {
+      display: block;
+      margin: $x auto;
+      font-family: $font-family_MW;
+      font-style: italic;
+    }
+
+    &__name {
+      @include text(h1);
+
+      font-weight: bold;
+      color: $color--red1;
+    }
+
+    &__bio {
+      @include text(big);
+
+      font-weight: 300;
+      color: $color--black;
+    }
+  }
+
+  &__content {
+    display: block;
+
+    &__quote {
+      @include text(h5);
+
+      display: block;
+      margin: $x * 5 auto;
+      font-family: $font-family_MW;
+      font-style: italic;
+      font-weight: bold;
+      color: $color--black;
+    }
+
+    &__text {
+      @extend .mce;
+
+      display: block;
+    }
+  }
+
+  &__aside {
+    position: sticky;
+    top: $x * 5;
+    display: block;
+    flex-shrink: 0;
+    margin-left: $x * 20;
+    width: $x * 104;
+
+    &__image {
+      display: block;
+      margin: $x * 6 auto;
+      border-radius: $x * 4;
+      width: $x * 104;
+      height: $x * 104;
+      background-color: $color--light_gray;
+      box-shadow: $shadow--card;
+    }
+
+    &__parameters {
+      display: block;
+      margin: $x * 6 auto;
+
+      &__li {
+        display: block;
+        margin: $x * 2 auto;
+        padding: $x * 3 $x * 6;
+        border-radius: $x * 4;
+
+        &_color {
+          &_blue {
+            background-color: $bg_color--blue;
+            color: $color--blue1;
+          }
+
+          &_green {
+            background-color: $color--green4;
+            color: $color--green1;
+          }
+        }
+
+        &_link {
+          text-decoration: none;
+          outline: none;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__title,
+        &__value {
+          @include text(medium);
+
+          display: block;
+          margin: $x auto;
+          font-weight: bold;
+          text-align: center;
+          color: inherit;
+        }
+
+        &__title {
+          font-family: $font-family_OS;
+        }
+
+        &__value {
+          font-family: $font-family_MW;
+          font-style: italic;
+
+          .story__aside__parameters__li_link & {
+            text-decoration: underline;
+          }
+
+          .story__aside__parameters__li_link:hover &,
+          .story__aside__parameters__li_link:focus &,
+          .story__aside__parameters__li_link:active & {
+            text-decoration: none;
+          }
+        }
+
+        & > * {
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin: $x * 2 auto;
+    }
+
+    &__button {
+      @include text(normal);
+
+      box-sizing: border-box;
+      display: block;
+      padding: $x * 3 $x * 6;
+      margin: $x auto;
+      border-radius: $x * 10;
+      min-width: $x * 55;
+      background-color: $color--red1;
+      font-family: $font-family_OS;
+      font-weight: 600;
+      color: $color--white;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      transition: background-color $transition;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color--red2;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

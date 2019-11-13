@@ -1,0 +1,16 @@
+@import 'defaults';
+
+@import 'options';
+
+html {
+  @include text;
+
+  font-family: $font-family;
+}
+
+body {
+  color: $color--black;
+  background-color: $color--white;
+}
+
+@import 'layout';

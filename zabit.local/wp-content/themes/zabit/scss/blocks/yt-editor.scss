@@ -1,0 +1,15 @@
+@import '../options';
+
+.editor-styles-wrapper {
+  .wp-block[data-type="zabit/yt"] {
+    max-width: unset;
+
+    @import 'yt';
+
+    .yt {
+      margin: 0;
+      min-height: $x * 30;
+      background-color: $color--text_disabled_active;
+    }
+  }
+}

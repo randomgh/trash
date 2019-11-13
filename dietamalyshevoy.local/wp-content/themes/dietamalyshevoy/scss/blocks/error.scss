@@ -1,0 +1,10 @@
+@import '../options';
+
+.error {
+  margin-top: $x * 31;
+  margin-bottom: $x * 31;
+
+  & > .content {
+    width: $x * 164;
+  }
+}

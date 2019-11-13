@@ -1,0 +1,160 @@
+// sass-lint:disable no-vendor-prefixes
+// sass-lint:disable no-color-literals
+// sass-lint:disable no-ids
+
+@import 'fonts';
+@import 'defaults';
+/*
+@import 'blocks/head1-editor';
+@import 'blocks/error-editor';
+*/
+.dem-field {
+  &__input {
+    .components-base-control__field &_text,
+    .components-base-control__field &_textarea {
+      width: 100%;
+    }
+  }
+
+  &__value {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    width: 350px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    color: #32373c;
+    background-color: #f1f1f1;
+    outline: 0;
+    transition: outline 50ms ease-in-out,
+    color 50ms ease-in-out,
+    border-color 50ms ease-in-out,
+    box-shadow 50ms ease-in-out,
+    background-color 50ms ease-in-out;
+
+    .field-icon ~ .dem-field & {
+      width: 60px;
+    }
+
+    .components-base-control__field & {
+      width: auto;
+      max-width: 100%;
+    }
+
+    .dem-field_empty & {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #124964;
+      border-color: #5b9dd9;
+      box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, .8);
+      outline: 1px solid transparent;
+    }
+
+    &__img {
+      display: block;
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  &__actions {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &__action {
+    display: inline-block;
+    margin: 2px;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    outline: none;
+    color: #72777c;
+    transition: color 50ms ease-in-out;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #23282d;
+    }
+
+    &:focus {
+      color: #124964;
+      box-shadow: none;
+      outline: none;
+    }
+
+    &::before {
+      border-radius: 50%;
+      text-indent: -1px;
+      font: normal 20px/1 dashicons;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    &_add {
+      &::before {
+        content: '\f132';
+      }
+
+      .dem-field_value & {
+        display: none;
+      }
+
+      &-image {
+        &::before {
+          content: '\f128';
+        }
+      }
+
+      &-url {
+        &::before {
+          content: '\f103';
+        }
+      }
+    }
+
+    &_edit {
+      &::before {
+        content: '\f463';
+      }
+
+      .dem-field_empty & {
+        display: none;
+      }
+    }
+
+    &_remove {
+      &::before {
+        content: '\f158';
+      }
+
+      .dem-field_empty & {
+        display: none;
+      }
+    }
+  }
+}
+
+#fights.postbox .inside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  & > * {
+    width: calc(#{100%} / 3);
+  }
+}

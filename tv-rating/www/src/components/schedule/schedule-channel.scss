@@ -1,0 +1,70 @@
+@import '../../scss/options';
+
+%schedule-channel { @extend %text--normal; };
+
+%schedule-channel__subtitle { @extend %text--small; };
+
+$schedule-channel_radius: $x / 2;
+$schedule-channel_padding: $x $x / 2;
+
+$schedule-channel_color: $color--text_black;
+
+$schedule-channel_background:         $color--white;
+$schedule-channel_background--active: $color--channel_background;
+
+$schedule-channel__image_size: $x * 4;
+$schedule-channel__image_margin: $x / 2 + 1 $x;
+
+.schedule-channel {
+  @extend %schedule-channel;
+  @extend %shadow--channel;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: $schedule-channel_radius;
+  text-decoration: none;
+  outline: none;
+  height: 100%;
+  padding: $schedule-channel_padding;
+  color: $schedule-channel_color;
+  background-color: $schedule-channel_background;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $schedule-channel_background--active;
+  }
+
+  &__image {
+    @extend %text--none;
+    
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: $schedule-channel__image_margin;
+    width: $schedule-channel__image_size;
+    height: $schedule-channel__image_size;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__name,
+  &__rating {
+    display: block;
+  }
+
+  &__rating {
+    @extend %schedule-channel__subtitle;
+  }
+}

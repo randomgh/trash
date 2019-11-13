@@ -1,0 +1,167 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.accomplishments {
+  @include clear_list();
+
+  display: block;
+
+  &__item {
+    display: block;
+    margin: $x * 7 0;
+
+    &__title {
+      display: block;
+      margin: $x * 2 0;
+      font-weight: 500;
+      color: $color--white;
+
+      @include adaptation(desktop-l) {
+        font-size: 28px;
+        line-height: 40px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    &__goals {
+      margin: $x * 2 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > * {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__goals {
+    @include clear_list();
+
+    display: block;
+    margin: 0;
+
+    &__item {
+      display: block;
+      margin: $x * 3 0;
+
+      &__title {
+        display: block;
+        margin: $x / 2 0;
+        font-weight: 500;
+        color: $color--text_active;
+
+        @include adaptation(desktop-l) {
+          font-size: 17px;
+          line-height: 24px;
+        }
+
+        @include adaptation(desktop-s) {
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        @include adaptation(tablet-l) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        @include adaptation(mobile-l) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        @include adaptation(mobile-s) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        b,
+        strong {
+          font-weight: normal;
+          color: $color--white;
+        }
+      }
+
+      &__description {
+        display: block;
+        margin: $x / 2 0;
+        color: $color--text_disabled;
+
+        @include adaptation(desktop-l) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        @include adaptation(desktop-s) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        @include adaptation(tablet-l) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        @include adaptation(mobile-l) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+
+        @include adaptation(mobile-s) {
+          font-size: 13px;
+          line-height: 20px;
+        }
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & > * {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

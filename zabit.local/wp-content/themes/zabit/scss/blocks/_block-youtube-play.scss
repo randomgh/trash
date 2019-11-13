@@ -1,0 +1,34 @@
+@import '../options';
+
+.youtube-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  outline: none;
+  color: $color--text;
+  transition: color $transition;
+
+  & > svg {
+    display: block;
+    width: $x * 10;
+    height: $x * 10;
+    opacity: .8;
+    transition: opacity $transition;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color--text-active;
+
+    & > svg {
+      opacity: 1;
+    }
+  }
+}

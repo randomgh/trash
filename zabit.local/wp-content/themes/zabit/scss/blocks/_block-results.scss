@@ -1,0 +1,192 @@
+@import '../options';
+
+.results {
+  display: block;
+
+  &_win {
+    .table__cell:nth-child(1),
+    .table__cell:nth-child(2) {
+      & .table__indicator__value {
+        color: $color--red;
+      }
+    }
+
+    .table__cell:nth-child(1) {
+      .chart__value {
+        stroke: $color--red;
+      }
+    }
+
+    .table__cell:nth-last-child(1),
+    .table__cell:nth-last-child(2) {
+      & .table__indicator__value {
+        color: $color--green;
+      }
+    }
+
+    .table__cell:nth-last-child(1) {
+      .chart__value {
+        stroke: $color--green;
+      }
+    }
+
+    .table__cell:nth-child(2) {
+      .chart__value {
+        &_first {
+          stroke: $color--green;
+        }
+
+        &_last {
+          stroke: $color--red;
+        }
+      }
+    }
+
+    & .circles {
+      &__item {
+        &_win {
+          border-color: $color--green;
+        }
+
+        &_loss {
+          border-color: $color--red;
+        }
+      }
+
+      &__values {
+        &_first {
+          color: $color--red;
+        }
+
+        &_last {
+          color: $color--green;
+        }
+      }
+    }
+  }
+
+  &_loss {
+    .table__cell:nth-child(1),
+    .table__cell:nth-child(2) {
+      & .table__indicator__value {
+        color: $color--green;
+      }
+    }
+
+    .table__cell:nth-child(1) {
+      .chart__value {
+        stroke: $color--green;
+      }
+    }
+
+    .table__cell:nth-last-child(1),
+    .table__cell:nth-last-child(2) {
+      & .table__indicator__value {
+        color: $color--red;
+      }
+    }
+
+    .table__cell:nth-last-child(1) {
+      .chart__value {
+        stroke: $color--red;
+      }
+    }
+
+    .table__cell:nth-child(2) {
+      .chart__value {
+        &_first {
+          stroke: $color--red;
+        }
+
+        &_last {
+          stroke: $color--green;
+        }
+      }
+    }
+
+    & .circles {
+      &__item {
+        &_win {
+          border-color: $color--red;
+        }
+
+        &_loss {
+          border-color: $color--green;
+        }
+      }
+
+      &__values {
+        &_first {
+          color: $color--green;
+        }
+
+        &_last {
+          color: $color--red;
+        }
+      }
+    }
+  }
+
+  &_draw {
+    .table__cell:nth-child(1),
+    .table__cell:nth-child(2) {
+      & .table__indicator__value {
+        color: $color--red;
+      }
+    }
+
+    .table__cell:nth-child(1) {
+      .chart__value {
+        stroke: $color--red;
+      }
+    }
+
+    .table__cell:nth-last-child(1),
+    .table__cell:nth-last-child(2) {
+      & .table__indicator__value {
+        color: $color--text_active;
+      }
+    }
+
+    .table__cell:nth-last-child(1) {
+      .chart__value {
+        stroke: $color--text_active;
+      }
+    }
+
+    .table__cell:nth-child(2) {
+      .chart__value {
+        &_first {
+          stroke: $color--text_active;
+        }
+
+        &_last {
+          stroke: $color--red;
+        }
+      }
+    }
+
+    & .circles {
+      &__item {
+        &_win {
+          border-color: $color--text_active;
+        }
+
+        &_loss {
+          border-color: $color--red;
+        }
+      }
+
+      &__values {
+        &_first {
+          color: $color--red;
+        }
+
+        &_last {
+          color: $color--text_active;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+@import '../options';
+
+@import '../layout/mce';
+
+.page {
+  margin-top: $x * 18;
+  margin-bottom: $x * 18;
+
+  & > .content {
+    max-width: $x * 175;
+  }
+
+  &__title {
+    @include text(h1);
+
+    display: block;
+    margin: $x * 8 auto;
+    font-family: $font-family_MW;
+    font-weight: 600;
+  }
+
+  &__text {
+    @extend .mce;
+
+    display: block;
+  }
+}

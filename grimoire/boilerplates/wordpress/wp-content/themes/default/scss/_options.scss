@@ -1,0 +1,46 @@
+/* Sizing */
+
+$x: 4px;
+
+/* Typography */
+
+$font-family: Arial, Helvetica, sans-serif;
+
+// Text
+
+@mixin text($size: noraml) {
+  font-size:   0;
+  line-height: 0;
+}
+/* Adaptations */
+
+$breakpoint--xxxxxs: 320px;
+$breakpoint--xxxxs:  375px;
+$breakpoint--xxxs:   425px;
+$breakpoint--xxs:    480px;
+$breakpoint--xs:     640px;
+$breakpoint--s:      768px;
+$breakpoint--m:      960px;
+$breakpoint--l:      1024px;
+$breakpoint--xl:     1280px;
+$breakpoint--xxl:    1440px;
+$breakpoint--xxxl:   1600px;
+$breakpoint--xxxxl:  1920px;
+$breakpoint--xxxxxl: 2560px;
+
+@mixin adaptation($media) {
+  @content;
+}
+
+/* Colors */
+
+$color--white: #fff;
+$color--black: #000;
+
+/* Misc */
+
+$transition: .3s ease-out 0s;
+
+/* Contents */
+
+$content--space: "\00a0";

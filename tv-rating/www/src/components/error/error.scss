@@ -1,0 +1,77 @@
+@import '../../scss/options';
+
+// TODO: adjust padding
+
+%error__number { @extend %h5; };
+
+%error__title { @extend %h1; };
+
+%error__text { @extend %text--big; };
+
+$error__number_margin: $x auto;
+$error__number_width:  $x * 84;
+
+$error__title_margin:     $x * 2.5 auto;
+$error__title_width:      $x * 84;
+$error__title_margin-top: -$x * 2;
+
+$error__text_margin: $x * 2.5 auto;
+$error__text_width:  $x * 84;
+
+$error__nav_margin:   $x * 3 0;
+$error__nav_padding:  0;
+
+$error__button_margin: $x;
+$error__button_width:  $x * 30;
+
+.error {
+  display: block;
+  flex-shrink: 0;
+  margin: auto;
+
+  &__number {
+    @extend %error__number;
+
+    display: block;
+    margin: $error__number_margin;
+    max-width: $error__number_width;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  &__title {
+    @extend %error__title;
+
+    display: block;
+    margin: $error__title_margin;
+    max-width: $error__title_width;
+    text-align: center;
+    font-weight: 900;
+
+    .error__number + & {
+      margin-top: $error__title_margin-top;
+    }
+  }
+
+  &__text {
+    @extend %error__text;
+
+    display: block;
+    margin: $error__text_margin;
+    max-width: $error__text_width;
+    text-align: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: $error__nav_margin;
+    padding: $error__nav_padding;
+
+    &__button {
+      margin: $error__button_margin;
+      width: $error__button_width;
+    }
+  }
+}

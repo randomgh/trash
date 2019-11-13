@@ -1,0 +1,177 @@
+@import 'options';
+
+// TODO: remove max-width
+.app {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.section {
+  position: relative;
+  display: block;
+}
+
+.block {
+  display: block;
+}
+
+.content {
+  display: block;
+  margin: 0 auto;
+  padding: 0 $x * 14;
+  max-width: $x * 284;
+}
+
+@import 'layout/main';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/mce';
+/*
+.modal-calc {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: $color--modal_legal;
+  z-index: 9999;
+
+  &_display {
+    display: flex;
+  }
+
+  & > .content {
+    padding: $x * 11 $x * 6;
+    background-color: #fff;
+    border-radius: $x * 4;
+    max-width: $x * 113;
+    position: relative;
+  }
+
+  &__title {
+    @include text(h5);
+
+    font-family: $font-family_OS;
+    color: $color--black2;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__index {
+    @include text(h1);
+
+    font-family: $font-family_OS;
+    text-align: left;
+    color: $color--green2;
+    margin: 0;
+  }
+
+  &__normal {
+    @include text(medium);
+
+    display: block;
+    color: $color--black2;
+    font-family: $font-family_OS;
+    margin-top: $x * 4;
+    font-weight: bold;
+
+    &_result {
+      display: inline;
+      color: $color--green2;
+      margin-left: $x * 1;
+    }
+  }
+
+  &__message {
+    @include text(medium);
+
+    display: block;
+    color: $color--black2;
+    font-family: $font-family_OS;
+    margin-top: $x * 4;
+    font-weight: bold;
+  }
+
+  &__description {
+    @include text(medium);
+
+    display: block;
+    color: $color--dark_gray;
+    font-family: $font-family_OS;
+    font-style: italic;
+    margin-top: $x * 4;
+  }
+
+  &__btn {
+    @include text(normal);
+
+    display: block;
+    box-sizing: border-box;
+    font-family: $font-family_OS;
+    font-weight: 600;
+    line-height: $x * 6;
+    background-color: $color--red1;
+    border-radius: $x * 10;
+    min-width: $x * 50;
+    padding: $x * 3;
+    margin: $x * 11 auto 0;
+    text-align: center;
+    color: $color--white;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color--red2;
+    }
+  }
+
+  &__close {
+    padding: $x * 2.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+
+    & > svg {
+      width: $x * 6;
+      height: $x * 6;
+    }
+  }
+}
+*/
+/*
+@import 'blocks/home-form';
+@import 'blocks/home-features';
+@import 'blocks/home-tabs';
+@import 'blocks/home-cards';
+@import 'blocks/home-slider';
+
+@import 'blocks/about-main';
+@import 'blocks/about-menu';
+@import 'blocks/about-description';
+@import 'blocks/about-food_intake';
+@import 'blocks/about-food_intake_list';
+@import 'blocks/about-appeal';
+
+@import 'blocks/contacts-head';
+@import 'blocks/contacts-columns';
+@import 'blocks/contacts-list';
+@import 'blocks/contacts-partners';
+@import 'blocks/contacts-legal';
+
+@import 'blocks/archive-story-head';
+
+@import 'blocks/story';
+
+@import 'blocks/archive-news-head';
+*/

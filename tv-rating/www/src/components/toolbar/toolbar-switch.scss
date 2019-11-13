@@ -1,0 +1,68 @@
+@import '../../scss/options';
+
+%toolbar-switch { @extend %text--medium; };
+
+$toolbar-switch_padding:           $x * 1.25 + 1 $x * 2 $x * 1.25 - 1 $x * 2;
+$toolbar-switch_border_radius:     $x / 2;
+$toolbar-switch_color:             $color--text_dark;
+$toolbar-switch_color_active:      $color--white;
+$toolbar-switch_background:        $color--background_hover;
+$toolbar-switch_background_active: $color--blue;
+
+$toolbar-switch__svg_margin: -$x / 4 - 1 auto;
+$toolbar-switch__svg_size: $x * 3;
+
+.toolbar-switch {
+  @extend %toolbar-switch;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__button {
+    display: block;
+    padding: $toolbar-switch_padding;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    transition: color $transition,
+                background-color $transition;
+
+    &:not(:hover):not(:active):not(:focus):not(&_active),
+    &:link:not(:hover):not(:active):not(:focus):not(&_active),
+    &:visited:not(:hover):not(:active):not(:focus):not(&_active) {
+      color: $toolbar-switch_color;
+      background-color: $toolbar-switch_background;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &_active {
+      color: $toolbar-switch_color_active;
+      background-color: $toolbar-switch_background_active;
+    }
+
+    &_active,
+    &_disabled {
+      pointer-events: none;
+      cursor: auto;
+    }
+
+    &:first-child {
+      border-radius: $toolbar-switch_border_radius 0 0 $toolbar-switch_border_radius;
+    }
+
+    &:last-child {
+      border-radius: 0 $toolbar-switch_border_radius $toolbar-switch_border_radius 0;
+    }
+
+    & > svg {
+      display: block;
+      margin: $toolbar-switch__svg_margin;
+      width: $toolbar-switch__svg_size;
+      height: $toolbar-switch__svg_size;
+    }
+  }
+}

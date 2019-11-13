@@ -1,0 +1,106 @@
+@import '../../scss/options';
+
+// TODO: adjust padding
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: auto;
+  padding: $x * 7;
+
+  &__title {
+    @extend %h4;
+
+    display: block;
+    margin: $x / 2 auto;
+    max-width: $x * 50;
+    text-align: center;
+  }
+
+  &__text {
+    @extend %text--normal;
+
+    display: block;
+    margin: $x / 2 auto;
+    max-width: $x * 50;
+    text-align: center;
+  }
+
+  &__body {
+    display: block;
+    box-sizing: border-box;
+    margin: $x * 3.5 auto;
+    padding: $x * 5 $x * 7;
+    width: $x * 66;
+    border-radius: $x;
+    background-color: $color--white;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    margin: $x * 2 auto;
+    align-items: stretch;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > .field {
+      margin: $x / 2 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .form_pending &,
+      .form_completed & {
+        pointer-events: none;
+      }
+    }
+
+    & > .link {
+      @extend %text--small;
+
+      align-self: flex-end;
+      margin: $x / 4 0;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:not(:hover):not(:active):not(:focus),
+      &:link:not(:hover):not(:active):not(:focus),
+      &:visited:not(:hover):not(:active):not(:focus) {
+        color: $color--blue;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color--blue-alt;
+      }
+    }
+
+    & > .button {
+      margin: $x / 2 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

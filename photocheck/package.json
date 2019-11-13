@@ -1,0 +1,76 @@
+{
+  "name": "photocheck",
+  "version": "0.0.0",
+  "description": "Photo check",
+  "keywords": [
+    "photo",
+    "check",
+    "messapps"
+  ],
+  "author": "nmudriy",
+  "license": "Apache-2.0",
+  "private": true,
+  "homepage": "https://github.com/Messapps/photocheck#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Messapps/photocheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Messapps/photocheck/issues"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "server-watch": "nodemon --require @babel/register ./index.js",
+    "server-start": "node --require @babel/register ./index.js",
+    "serve-dev": "cd ./www && npm run serve-dev",
+    "serve-prod": "cd ./www && npm run serve-prod",
+    "watch-dev": "cd ./www && npm run watch-dev",
+    "watch-prod": "cd ./www && npm run watch-prod",
+    "build-dev": "cd ./www && npm run build-dev",
+    "build-prod": "cd ./www && npm run build-prod",
+    "service-start": "cd C:/Program Files/Tomcat/apache-tomcat-8.5.30/bin && catalina.bat run",
+    "service-build-prod": "cd service && mvn clean package",
+    "service-deploy-prod": "cd service && mvn clean package tomcat7:deploy -P production",
+    "service-redeploy-prod": "cd service && mvn clean package tomcat7:redeploy -P production",
+    "start": "node --require @babel/register ./index.js",
+    "forever-start": "forever start -c \"node --require @babel/register\" ./index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "color-space": "^1.16.0",
+    "connect-mongodb-session": "^2.1.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "delta-e": "0.0.7",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.0",
+    "express-session": "^1.16.1",
+    "helmet": "^3.18.0",
+    "imagemagick": "^0.1.3",
+    "mongoose": "^5.5.9",
+    "multer": "^1.4.1",
+    "node-fetch": "^2.6.0"
+  }
+}

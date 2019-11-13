@@ -1,0 +1,69 @@
+@import '../../scss/options';
+
+%footer { @extend %text--small; };
+
+$footer_margin: auto auto $x * 2 auto;
+
+$footer__text_margin: $x * 2 auto;
+$footer__text_width:  $x * 46;
+
+$footer__links_margin: $x * 2 auto;
+
+$footer__links__item_margin:       0 $x * 3;
+$footer__links__item_color_active: $color--blue;
+
+.footer {
+  @extend %footer;
+
+  display: block;
+  flex-shrink: 0;
+  margin: $footer_margin;
+
+  &__text {
+    display: block;
+    margin: $footer__text_margin;
+    width: $footer__text_width;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: $footer__links_margin;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+      display: block;
+      margin: $footer__links__item_margin;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color $transition;
+
+      &:not(:hover):not(:active):not(:focus),
+      &:link:not(:hover):not(:active):not(:focus),
+      &:visited:not(:hover):not(:active):not(:focus) {
+        color: inherit;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $footer__links__item_color_active;
+      }
+    }
+  }
+}

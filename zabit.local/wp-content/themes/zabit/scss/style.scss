@@ -1,0 +1,26 @@
+@import 'options';
+
+@import 'fonts';
+@import 'defaults';
+
+html {
+  font-family: $font-family;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+body {
+  color: $color--text;
+  background-color: $color--background;
+}
+
+.state {
+  display: none;
+}
+
+.iconset {
+  display: none;
+}
+
+
+@import 'layout';

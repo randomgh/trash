@@ -1,0 +1,87 @@
+@import 'sizing';
+
+$font-family_MW: 'Merriweather', Georgia, serif;
+$font-family_R:  'Roboto', Arial, sans-serif;
+$font-family_C:  'Caveat', 'Brush Script MT', cursive;
+
+@mixin text($style: normal) {
+  @if index(none small medium normal big h9 h8 h7 h6 h5 h4 h3 h2 h1, $style) {
+    @if $style == none {
+      font-size: 0;
+      line-height: 0;
+    } @else if $style == small {
+      font-family: $font-family_R;
+      font-size: 10px;
+      line-height: $x * 4;
+      letter-spacing: .02em;
+    } @else if $style == medium {
+      font-family: $font-family_R;
+      font-size: 12px;
+      line-height: $x * 4;
+      letter-spacing: .033em;
+    } @else if $style == normal {
+      font-family: $font-family_R;
+      font-size: 14px;
+      line-height: $x * 5;
+    } @else if $style == big {
+      font-family: $font-family_R;
+      font-size: 16px;
+      line-height: $x * 6;
+    } @else if $style == h9 {
+      font-family: $font-family_MW;
+      font-size: 15px;
+      line-height: $x * 5;
+      font-weight: bold;
+      font-style: italic;
+    } @else if $style == h8 {
+      font-family: $font-family_R;
+      font-size: 16px;
+      line-height: $x * 6;
+      font-weight: bold;
+    } @else if $style == h7 {
+      font-family: $font-family_MW;
+      font-size: 17px;
+      line-height: $x * 6;
+      font-weight: bold;
+      font-style: italic;
+    } @else if $style == h6 {
+      font-family: $font-family_R;
+      font-size: 24px;
+      line-height: $x * 8;
+      font-weight: 500;
+    } @else if $style == h5 {
+      font-family: $font-family_MW;
+      font-size: 24px;
+      line-height: $x * 8;
+      font-weight: 300;
+      font-style: italic;
+    } @else if $style == h4 {
+      font-family: $font-family_MW;
+      font-size: 24px;
+      line-height: $x * 8;
+      font-weight: bold;
+      font-style: italic;
+    } @else if $style == h3 {
+      font-family: $font-family_MW;
+      font-size: 36px;
+      line-height: $x * 12;
+      font-weight: bold;
+      font-style: italic;
+    } @else if $style == h2 {
+      font-family: $font-family_MW;
+      font-size: 40px;
+      line-height: $x * 14;
+      font-weight: bold;
+      font-style: italic;
+    } @else if $style == h1 {
+      font-family: $font-family_MW;
+      font-size: 48px;
+      line-height: $x * 16;
+      letter-spacing: -.01em;
+      font-weight: bold;
+      font-style: italic;
+    }
+  } @else {
+    @error "Unknown text style '#{$style}'";
+  }
+}

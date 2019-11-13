@@ -1,0 +1,83 @@
+@import '../options';
+
+.event-list {
+  display: block;
+  margin-top: auto;
+
+  &:not(:first-child) {
+    padding-top: $x * 2.5;
+  }
+
+  &__nav {
+    display: block;
+    margin-top: $x * 4;
+  }
+
+  & > .event-excerpt {
+    margin: $x * 7 0;
+
+    &:first-of-type {
+      @include adaptation(desktop-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(desktop-s) {
+        margin-top: 0;
+      }
+
+      @include adaptation(tablet-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(mobile-l) {
+        display: none;
+      }
+
+      @include adaptation(mobile-s) {
+        display: none;
+      }
+    }
+
+    &:nth-of-type(2) {
+      @include adaptation(desktop-l) {
+
+      }
+
+      @include adaptation(desktop-s) {
+
+      }
+
+      @include adaptation(tablet-l) {
+
+      }
+
+      @include adaptation(mobile-l) {
+        margin-top: 0;
+      }
+
+      @include adaptation(mobile-s) {
+        margin-top: 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: underline;
+    outline: none;
+    color: $color--text_active;
+    transition: color $transition;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: $color--text;
+    }
+  }
+}

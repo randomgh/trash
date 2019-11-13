@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "standard",
+    "node",
+    "promise",
+    "import"
+  ],
+  "rules": {
+    "react/prop-types": [2],
+
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-nesting": 1
+  },
+  "extends": ["standard", "eslint:recommended"]
+}

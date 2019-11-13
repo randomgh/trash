@@ -1,0 +1,85 @@
+/* Sizing */
+
+$x: 8px;
+
+/* Typography */
+
+$font-family: 'Helvetica Neue Cyr', Arial, Helvetica, sans-serif;
+
+// Text
+
+%text--none {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Adaptations */
+
+$breakpoint--xxxxxs: 320px;
+$breakpoint--xxxxs:  375px;
+$breakpoint--xxxs:   425px;
+$breakpoint--xxs:    480px;
+$breakpoint--xs:     640px;
+$breakpoint--s:      768px;
+$breakpoint--m:      960px;
+$breakpoint--l:      1024px;
+$breakpoint--xl:     1280px;
+$breakpoint--xxl:    1440px;
+$breakpoint--xxxl:   1600px;
+$breakpoint--xxxxl:  1920px;
+$breakpoint--xxxxxl: 2560px;
+
+@mixin adaptation($media) {
+  @if $media == mobile-s {
+    @media only screen and (max-width: $breakpoint--xxxxs) { @content; }
+  }
+  @else if $media == mobile-l {
+    @media only screen and (min-width: $breakpoint--xxxxs + .1) and (max-width: $breakpoint--xs) { @content; }
+  }
+  @else if $media == tablet-l {
+    @media only screen and (min-width: $breakpoint--xs + .1) and (max-width: $breakpoint--l) { @content; }
+  }
+  @else if $media == desktop-s {
+    @media only screen and (min-width: $breakpoint--l + .1) and (max-width: $breakpoint--xxl) { @content; }
+  }
+  @else if $media == desktop-l {
+    @media only screen and (min-width: $breakpoint--xxl + .1) { @content; }
+  }
+}
+
+/* Colors */
+
+$color--white: #fff;
+$color--black: #000;
+
+$color--text:                 #efefef;
+$color--text_active:          #f5c185;
+$color--text_disabled:        #686868;
+$color--text_disabled_active: #9e9e9e;
+$color--text_powered:         #8b8b8b;
+
+$color--background: #282828;
+
+$color--footer_background: #242424;
+$color--footer_background2: #202020;
+
+$color--aside_border: #3e3e3e;
+
+$color--footer_aside_border: #414141;
+
+$color--text_bio: #979797;
+
+$color--green: #49955e;
+$color--red:   #bc6464;
+
+$error_opacity: .6;
+
+/* Misc */
+
+$transition: .3s ease-out 0s;
+$animation:  .9s linear forwards;
+$show:         .6s ease-out 0s;
+
+/* Contents */
+
+$content--space: "\00a0";

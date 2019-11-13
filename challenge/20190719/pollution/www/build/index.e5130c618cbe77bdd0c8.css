@@ -1,0 +1,51 @@
+/* Sizing */
+/* Typography */
+/* Adaptations */
+/* Colors */
+/* Misc */
+/* Contents */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  font-style: normal; }
+
+html, body, input, textarea, select, button {
+  font-size: 1em;
+  line-height: 1.2em; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: 1px;
+  height: 1px; }
+
+svg {
+  fill: currentColor; }
+
+a {
+  color: inherit; }
+
+figure {
+  margin: 0; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif; }
+
+body {
+  color: #000;
+  background-color: #fff; }
+
+.iconset {
+  display: none; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+
+
+/*# sourceMappingURL=index.e5130c618cbe77bdd0c8.css.map*/

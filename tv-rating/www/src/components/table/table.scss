@@ -1,0 +1,157 @@
+@import '../../scss/options';
+
+.table {
+  @extend %text--normal;
+
+  display: block;
+  margin: $x * 3;
+  width: $x * 86;
+  border-radius: $x / 2;
+  background-color: $color--white;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    &__title {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-grow: 1;
+      padding: $x * 2 + 1 $x $x * 2 - 1 $x * 3;
+      font-weight: bold;
+
+      &__more {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: $x;
+        padding: $x;
+        border-radius: 50%;
+        background-color: $color--background_gray;
+        transition: background-color $transition;
+
+        &:hover {
+          background-color: $color--button_white_border;
+        }
+
+        & > svg {
+          width: $x;
+          height: $x;
+        }
+      }
+    }
+
+    &__rating {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      padding: $x * 2 + 1 $x $x * 2 - 1 $x;
+      width: $x * 8;
+      border-left: 2px solid $color--table-border-even;
+
+      & > svg {
+        width: $x * 2;
+        height: $x * 2;
+      }
+    }
+  }
+
+  &__body {
+    display: block;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-decoration: none;
+    transition: background-color $transition;
+
+    &:nth-child(odd) {
+      background-color: $color--background_white;
+
+      &:hover {
+        background-color: $color--input_hover_background;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: $color--white;
+
+      &:hover {
+        background-color: $color--input_hover_background;
+      }
+    }
+
+    &__id {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      padding: $x * 2 + 1 $x $x * 2 - 1 $x;
+      width: $x * 6;
+      min-height: $x * 2 + 1 + $x * 2 - 1 + 3.25 * $x;
+
+      .table_sorting_alphabet .table__row:not(.table__row_first) & {
+        opacity: 0;
+      }
+    }
+
+    &__image {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $x + 1;
+      flex-shrink: 0;
+
+      & > * {
+        display: block;
+        border-radius: 50%;
+        width: $x * 5;
+        height: $x * 5;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__title {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-grow: 1;
+      padding: $x * 2 + 1 $x $x * 2 - 1 $x;
+      min-height: $x * 2 + 1 + $x * 2 - 1 + 3.25 * $x;
+    }
+
+    &__rating {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      padding: $x * 2 + 1 $x $x * 2 - 1 $x;
+      width: $x * 8;
+      min-height: $x * 2 + 1 + $x * 2 - 1 + 3.25 * $x;
+      border-left-width: 2px;
+      border-left-style: solid;
+
+      .table__row:nth-child(odd) & {
+        border-left-color: $color--table-border-odd;
+      }
+
+      .table__row:nth-child(even) & {
+        border-left-color: $color--table-border-even;
+      }
+    }
+  }
+}

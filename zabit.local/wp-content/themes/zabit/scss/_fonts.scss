@@ -1,0 +1,3 @@
+@import 'utilities/font';
+
+@include font('../../fonts', 'Helvetica Neue Cyr', 'thin' 'light' 'ultra_light' 'normal' 'medium' 'bold' 'ultra_bold' 'black', 'normal' 'italic', eot woff ttf);

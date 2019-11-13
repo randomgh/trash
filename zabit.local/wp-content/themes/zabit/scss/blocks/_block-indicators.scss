@@ -1,0 +1,204 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.indicators {
+  @include clear_list();
+
+  display: block;
+  margin: $x * 7 0;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: $x * 4 0;
+
+    &__caption {
+      flex-grow: 1;
+      display: block;
+
+      @include adaptation(desktop-l) {
+        margin: 0 $x * 3;
+        padding: $x * 3 0;
+      }
+
+      @include adaptation(desktop-s) {
+        margin: 0 $x * 2;
+        padding: $x * 3 0;
+      }
+
+      @include adaptation(tablet-l) {
+        margin: 0 $x;
+        padding: $x * 3 0;
+      }
+
+      @include adaptation(mobile-l) {
+        margin: 0 $x * 1.5;
+        padding: $x * 3 0;
+      }
+
+      @include adaptation(mobile-s) {
+        margin: 0 $x * 1.5;
+        padding: $x * 3 0;
+      }
+
+      & > * {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__title {
+      display: block;
+      margin: $x / 2 0;
+      font-weight: 500;
+      color: $color--white;
+
+      @include adaptation(desktop-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+
+    &__parameter {
+      display: flex;
+      flex-direction: row;
+      margin: $x * .75 0;
+      color: $color--text_disabled;
+
+      @include adaptation(desktop-l) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .indicators__item__title + & {
+        margin-top: $x / 2;
+      }
+
+      &__title {
+        flex-grow: 1;
+        display: block;
+        margin: 0 $x;
+      }
+
+      &__value {
+        flex-shrink: 0;
+        display: block;
+        margin: 0 $x;
+      }
+
+      & > * {
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__chart {
+      flex-shrink: 0;
+      display: block;
+
+      @include adaptation(desktop-l) {
+        margin: 0 $x * 3;
+        width: $x * 15;
+        height: $x * 15;
+      }
+
+      @include adaptation(desktop-s) {
+        margin: 0 $x * 2;
+        width: $x * 13;
+        height: $x * 13;
+      }
+
+      @include adaptation(tablet-l) {
+        margin: 0 $x;
+        width: $x * 7;
+        height: $x * 7;
+      }
+
+      @include adaptation(mobile-l) {
+        margin: 0 $x * 1.5;
+        width: $x * 13;
+        height: $x * 13;
+      }
+
+      @include adaptation(mobile-s) {
+        margin: 0 $x * 1.5;
+        width: $x * 13;
+        height: $x * 13;
+      }
+
+      .chart__background {
+        display: none;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & > * {
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

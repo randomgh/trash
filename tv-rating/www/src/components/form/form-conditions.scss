@@ -1,0 +1,44 @@
+@import '../../scss/options';
+
+.form-conditions {
+  display: block;
+
+  &__title {
+    display: block;
+    margin: $x / 2 auto;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: block;
+    margin: $x / 2 auto;
+    padding: 0;
+    list-style-type: disc;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    margin: 0 auto 0 .7em;
+    padding: 0;
+
+    &:before {
+      content: $content--bullet;
+      position: absolute;
+      display: block;
+      right: 100%;
+      top: 0;
+      margin-right: .25em;
+      font-size: larger;
+      line-height: 1.5em;
+    }
+
+    &_valid {
+      color: $color--green;
+    }
+
+    &_invalid {
+      color: $color--red;
+    }
+  }
+}

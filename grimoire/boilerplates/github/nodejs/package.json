@@ -1,0 +1,55 @@
+{
+  "name": "webhook",
+  "version": "0.0.0",
+  "description": "Github webhook handler",
+  "keywords": [
+    "grimoire",
+    "github",
+    "webhook",
+    "messapps"
+  ],
+  "author": "nmudriy",
+  "license": "Apache-2.0",
+  "private": true,
+  "homepage": "https://github.com/Messapps/grimoire#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Messapps/grimoire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Messapps/grimoire/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "server-watch": "nodemon --require @babel/register ./index.js",
+    "server-start": "node --require @babel/register ./index.js",
+    "start": "node --require @babel/register ./index.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0"
+  }
+}

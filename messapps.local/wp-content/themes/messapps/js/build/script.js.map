@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["document","window","location","$","jQuery","WP"],"mappings":"cAAA,SAAEA,EAAUC,EAAQC,EAAUC,GAC1BA,EAAE,cADN,CACKH,SAACC,OAAFC,SAAAE,OAAAC","file":"script.js","sourcesContent":["((document, window, location, $, wp = {}) => {\r\n    $(() => {\r\n\r\n    });\r\n})(document, window, location, jQuery, WP);"]}

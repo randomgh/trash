@@ -1,0 +1,40 @@
+/* sizing */
+
+$x: 4px;
+
+$gap--small:  $x * 5;
+$gap--medium: $x * 6;
+$gap--big:    $x * 7;
+
+/* typography */
+
+$font-family:  Arial, Helvetica, sans-serif;
+
+@mixin text($style: normal) {
+  @if $style == none {
+    font-size: 0;
+    line-height: 0;
+  } @else if $style == normal {
+    font-size: 14px;
+    line-height: $x * 5.5;
+  } @else {
+    @error "Unknown text style '#{$style}'";
+  }
+}
+
+/* palette */
+
+$color--white:      #fff;
+$color--gray_light: #dcdcdc;
+$color--gray_dark:  #696969;
+$color--black:      #777;
+
+/* misc */
+
+$transition: .3s ease-out 0s;
+
+/* contents */
+
+$content--space:  '\00a0';
+$content--bullet: '\2022';
+$content--square: '\25A0';

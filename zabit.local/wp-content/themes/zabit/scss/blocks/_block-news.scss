@@ -1,0 +1,221 @@
+@import '../options';
+
+.news {
+  display: block;
+  margin-top: auto;
+
+  @include adaptation(desktop-l) {
+    position: sticky;
+    bottom: $x * 5;
+  }
+
+  @include adaptation(desktop-s) {
+    position: sticky;
+    bottom: $x * 5;
+  }
+
+  @include adaptation(tablet-l) {
+    position: sticky;
+    bottom: $x * 5;
+  }
+
+  @include adaptation(mobile-l) {
+
+  }
+
+  @include adaptation(mobile-s) {
+
+  }
+
+  &_hidden {
+    display:none;
+  }
+
+  &:not(:first-child) {
+    padding-top: $x * 2.5;
+  }
+
+  &__image {
+    @extend %text--none;
+
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    transition: opacity $transition;
+
+    @include adaptation(desktop-l) {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      opacity: 0;
+      margin-bottom: $x * 4;
+    }
+
+    @include adaptation(desktop-s) {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      opacity: 0;
+      margin-bottom: $x * 3;
+    }
+
+    @include adaptation(tablet-l) {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      opacity: 0;
+      margin-bottom: $x * 2;
+    }
+
+    @include adaptation(mobile-l) {
+      margin-bottom: $x * 2;
+    }
+
+    @include adaptation(mobile-s) {
+      margin-bottom: $x * 2;
+    }
+
+    &_visible {
+      opacity: 1;
+    }
+
+    & > .background {
+      position: static;
+      top: unset;
+      left: unset;
+      display: block;
+      margin: 0 auto;
+
+      &_hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__caption {
+    display: block;
+
+    &__text {
+      display: block;
+      margin: 0 auto $x * 1.5 auto;
+      font-weight: 500;
+      color: $color--text;
+
+      @include adaptation(desktop-l) {
+        font-size: 28px;
+        line-height: 40px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 22px;
+        line-height: 29px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      b,
+      strong {
+        font-weight: 500;
+        color: $color--text_active;
+      }
+
+      & > * {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__date {
+      display: block;
+      margin: $x * 1.5 auto $x * 4 auto;
+      color: $color--text_disabled;
+
+      @include adaptation(desktop-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    &__nav {
+      display: block;
+      margin-top: $x * 4;
+    }
+
+    &__link {
+      text-decoration: underline;
+      outline: none;
+      color: $color--text_active;
+      transition: color $transition;
+
+      @include adaptation(desktop-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: $color--text;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../options';
+
+.yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $x * 2 auto;
+
+  &__video {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,87 @@
+@import '../../scss/options';
+
+%toolbar_text--none   { @extend %text--none; };
+%toolbar_text--small  { @extend %text--small; };
+%toolbar_text--medium { @extend %text--medium; };
+%toolbar_text--normal { @extend %text--normal; };
+%toolbar_text--big    { @extend %text--big; };
+
+$toolbar_background--small:  transparent;
+$toolbar_background--medium: $color--background_black_alt;
+$toolbar_background--normal: $color--background_black;
+$toolbar_background--big:    transparent;
+
+$toolbar_padding--small:  0;
+$toolbar_padding--medium: $x * 1.5;
+$toolbar_padding--normal: $x $x * 3;
+$toolbar_padding--big:    0;
+
+$toolbar_item_margin--small:  0;
+$toolbar_item_margin--medium: 0 $x * 1.5;
+$toolbar_item_margin--normal: 0 $x * 1.5;
+$toolbar_item_margin--big:    0;
+
+.toolbar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  flex-shrink: 0;
+
+  &_size {
+    &_small {
+      @extend %toolbar_text--small;
+
+      padding: $toolbar_padding--small;
+      background-color: $toolbar_background--small;
+
+      & > * {
+        margin: $toolbar_item_margin--small;
+      }
+    }
+
+    &_medium {
+      @extend %toolbar_text--medium;
+
+      padding: $toolbar_padding--medium;
+      background-color: $toolbar_background--medium;
+
+      & > * {
+        margin: $toolbar_item_margin--medium;
+      }
+    }
+
+    &_normal {
+      @extend %toolbar_text--normal;
+
+      padding: $toolbar_padding--normal;
+      background-color: $toolbar_background--normal;
+
+      & > * {
+        margin: $toolbar_item_margin--normal;
+      }
+    }
+
+    &_big {
+      @extend %toolbar_text--big;
+
+      padding: $toolbar_padding--big;
+      background-color: $toolbar_background--big;
+
+      & > * {
+        margin: $toolbar_item_margin--big;
+      }
+    }
+  }
+
+  & > * {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

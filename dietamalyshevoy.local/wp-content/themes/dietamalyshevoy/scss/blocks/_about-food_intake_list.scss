@@ -1,0 +1,49 @@
+@import '../options';
+
+.about-food-intake-list {
+  margin: $x * 21 0 $x * 20 0;
+
+    & > .content {
+      padding: 0 $x * 28;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      text-align: center;
+      margin: $x * 2 0 $x * 4 0;
+      width: $x * 51;
+
+      &__img {
+        box-shadow: 0 $x * 7.5 $x * 12.5 $opacity_color--box_shadow;
+      }
+
+      &__title {
+        font-family: $font-family_C;
+        font-weight: bold;
+        font-size: $x * 6.25;
+        line-height: $x * 7.5;
+        transform: matrix(1, -.05, .05, 1, 0, 0);
+        display: inline-block;
+        margin-top: $x * 6;
+
+        &_red {
+          color: $color--red1;
+        }
+
+        &_blue {
+          color: $color--blue1;
+        }
+
+        &_yellow {
+          color: $color--yellow1;
+        }
+
+        &_green {
+          color: $color--green1;
+        }
+      }
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../scss/options';
+
+$modal_border_radius: $x;
+$modal_background:    $color--white;
+
+.modal {
+  display: block;
+  margin: auto;
+  border-radius: $modal_border_radius;
+  background-color: $modal_background;
+  overflow: auto;
+}

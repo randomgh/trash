@@ -1,0 +1,140 @@
+/* Sizing */
+
+$x: 8px;
+
+/* Typography */
+
+$font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+// Text
+
+%text--none {
+  font-size: 0;
+  line-height: 0;
+}
+
+%text--small {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+%text--medium {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+%text--normal {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+%text--big {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+// Header
+
+%h1 {
+  font-size: 88px;
+  line-height: 92px;
+}
+
+%h2 {
+  font-size: 56px;
+  line-height: 66px;
+  font-weight: bold;
+}
+
+%h3 {
+  font-size: 0;
+  line-height: 0;
+}
+
+%h4 {
+  font-size: 34px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+%h5 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+%h6 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+/* Colors */
+
+$color--white: #fff;
+$color--black: #313131;
+
+$color--blue:       #584ac6;
+$color--blue_alt:   #5448ba;
+$color--green:      #21b15e;
+$color--green_alt:  #21ac5c;
+$color--yellow:     #e8bb27;
+$color--yellow_alt: #e0b527;
+$color--red:        #c83f3f;
+$color--red_alt:    #c23e3e;
+
+$color--background_black:     #212124;
+$color--background_black_alt: #2a292c;
+$color--background_gray:      #f2f2f5;
+$color--background_white:     #f8f8f8;
+
+$color--text_black: $color--black;
+$color--text_dark:  #68686a;
+$color--text_light: #bdbdbd;
+$color--text_white: $color--white;
+
+$color--button_disabled_background: #ebebeb;
+$color--button_disabled_text:       #aaa;
+$color--button_white_border:        #e9e9e9;
+
+$color--background_icon:          #29292c;
+$color--background_hover:         #333336;
+$color--background_active:        $color--blue;
+$color--background_active_icon:   #7367cf;
+
+$color--input_text:             #a7a7ac;
+$color--input_action:           #999;
+$color--input_hover_background: #f4f4f4;
+
+$color--breadcrumbs_separator: #414144;
+
+$color--picker_background: #3b3b3d;
+$color--picker_text:       #dedede;
+
+$color--table-border-odd:  #efefef;
+$color--table-border-even: #f6f6f6;
+
+$color--background_image: #c4c4c4;
+
+$color--checkbox_border: #595961;
+
+$color--channel_background: #fbfbfb;
+
+/* Misc */
+
+%shadow--none {
+  box-shadow: 0 0 0 rgba($color--black, 0);
+}
+
+%shadow--ui {
+  box-shadow: 0 $x $x * 2 rgba($color--black, .08);
+}
+%shadow--channel {
+  box-shadow: 0 1px 0 rgba($color--black, .11);
+}
+
+$transition: .3s ease-out 0s;
+
+/* Contents */
+
+$content--space: "\00a0";
+$content--bullet: "\2022";

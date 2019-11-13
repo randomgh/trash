@@ -1,0 +1,48 @@
+@import '../options';
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  transition: opacity $transition;
+
+  @include adaptation(desktop-l) {
+
+  }
+
+  @include adaptation(desktop-s) {
+
+  }
+
+  @include adaptation(tablet-l) {
+
+  }
+
+  @include adaptation(mobile-l) {
+    display: none;
+  }
+
+  @include adaptation(mobile-s) {
+    display: none;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    filter: #{grayscale(100%)};
+  }
+}

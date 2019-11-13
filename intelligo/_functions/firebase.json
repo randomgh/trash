@@ -1,0 +1,36 @@
+{
+  "functions": {},
+  "hosting": {
+    "public": "../public/www",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/gql/*",
+        "function": "gql"
+      },
+      {
+        "source": "/giql/*",
+        "function": "giql"
+      },
+      {
+        "source": "/rest/*",
+        "function": "rest"
+      },
+      {
+        "source": "/swagger/*",
+        "function": "swagger"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
+}

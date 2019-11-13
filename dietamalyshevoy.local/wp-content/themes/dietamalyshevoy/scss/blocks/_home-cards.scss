@@ -1,0 +1,192 @@
+@import '../options';
+
+.home-cards {
+  margin-top: $x * 66;
+  margin-bottom: $x * 66;
+
+  &:not(:last-child) {
+    margin-bottom: -$x * 66;
+  }
+
+  & > .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    max-width: unset;
+  }
+
+  &__decoration {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: $x * 57;
+    margin-top: -$x * 50;
+
+    &_position {
+      &_left {
+        right: 50%;
+        margin-right: $x * 48;
+      }
+
+      &_right {
+        left: 50%;
+        margin-left: $x * 48;
+      }
+    }
+
+    & > svg {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  &__deck {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 $x * 25;
+    height: $x * 186;
+    overflow: hidden;
+
+    &_position {
+      &_left {
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-left: 0;
+
+        & > .home-cards__card {
+          &:last-child {
+            margin-top: $x * 33;
+            margin-bottom: $x * 44;
+          }
+
+          &:nth-last-child(4n + 1) {
+            margin-top: $x * 33;
+          }
+        }
+      }
+
+      &_right {
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-right: 0;
+
+        & > .home-cards__card {
+          &:first-child {
+            margin-top: $x * 33;
+            margin-bottom: $x * 44;
+          }
+
+          &:nth-child(4n) {
+            margin-top: $x * 33;
+          }
+        }
+      }
+    }
+  }
+
+  &__card {
+    display: block;
+    margin: $x * 3;
+    width: $x * 54;
+    height: $x * 71;
+    perspective: 1000px;
+    outline: none;
+
+    &__inner {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: rotateY(0);
+      transition: transform $flip_transition;
+
+      .home-cards__card:hover &,
+      .home-cards__card:focus &,
+      .home-cards__card:active & {
+        transform: rotateY(180deg);
+      }
+    }
+
+    &__side {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $x * 4;
+      width: 100%;
+      height: 100%;
+      box-shadow: $shadow--card;
+      overflow: hidden;
+      backface-visibility: hidden;
+
+      &_position {
+        &_front {
+          transform: rotateY(0);
+        }
+
+        &_back {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+
+    &__img {
+      display: block;
+      margin: 0;
+      max-width: 100%;
+      background-color: $color--blue2;
+    }
+
+    &__circle {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: $x * 4;
+      border-radius: 50%;
+      border: 3px solid $color--white;
+      width: $x * 16;
+      height: $x * 16;
+      background-color: $color--yellow2;
+      opacity: 0;
+      transition: opacity $transition;
+
+      .home-cards__card:hover &,
+      .home-cards__card:focus &,
+      .home-cards__card:active & {
+        opacity: 1;
+        transition-delay: nth($flip_transition, 1);
+      }
+
+      &__text,
+      &__value {
+        display: block;
+        text-align: center;
+        font-family: $font-family_OS;
+        font-weight: 600;
+        color: $color--white;
+      }
+
+      &__text {
+        @include text(tiny);
+      }
+
+      &__value {
+        @include text(h6);
+      }
+    }
+  }
+}

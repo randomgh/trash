@@ -1,0 +1,41 @@
+@import '../options';
+
+.title {
+  display: block;
+
+  &:not(:last-child) {
+    padding-bottom: $x * 2.5;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    text-transform: lowercase;
+
+    @include adaptation(desktop-l) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+
+    @include adaptation(desktop-s) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    @include adaptation(tablet-l) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    @include adaptation(mobile-l) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+
+    @include adaptation(mobile-s) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+}

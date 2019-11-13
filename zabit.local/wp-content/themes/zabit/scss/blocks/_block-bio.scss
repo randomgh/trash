@@ -1,0 +1,87 @@
+@import '../options';
+
+@import '../utilities/clear';
+
+.bio {
+  @include clear_list();
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-top: auto;
+  height: $x * 46;
+
+  &:not(:first-child) {
+    padding-top: $x * 2.5;
+  }
+
+  &__indicator {
+    display: block;
+    width: 50%;
+    margin: $x / 2 0;
+    padding: 0;
+
+    &__title {
+      display: block;
+      color: $color--text_bio;
+
+      @include adaptation(desktop-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+
+    &__value {
+      display: block;
+      font-weight: 500;
+      color: $color--text;
+
+      @include adaptation(desktop-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(desktop-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(tablet-l) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      @include adaptation(mobile-l) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      @include adaptation(mobile-s) {
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+  }
+}

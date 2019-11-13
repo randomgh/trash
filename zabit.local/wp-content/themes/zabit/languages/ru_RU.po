@@ -1,0 +1,2830 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-08-09 23:05+0300\n"
+"PO-Revision-Date: 2019-08-09 23:32+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_n_noop:1,2;_nx:1,2;_nx_noop:1,2;"
+"esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: aside-accomplishments.php:24
+msgid "accomplishments"
+msgstr "достижения"
+
+#: aside-accomplishments.php:29
+#, php-format
+msgid "#%d"
+msgstr ""
+
+#: aside-accomplishments.php:30
+#, php-format
+msgid "ufc %s"
+msgstr "ufc %s"
+
+#: aside-event.php:28
+msgid "Recent fights"
+msgstr "Недавние бои"
+
+#: aside-post.php:11
+msgid "Watch video"
+msgstr "Смотреть видео"
+
+#: aside-statistics.php:3
+msgid "statistics"
+msgstr "статистика"
+
+#: block-about.php:21
+#, php-format
+msgid "about %s"
+msgstr "биография"
+
+#: block-about.php:21
+msgid "about"
+msgstr "биография"
+
+#: block-announcement.php:38 block-announcement.php:64
+msgid "fight details"
+msgstr "результаты боя"
+
+#: block-announcement.php:41
+msgid "d"
+msgstr ""
+
+#: block-announcement.php:43
+msgid "F, Y"
+msgstr ""
+
+#: block-announcement.php:44
+#, php-format
+msgid "at %s"
+msgstr ""
+
+#: block-announcement.php:44
+msgid "h:i a"
+msgstr ""
+
+#: block-bio.php:25
+msgid "hometown"
+msgstr "родной город"
+
+#: block-bio.php:31
+msgid "age"
+msgstr "возраст"
+
+#: block-bio.php:37
+msgid "height"
+msgstr "рост"
+
+#: block-bio.php:43
+msgid "weight"
+msgstr "вес"
+
+#: block-bio.php:49
+msgid "debut in mma"
+msgstr "дебют в mma"
+
+#: block-bio.php:50 block-bio.php:56 excerpt-event.php:91
+msgid "F d, Y"
+msgstr ""
+
+#: block-bio.php:55
+msgid "debut in ufc"
+msgstr "дебют в ufc"
+
+#: block-bio.php:61
+msgid "arm reach"
+msgstr "размах рук"
+
+#: block-bio.php:67
+msgid "leg reach"
+msgstr "размах ног"
+
+#: block-error.php:14
+msgid "The page is not found"
+msgstr "Страница не найдена"
+
+#: block-event.php:40
+msgid "upcoming"
+msgstr "предстоящий"
+
+#: block-event.php:45
+msgid "vs."
+msgstr "vs."
+
+#: block-event.php:54
+msgid "details"
+msgstr "детали"
+
+#: block-event.php:56
+msgid "D, M j / g:i a"
+msgstr ""
+
+#: block-event.php:64
+msgid "view fight details"
+msgstr "посмотреть детали боя"
+
+#: block-list.php:19
+#, php-format
+msgid "view all %s"
+msgstr ""
+
+#: block-matchup.php:130
+msgid "matchup stats"
+msgstr "статистика бойцов"
+
+#: block-matchup.php:147 block-matchup.php:165 block-results.php:127
+#: block-results.php:146
+msgid "unranked"
+msgstr "без рейтинга"
+
+#: block-matchup.php:175 block-matchup.php:185 block-matchup.php:192
+#: block-matchup.php:202 block-matchup.php:209 block-matchup.php:219
+#: block-matchup.php:226 block-matchup.php:236 block-matchup.php:243
+#: block-matchup.php:253 block-matchup.php:260 block-matchup.php:270
+#: block-matchup.php:277 block-matchup.php:287 block-matchup.php:311
+#: block-matchup.php:321 block-matchup.php:340 block-matchup.php:350
+#: block-matchup.php:369 block-matchup.php:379 block-matchup.php:397
+#: block-matchup.php:407 block-matchup.php:418 block-matchup.php:429
+#: block-matchup.php:443 block-matchup.php:461 block-matchup.php:473
+#: block-matchup.php:491 block-matchup.php:500 block-matchup.php:518
+#: block-matchup.php:527 block-matchup.php:545 block-matchup.php:558
+#: block-matchup.php:576 block-matchup.php:588 block-matchup.php:606
+#: block-matchup.php:615 block-matchup.php:633 block-matchup.php:642
+#: block-matchup.php:660 block-results.php:93 block-results.php:99
+#: block-results.php:105 block-results.php:164 block-results.php:165
+#: block-results.php:183 block-results.php:184 block-results.php:197
+#: block-results.php:198 block-results.php:216 block-results.php:217
+#: block-results.php:230 block-results.php:231 block-results.php:249
+#: block-results.php:250 block-results.php:260 block-results.php:266
+#: block-results.php:272 block-results.php:278 block-results.php:288
+#: block-results.php:289 block-results.php:307 block-results.php:308
+#: block-results.php:315 block-results.php:316 block-results.php:334
+#: block-results.php:335 block-results.php:342 block-results.php:343
+#: block-results.php:361 block-results.php:362
+msgid "&mdash;"
+msgstr ""
+
+#: block-matchup.php:180
+msgid "record"
+msgstr "рекорд"
+
+#: block-matchup.php:197
+msgid "last fight"
+msgstr "последний бой"
+
+#: block-matchup.php:214
+msgid "country"
+msgstr "страна"
+
+#: block-matchup.php:231
+msgid "height (inch)"
+msgstr "рост (см)"
+
+#: block-matchup.php:248
+msgid "weight (lb)"
+msgstr "вес (кг)"
+
+#: block-matchup.php:265
+msgid "reach (inch)"
+msgstr "размах (см)"
+
+#: block-matchup.php:282
+msgid "leg reach (inch)"
+msgstr "размах ног (см)"
+
+#: block-matchup.php:294
+msgid "win by"
+msgstr "победа"
+
+#: block-matchup.php:311 block-matchup.php:321 block-matchup.php:340
+#: block-matchup.php:350 block-matchup.php:369 block-matchup.php:379
+#: block-results.php:289 block-results.php:308 block-results.php:316
+#: block-results.php:335 block-results.php:343 block-results.php:362
+#: section-statistics.php:162 section-statistics.php:177
+#, php-format
+msgid "%d%%"
+msgstr ""
+
+#: block-matchup.php:316
+msgid "ko/tko"
+msgstr "нокаут (тн)"
+
+#: block-matchup.php:345
+msgid "sub"
+msgstr "сабмишн"
+
+#: block-matchup.php:374
+msgid "dec"
+msgstr "dec"
+
+#: block-matchup.php:397 block-matchup.php:407 block-results.php:99
+#: excerpt-event.php:104 section-statistics.php:194
+msgid "i:s"
+msgstr ""
+
+#: block-matchup.php:402
+msgid "avg fight time"
+msgstr "среднее время боя"
+
+#: block-matchup.php:423
+msgid "knockdown avg"
+msgstr "среднее количество нокдаунов"
+
+#: block-matchup.php:424 section-statistics.php:140 section-statistics.php:172
+msgid "per 15 min"
+msgstr "за 15 минут "
+
+#: block-matchup.php:437
+msgid "significant strikes"
+msgstr "акц. удар"
+
+#: block-matchup.php:456
+msgid "landed per min"
+msgstr "нанесенный в минуту"
+
+#: block-matchup.php:486
+msgid "significant strikes accuracy"
+msgstr "акц. удар"
+
+#: block-matchup.php:513
+msgid "absobrbed per min"
+msgstr "пропущено ударов в мин"
+
+#: block-matchup.php:540
+msgid "defence"
+msgstr "защита"
+
+#: block-matchup.php:552
+msgid "grappling"
+msgstr "в борьбе"
+
+#: block-matchup.php:571
+msgid "takedown avg (per 15 min)"
+msgstr "среднее количество тейкдаунов (за 15 минут)"
+
+#: block-matchup.php:601
+msgid "takedown accuracy"
+msgstr "точность тейкдаунов"
+
+#: block-matchup.php:628
+msgid "takedown defence"
+msgstr "защита от тейкдаунов"
+
+#: block-matchup.php:655
+msgid "submission avg (per 15 min)"
+msgstr "среднее количество сабмишенов за 15 минут"
+
+#: block-news.php:11
+msgid "read article"
+msgstr "читать новость"
+
+#: block-results.php:87
+msgid "fight results"
+msgstr "результаты боев"
+
+#: block-results.php:92 excerpt-event.php:99
+msgid "round"
+msgstr "раунд"
+
+#: block-results.php:98 excerpt-event.php:103
+msgid "time"
+msgstr "время"
+
+#: block-results.php:104 excerpt-event.php:107
+msgid "method"
+msgstr "метод"
+
+#: block-results.php:128 block-results.php:147
+msgid "Winner"
+msgstr "Победитель"
+
+#: block-results.php:165 block-results.php:184 block-results.php:198
+#: block-results.php:217 block-results.php:231 block-results.php:250
+#, php-format
+msgid "%d%% of %d"
+msgstr "%d%% из %d"
+
+#: block-results.php:178
+msgid "total strikes"
+msgstr "всего ударов"
+
+#: block-results.php:211
+msgid "sig. strikes"
+msgstr "акц. удары"
+
+#: block-results.php:244
+msgid "takedowns"
+msgstr "тейкдауны"
+
+#: block-results.php:259
+msgid "knockdowns"
+msgstr "нокдауны"
+
+#: block-results.php:265
+msgid "sub. attempts"
+msgstr "попытки сабмишена"
+
+#: block-results.php:271
+msgid "pass"
+msgstr "проход"
+
+#: block-results.php:277
+msgid "rev."
+msgstr "переворот"
+
+#: block-results.php:283
+msgid "sig. strikes by position"
+msgstr "акц. удары по позициям"
+
+#: block-results.php:302
+msgid "distance"
+msgstr "на дистанции"
+
+#: block-results.php:329
+msgid "clinch"
+msgstr "в клинче"
+
+#: block-results.php:356
+msgid "ground"
+msgstr "в партере "
+
+#: block-social.php:11
+msgid "Did you like this article? Share it!"
+msgstr "Понравилась статья? Поделись ей!"
+
+#: block-social.php:16
+msgid "Share Facebook"
+msgstr "поделиться в Facebook"
+
+#: block-social.php:17 core/post_type/event.php:85 core/post_type/news.php:109
+#: core/post_type/page.php:73 core/post_type/post.php:60
+msgid "Facebook"
+msgstr "Facebook"
+
+#: block-social.php:23
+msgid "Share Twitter"
+msgstr "поделиться в Twitter"
+
+#: block-social.php:24 core/post_type/event.php:157 core/post_type/news.php:181
+#: core/post_type/page.php:145 core/post_type/post.php:132
+msgid "Twitter"
+msgstr "Twitter"
+
+#: block-social.php:42
+msgid "Share VKontakte"
+msgstr "поделиться в Вконтакте"
+
+#: block-social.php:43 core/post_type/event.php:121 core/post_type/news.php:145
+#: core/post_type/page.php:109 core/post_type/post.php:96
+msgid "VKontakte"
+msgstr "Вконтакте"
+
+#: block-stats.php:24
+msgid "Record"
+msgstr "Рекорд"
+
+#: core/admin.php:7
+msgid "Zabit settings"
+msgstr ""
+
+#: core/admin.php:8
+msgid "Zabit"
+msgstr ""
+
+#: core/admin.php:17 core/post_type/goal.php:102
+msgid "General"
+msgstr "Общее"
+
+#: core/admin.php:19
+msgid "Zabit general settings"
+msgstr ""
+
+#: core/admin.php:24
+msgid "Logo"
+msgstr "Логотип"
+
+#: core/admin.php:35 header.php:28
+msgid "Menu"
+msgstr ""
+
+#: core/admin.php:46
+msgid "About page"
+msgstr "Страница биографии"
+
+#: core/admin.php:48
+msgid "About page."
+msgstr "Страница биографии."
+
+#: core/admin.php:50 core/admin.php:72
+msgid "There are no pages. Make one first."
+msgstr ""
+
+#: core/admin.php:51 core/admin.php:73
+msgid "Select page"
+msgstr "Выбрать страницу"
+
+#: core/admin.php:68
+msgid "Error page"
+msgstr "Страница ошибки"
+
+#: core/admin.php:70
+msgid "404 error page."
+msgstr "Страница ошибки 404."
+
+#: core/admin.php:90
+msgid "Left background"
+msgstr "Фон с левой стороны"
+
+#: core/admin.php:91
+msgid "Left sidebar background."
+msgstr ""
+
+#: core/admin.php:102
+msgid "Right background"
+msgstr "Фон справа"
+
+#: core/admin.php:103
+msgid "Right sidebar background."
+msgstr "Фон сайдбара справа."
+
+#: core/admin.php:114 core/admin.php:203 core/post_type/athlete.php:8
+#: core/post_type/athlete.php:10
+msgid "Athlete"
+msgstr "Боец"
+
+#: core/admin.php:115
+msgid "Athlete dummy."
+msgstr ""
+
+#: core/admin.php:126 js/src/blocks/media-editor.js:89
+#: js/src/blocks/yt-editor.js:9
+msgid "Youtube"
+msgstr ""
+
+#: core/admin.php:127
+msgid "Youtube play button."
+msgstr ""
+
+#: core/admin.php:138
+msgid "Cart"
+msgstr ""
+
+#: core/admin.php:139
+#, fuzzy
+#| msgid "Edit icon"
+msgid "Cart icon."
+msgstr "Отредактировать иконку"
+
+#: core/admin.php:152
+msgid "Social"
+msgstr ""
+
+#: core/admin.php:154
+msgid "Zabit social settings"
+msgstr ""
+
+#: core/admin.php:159
+msgid "Facebook icon"
+msgstr "Иконка Facebook"
+
+#: core/admin.php:170
+msgid "Twitter icon"
+msgstr "Иконка Twitter"
+
+#: core/admin.php:181
+msgid "VKontakte icon"
+msgstr ""
+
+#: core/admin.php:196 core/post_type/athlete.php:63
+msgid "Bio"
+msgstr "Биография"
+
+#: core/admin.php:198
+msgid "Zabit bio settings"
+msgstr ""
+
+#: core/admin.php:205
+msgid "Default athlete."
+msgstr "Атлет по умолчанию."
+
+#: core/admin.php:207
+msgid "There are no athletes. Make one first."
+msgstr ""
+
+#: core/admin.php:208
+msgid "Select athlete"
+msgstr "Выбрать бойца"
+
+#: core/admin_page.php:271 core/meta_box.php:444 core/meta_box.php:530
+#: core/taxonomy_meta.php:196 core/walkers/EditNavMenuWalker.php:193
+msgid "Add icon"
+msgstr "Добавить иконку"
+
+#: core/admin_page.php:272 core/meta_box.php:445 core/meta_box.php:502
+#: core/taxonomy_meta.php:197 core/walkers/EditNavMenuWalker.php:194
+msgid "Edit icon"
+msgstr "Отредактировать иконку"
+
+#: core/admin_page.php:273 core/meta_box.php:446 core/meta_box.php:503
+#: core/meta_box.php:519 core/taxonomy_meta.php:198
+#: core/walkers/EditNavMenuWalker.php:195
+msgid "Remove icon"
+msgstr "Удалить иконку"
+
+#: core/legacy.php:41 core/legacy.php:54 core/legacy.php:72
+#, php-format
+msgid ""
+"Zabit requires at least WordPress version 5.1. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: core/menu.php:5
+msgid "Main menu"
+msgstr "Главное меню"
+
+#: core/menu.php:6
+msgid "Languages menu"
+msgstr "Меню языков"
+
+#: core/menu.php:7
+msgid "Social menu"
+msgstr ""
+
+#: core/meta_box.php:256
+#, php-format
+msgid "%s-%s"
+msgstr "%s-%s"
+
+#: core/meta_box.php:531
+msgid "Add url"
+msgstr ""
+
+#: core/post_type/athlete.php:5 core/post_type/athlete.php:7
+#: core/post_type/athlete.php:9
+msgid "Athletes"
+msgstr "Бойцы"
+
+#: core/post_type/athlete.php:11 core/post_type/event.php:11
+#: core/post_type/goal.php:11 core/post_type/news.php:11
+msgid "Add new"
+msgstr "Добавить новое"
+
+#: core/post_type/athlete.php:12
+msgid "Add new athlete"
+msgstr "Добавить нового бойца"
+
+#: core/post_type/athlete.php:13
+msgid "New athlete"
+msgstr "Новый боец"
+
+#: core/post_type/athlete.php:14
+msgid "Edit athlete"
+msgstr "Отредактировать инфо о бойце"
+
+#: core/post_type/athlete.php:15
+msgid "View athlete"
+msgstr ""
+
+#: core/post_type/athlete.php:16
+msgid "View athletes"
+msgstr ""
+
+#: core/post_type/athlete.php:17
+msgid "All athletes"
+msgstr "Все бойцы"
+
+#: core/post_type/athlete.php:18
+msgid "Search athletes"
+msgstr "Поиск бойцов"
+
+#: core/post_type/athlete.php:19
+msgid "Parent athlete:"
+msgstr ""
+
+#: core/post_type/athlete.php:20
+msgid "No athletes found."
+msgstr ""
+
+#: core/post_type/athlete.php:21
+msgid "No athletes found in Trash."
+msgstr ""
+
+#: core/post_type/athlete.php:22
+msgid "Athletes archives"
+msgstr "Архив бойцов"
+
+#: core/post_type/athlete.php:23
+msgid "Athletes attributes"
+msgstr ""
+
+#: core/post_type/athlete.php:24
+msgid "Insert into athletes"
+msgstr ""
+
+#: core/post_type/athlete.php:25
+msgid "Uploaded to this athlete"
+msgstr ""
+
+#: core/post_type/athlete.php:26 core/post_type/event.php:26
+#: core/post_type/goal.php:26 core/post_type/news.php:26
+msgid "Featured image"
+msgstr ""
+
+#: core/post_type/athlete.php:27 core/post_type/event.php:27
+#: core/post_type/goal.php:27 core/post_type/news.php:27
+msgid "Set featured image"
+msgstr "Установить главную картинку"
+
+#: core/post_type/athlete.php:28 core/post_type/event.php:28
+#: core/post_type/goal.php:28 core/post_type/news.php:28
+msgid "Remove featured image"
+msgstr "Удалить главное изображение"
+
+#: core/post_type/athlete.php:29 core/post_type/event.php:29
+#: core/post_type/goal.php:29 core/post_type/news.php:29
+msgid "Use as featured image"
+msgstr ""
+
+#: core/post_type/athlete.php:30
+msgid "Filter athletes list"
+msgstr "Фильтровать список бойцов"
+
+#: core/post_type/athlete.php:31
+msgid "Athletes list navigation"
+msgstr "Навигация по списку бойцов"
+
+#: core/post_type/athlete.php:32
+msgid "Athletes list"
+msgstr "Список бойцов"
+
+#: core/post_type/athlete.php:33
+msgid "Athlete published."
+msgstr ""
+
+#: core/post_type/athlete.php:34
+msgid "Athlete published privately."
+msgstr ""
+
+#: core/post_type/athlete.php:35
+msgid "Athlete reverted to draft."
+msgstr ""
+
+#: core/post_type/athlete.php:36
+msgid "Athlete scheduled."
+msgstr ""
+
+#: core/post_type/athlete.php:37
+msgid "Athlete updated."
+msgstr ""
+
+#: core/post_type/athlete.php:39
+msgid "Athletes."
+msgstr "Бойцы."
+
+#: core/post_type/athlete.php:71
+msgid "Homeland"
+msgstr "Родина"
+
+#: core/post_type/athlete.php:72
+msgid "Athlete's homeland."
+msgstr "Родина бойца."
+
+#: core/post_type/athlete.php:73
+msgid "Select country"
+msgstr "Выбрать страну"
+
+#: core/post_type/athlete.php:84
+msgid "Hometown"
+msgstr "Родной город"
+
+#: core/post_type/athlete.php:85
+msgid "Athlete's home town."
+msgstr "Родной город бойца."
+
+#: core/post_type/athlete.php:86
+msgid "Town"
+msgstr "Город"
+
+#: core/post_type/athlete.php:91
+msgid "Birthday"
+msgstr "День рождения"
+
+#: core/post_type/athlete.php:92
+msgid "Athlete's birthday."
+msgstr "День рождения бойца."
+
+#: core/post_type/athlete.php:98
+msgid "Height"
+msgstr "Рост"
+
+#: core/post_type/athlete.php:99
+msgid "Athlete's height."
+msgstr ""
+
+#: core/post_type/athlete.php:108
+msgid "Weight"
+msgstr "Вес"
+
+#: core/post_type/athlete.php:109
+msgid "Athlete's weight."
+msgstr ""
+
+#: core/post_type/athlete.php:118
+msgid "Hand reach"
+msgstr "Размах рук"
+
+#: core/post_type/athlete.php:119
+msgid "Athlete's hand reach."
+msgstr ""
+
+#: core/post_type/athlete.php:128
+msgid "Leg reach"
+msgstr "Размах ног"
+
+#: core/post_type/athlete.php:129
+msgid "Athlete's leg reach."
+msgstr "размах ног"
+
+#: core/post_type/athlete.php:138
+msgid "Debut in MMA"
+msgstr "Дебют в ММА"
+
+#: core/post_type/athlete.php:139
+#, fuzzy
+#| msgid "Athlete's home town."
+msgid "Athlete's debut in MMA."
+msgstr "Родной город бойца."
+
+#: core/post_type/athlete.php:145
+msgid "Debut in UFC"
+msgstr "Дебют в UFC"
+
+#: core/post_type/athlete.php:146
+msgid "Athlete's octagon debut."
+msgstr ""
+
+#: core/post_type/athlete.php:152
+msgid "Division"
+msgstr "Весовая категория"
+
+#: core/post_type/athlete.php:153
+msgid "Athlete's weight division."
+msgstr ""
+
+#: core/post_type/athlete.php:154
+msgid "Select division"
+msgstr "Выбрать весовую категорию"
+
+#: core/post_type/athlete.php:165
+msgid "Division rank"
+msgstr "Рейтинг в весовой категории"
+
+#: core/post_type/athlete.php:166
+msgid "Athlete's division rank."
+msgstr ""
+
+#: core/post_type/athlete.php:175
+msgid "Rank"
+msgstr "Рейтинг"
+
+#: core/post_type/athlete.php:176
+msgid "Athlete's total rank."
+msgstr ""
+
+#: core/post_type/athlete.php:186
+msgid "Fights"
+msgstr "Бои"
+
+#: core/post_type/athlete.php:194
+msgid "Record win streak"
+msgstr "Рекордная победная серия"
+
+#: core/post_type/athlete.php:195
+msgid "Record fight win streak."
+msgstr "Победная серия."
+
+#: core/post_type/athlete.php:204
+msgid "Record win knockouts"
+msgstr "Рекордная серия нокаутов"
+
+#: core/post_type/athlete.php:205
+msgid "Record wins by knockout."
+msgstr "Рекордная серия нокаутов."
+
+#: core/post_type/athlete.php:214
+msgid "Record win submissions"
+msgstr "Рекордная серия сабмишенов"
+
+#: core/post_type/athlete.php:215
+msgid "Record wins by submission."
+msgstr "Рекордная серия сабмишенов."
+
+#: core/post_type/athlete.php:224
+msgid "Win knockouts"
+msgstr "Победный нокаут"
+
+#: core/post_type/athlete.php:225
+msgid "Wins by knockout."
+msgstr "Побед нокаутом."
+
+#: core/post_type/athlete.php:234
+msgid "Win submissions"
+msgstr "Победный сабмишн"
+
+#: core/post_type/athlete.php:235
+msgid "Wins by submission."
+msgstr "Побед приемами."
+
+#: core/post_type/athlete.php:244
+msgid "Win decisions"
+msgstr "Побед решением судей"
+
+#: core/post_type/athlete.php:245
+msgid "Wins by decision."
+msgstr "Победы решением судей."
+
+#: core/post_type/athlete.php:254
+msgid "Loss knockouts"
+msgstr "Проигрыш нокаутом"
+
+#: core/post_type/athlete.php:255
+msgid "Losses by knockout."
+msgstr "Проигрыши нокаутом."
+
+#: core/post_type/athlete.php:264
+msgid "Loss submissions"
+msgstr "Проигрыши сабмишеном"
+
+#: core/post_type/athlete.php:265
+msgid "Losses by submission."
+msgstr "Проигрыши сабмишеном."
+
+#: core/post_type/athlete.php:274
+msgid "Loss decisions"
+msgstr "Проигрыш по решению судей"
+
+#: core/post_type/athlete.php:275
+msgid "Losses by decision."
+msgstr "Проигрыш по решению судей."
+
+#: core/post_type/athlete.php:284
+msgid "Draws"
+msgstr "Ничьи"
+
+#: core/post_type/athlete.php:285
+msgid "Draws."
+msgstr "Ничьи."
+
+#: core/post_type/athlete.php:294
+msgid "Last"
+msgstr "Последний"
+
+#: core/post_type/athlete.php:295
+msgid "Last fight result."
+msgstr "Результаты последнего боя."
+
+#: core/post_type/athlete.php:296 core/post_type/event.php:277
+msgid "Choose fight result"
+msgstr "Выбрать результаты боя"
+
+#: core/post_type/athlete.php:316
+msgid "Stats"
+msgstr "Статистика"
+
+#: core/post_type/athlete.php:324
+msgid "Fight time"
+msgstr "Длительность боя"
+
+#: core/post_type/athlete.php:325
+msgid "Average fight time."
+msgstr "Среднее время боя."
+
+#: core/post_type/athlete.php:331
+msgid "Knockdown average"
+msgstr "Среднее количество нокдаунов"
+
+#: core/post_type/athlete.php:332
+msgid "Knockdown average per 15 min."
+msgstr "Среднее количество нокдаунов за 15 минут "
+
+#: core/post_type/athlete.php:342 core/post_type/event.php:363
+#: core/post_type/event.php:502
+msgid "Significant strikes"
+msgstr "Акцентированный удар"
+
+#: core/post_type/athlete.php:350 core/post_type/athlete.php:470
+msgid "Landed"
+msgstr "Нанесенный"
+
+#: core/post_type/athlete.php:351
+msgid "Significant strikes landed."
+msgstr "Акцентированный удар."
+
+#: core/post_type/athlete.php:360 core/post_type/athlete.php:480
+msgid "Attempted"
+msgstr "Нанесенные"
+
+#: core/post_type/athlete.php:361 core/post_type/event.php:374
+#: core/post_type/event.php:513
+msgid "Significant strikes attempted."
+msgstr "Акцентированный удар."
+
+#: core/post_type/athlete.php:370 core/post_type/athlete.php:490
+msgid "Landed ratio"
+msgstr "Процент нанесенных ударов"
+
+#: core/post_type/athlete.php:371
+msgid "Significant strikes landed per minute."
+msgstr "Акцентированный удар"
+
+#: core/post_type/athlete.php:380
+msgid "Absorbed ratio"
+msgstr "Пропущ. ударов за бой"
+
+#: core/post_type/athlete.php:381
+msgid "Absorbed per minute."
+msgstr "Пропущ. ударов в минуту."
+
+#: core/post_type/athlete.php:390 core/post_type/athlete.php:510
+msgid "Defence"
+msgstr "Защита"
+
+#: core/post_type/athlete.php:391
+msgid "Defence."
+msgstr "Защита."
+
+#: core/post_type/athlete.php:401
+msgid "Head"
+msgstr "Голова"
+
+#: core/post_type/athlete.php:402 core/post_type/athlete.php:412
+#: core/post_type/athlete.php:422 core/post_type/athlete.php:432
+#: core/post_type/athlete.php:442 core/post_type/athlete.php:452
+#: core/post_type/event.php:364 core/post_type/event.php:384
+#: core/post_type/event.php:394 core/post_type/event.php:404
+#: core/post_type/event.php:503 core/post_type/event.php:523
+#: core/post_type/event.php:533 core/post_type/event.php:543
+msgid "Significant strikes."
+msgstr "Акцентированный удар."
+
+#: core/post_type/athlete.php:411
+msgid "Body"
+msgstr "Тело"
+
+#: core/post_type/athlete.php:421
+msgid "Leg"
+msgstr "Нога"
+
+#: core/post_type/athlete.php:431 core/post_type/event.php:383
+#: core/post_type/event.php:522
+msgid "Standing"
+msgstr "Стоя"
+
+#: core/post_type/athlete.php:441 core/post_type/event.php:393
+#: core/post_type/event.php:532
+msgid "Clinch"
+msgstr "В клинче"
+
+#: core/post_type/athlete.php:451 core/post_type/event.php:403
+#: core/post_type/event.php:542
+msgid "Ground"
+msgstr "В партере"
+
+#: core/post_type/athlete.php:462
+msgid "Grappling"
+msgstr "В борьбе"
+
+#: core/post_type/athlete.php:471
+msgid "Takedowns landed."
+msgstr "Нанесенные тейкдауны."
+
+#: core/post_type/athlete.php:481 core/post_type/event.php:424
+#: core/post_type/event.php:563
+msgid "Takedowns attempted."
+msgstr "Попытки тейкдаунов."
+
+#: core/post_type/athlete.php:491
+msgid "Takedowns landed per 15 minute."
+msgstr "Нанесенные тейкдауны за 15 минут."
+
+#: core/post_type/athlete.php:500
+msgid "Submission ratio"
+msgstr "Сабмишенов за бой"
+
+#: core/post_type/athlete.php:501
+msgid "Submission per 15 minute."
+msgstr "Количество сабмишенов за 15 минут."
+
+#: core/post_type/athlete.php:511
+msgid "Takedown defence."
+msgstr "Защита от тейкдаунов."
+
+#: core/post_type/event.php:5 core/post_type/event.php:7
+#: core/post_type/event.php:9 core/post_type/news.php:224
+msgid "Events"
+msgstr "Бои"
+
+#: core/post_type/event.php:8 core/post_type/event.php:10
+#: core/post_type/event.php:231 core/post_type/event.php:233
+msgid "Event"
+msgstr ""
+
+#: core/post_type/event.php:12
+msgid "Add new event"
+msgstr "Добавить новый бой"
+
+#: core/post_type/event.php:13
+msgid "New event"
+msgstr "Новый бой"
+
+#: core/post_type/event.php:14
+msgid "Edit event"
+msgstr "Отредактировать бой"
+
+#: core/post_type/event.php:15
+msgid "View event"
+msgstr ""
+
+#: core/post_type/event.php:16
+msgid "View events"
+msgstr ""
+
+#: core/post_type/event.php:17
+msgid "All events"
+msgstr "Все бои"
+
+#: core/post_type/event.php:18
+msgid "Search events"
+msgstr "Поиск боев"
+
+#: core/post_type/event.php:19
+msgid "Parent event:"
+msgstr ""
+
+#: core/post_type/event.php:20
+msgid "No events found."
+msgstr ""
+
+#: core/post_type/event.php:21
+msgid "No events found in Trash."
+msgstr ""
+
+#: core/post_type/event.php:22
+msgid "Events archives"
+msgstr "Архив боев"
+
+#: core/post_type/event.php:23
+msgid "Events attributes"
+msgstr ""
+
+#: core/post_type/event.php:24
+msgid "Insert into events"
+msgstr "Добавить к боям"
+
+#: core/post_type/event.php:25
+msgid "Uploaded to this event"
+msgstr ""
+
+#: core/post_type/event.php:30
+msgid "Filter events list"
+msgstr "Фильтровать список боев"
+
+#: core/post_type/event.php:31
+msgid "Events list navigation"
+msgstr "Навигация по списку боев"
+
+#: core/post_type/event.php:32
+msgid "Events list"
+msgstr "Список боев"
+
+#: core/post_type/event.php:33
+msgid "Event published."
+msgstr "Обновленный бой."
+
+#: core/post_type/event.php:34
+msgid "Event published privately."
+msgstr ""
+
+#: core/post_type/event.php:35
+msgid "Event reverted to draft."
+msgstr ""
+
+#: core/post_type/event.php:36
+msgid "Event scheduled."
+msgstr "Запланированный бой."
+
+#: core/post_type/event.php:37
+msgid "Event updated."
+msgstr ""
+
+#: core/post_type/event.php:39
+msgid "Events."
+msgstr "Бои."
+
+#: core/post_type/event.php:63 core/post_type/news.php:63
+#: core/post_type/page.php:14 core/post_type/post.php:14
+msgid "Setting"
+msgstr "Настройки"
+
+#: core/post_type/event.php:70 core/post_type/page.php:31
+msgid "Background"
+msgstr "Фон"
+
+#: core/post_type/event.php:72 core/post_type/page.php:33
+msgid "Section background."
+msgstr ""
+
+#: core/post_type/event.php:92 core/post_type/event.php:128
+#: core/post_type/event.php:164 core/post_type/news.php:116
+#: core/post_type/news.php:152 core/post_type/news.php:188
+#: core/post_type/page.php:80 core/post_type/page.php:116
+#: core/post_type/page.php:152 core/post_type/post.php:67
+#: core/post_type/post.php:103 core/post_type/post.php:139
+msgid "Enable"
+msgstr "Включить"
+
+#: core/post_type/event.php:94 core/post_type/news.php:118
+#: core/post_type/page.php:82 core/post_type/post.php:69
+msgid "Enable facebook meta."
+msgstr ""
+
+#: core/post_type/event.php:98 core/post_type/event.php:134
+#: core/post_type/event.php:170 core/post_type/goal.php:110
+#: core/post_type/goal.php:129 core/post_type/news.php:122
+#: core/post_type/news.php:158 core/post_type/news.php:194
+#: core/post_type/page.php:86 core/post_type/page.php:122
+#: core/post_type/page.php:158 core/post_type/post.php:73
+#: core/post_type/post.php:109 core/post_type/post.php:145
+msgid "Title"
+msgstr "Название"
+
+#: core/post_type/event.php:100 core/post_type/news.php:124
+#: core/post_type/page.php:88 core/post_type/post.php:75
+msgid "Facebook title."
+msgstr "Заголовок для Facebook."
+
+#: core/post_type/event.php:104 core/post_type/event.php:140
+#: core/post_type/event.php:176 core/post_type/goal.php:115
+#: core/post_type/goal.php:134 core/post_type/news.php:128
+#: core/post_type/news.php:164 core/post_type/news.php:200
+#: core/post_type/page.php:92 core/post_type/page.php:128
+#: core/post_type/page.php:164 core/post_type/post.php:79
+#: core/post_type/post.php:115 core/post_type/post.php:151
+#: core/walkers/EditNavMenuWalker.php:150
+#: woocommerce/single-product/tabs/description.php:24
+msgid "Description"
+msgstr "Описание"
+
+#: core/post_type/event.php:106 core/post_type/news.php:130
+#: core/post_type/page.php:94 core/post_type/post.php:81
+msgid "Facebook description."
+msgstr "Описание Facebook."
+
+#: core/post_type/event.php:110 core/post_type/event.php:146
+#: core/post_type/event.php:182 core/post_type/news.php:134
+#: core/post_type/news.php:170 core/post_type/news.php:206
+#: core/post_type/page.php:98 core/post_type/page.php:134
+#: core/post_type/page.php:170 core/post_type/post.php:85
+#: core/post_type/post.php:121 core/post_type/post.php:157
+msgid "Image"
+msgstr "Изображение"
+
+#: core/post_type/event.php:112 core/post_type/news.php:136
+#: core/post_type/page.php:100 core/post_type/post.php:87
+msgid "Facebook image."
+msgstr "Изображение Facebook"
+
+#: core/post_type/event.php:130 core/post_type/news.php:154
+#: core/post_type/page.php:118 core/post_type/post.php:105
+msgid "Enable vk meta."
+msgstr ""
+
+#: core/post_type/event.php:136 core/post_type/news.php:160
+#: core/post_type/page.php:124 core/post_type/post.php:111
+msgid "VKontakte title."
+msgstr ""
+
+#: core/post_type/event.php:142 core/post_type/news.php:166
+#: core/post_type/page.php:130 core/post_type/post.php:117
+msgid "VKontakte description."
+msgstr ""
+
+#: core/post_type/event.php:148 core/post_type/news.php:172
+#: core/post_type/page.php:136 core/post_type/post.php:123
+msgid "VKontakte image."
+msgstr ""
+
+#: core/post_type/event.php:166 core/post_type/news.php:190
+#: core/post_type/page.php:154 core/post_type/post.php:141
+msgid "Enable twitter meta."
+msgstr ""
+
+#: core/post_type/event.php:172 core/post_type/news.php:196
+#: core/post_type/page.php:160 core/post_type/post.php:147
+msgid "Twitter title."
+msgstr ""
+
+#: core/post_type/event.php:178 core/post_type/news.php:202
+#: core/post_type/page.php:166 core/post_type/post.php:153
+msgid "Twitter description."
+msgstr ""
+
+#: core/post_type/event.php:184 core/post_type/news.php:208
+#: core/post_type/page.php:172 core/post_type/post.php:159
+msgid "Twitter image."
+msgstr ""
+
+#: core/post_type/event.php:193
+msgid "Info"
+msgstr "Информация"
+
+#: core/post_type/event.php:201 woocommerce/myaccount/my-orders.php:14
+msgid "Date"
+msgstr "Дата"
+
+#: core/post_type/event.php:202
+msgid "Event date."
+msgstr "Дата боя."
+
+#: core/post_type/event.php:208
+msgid "Timezone"
+msgstr "Часовой пояс"
+
+#: core/post_type/event.php:209
+msgid "Event date timezone."
+msgstr "Часовой пояс даты боя."
+
+#: core/post_type/event.php:210
+msgid "Select timezone"
+msgstr "Выбрать часовой пояс"
+
+#: core/post_type/event.php:224 core/post_type/event.php:226
+msgid "Place"
+msgstr "Место"
+
+#: core/post_type/event.php:225
+msgid "Event place."
+msgstr "Место проведения боя."
+
+#: core/post_type/event.php:232
+msgid "UFC event type."
+msgstr ""
+
+#: core/post_type/event.php:238
+msgid "UFC"
+msgstr "UFC"
+
+#: core/post_type/event.php:239
+msgid "UFC."
+msgstr "UFC."
+
+#: core/post_type/event.php:248
+msgid "Opponent"
+msgstr "Соперник"
+
+#: core/post_type/event.php:249
+msgid "Opponent."
+msgstr "Соперник."
+
+#: core/post_type/event.php:250
+msgid "Select opponent"
+msgstr "Выбрать соперника"
+
+#: core/post_type/event.php:267
+msgid "Results"
+msgstr "Результаты"
+
+#: core/post_type/event.php:275
+msgid "Result"
+msgstr "Результаты"
+
+#: core/post_type/event.php:276
+msgid "Fight result."
+msgstr "Длительность боя."
+
+#: core/post_type/event.php:296
+msgid "Round"
+msgstr "Раунд"
+
+#: core/post_type/event.php:297
+msgid "Round."
+msgstr "Раунд."
+
+#: core/post_type/event.php:306
+msgid "Time"
+msgstr "Время"
+
+#: core/post_type/event.php:307
+msgid "Fight time."
+msgstr "Время боя."
+
+#: core/post_type/event.php:313
+msgid "Method"
+msgstr "Метод"
+
+#: core/post_type/event.php:314
+msgid "Method."
+msgstr "Метод."
+
+#: core/post_type/event.php:315
+msgid "Choose method"
+msgstr "Выбрать метод"
+
+#: core/post_type/event.php:335
+msgid "Zabit stats"
+msgstr "Статистика Забита"
+
+#: core/post_type/event.php:343 core/post_type/event.php:482
+msgid "Total strikes"
+msgstr "Общее количество ударов"
+
+#: core/post_type/event.php:344 core/post_type/event.php:483
+msgid "Total strikes."
+msgstr "Общее количество ударов."
+
+#: core/post_type/event.php:353 core/post_type/event.php:492
+#, fuzzy
+#| msgid "sig. strikes attempted"
+msgid "Total strikes attempted"
+msgstr "попытки акц. ударов"
+
+#: core/post_type/event.php:354 core/post_type/event.php:493
+#, fuzzy
+#| msgid "sig. strikes attempted"
+msgid "Total strikes attempted."
+msgstr "попытки акц. ударов"
+
+#: core/post_type/event.php:373 core/post_type/event.php:512
+#, fuzzy
+#| msgid "Significant strikes attempted."
+msgid "Significant strikes attempted"
+msgstr "Акцентированный удар."
+
+#: core/post_type/event.php:413 core/post_type/event.php:552
+msgid "Takedowns"
+msgstr "Тейкдауны"
+
+#: core/post_type/event.php:414 core/post_type/event.php:553
+msgid "Takedowns."
+msgstr "Тейкдауны."
+
+#: core/post_type/event.php:423 core/post_type/event.php:562
+#, fuzzy
+#| msgid "Takedowns attempted."
+msgid "Takedowns attempted"
+msgstr "Попытки тейкдаунов."
+
+#: core/post_type/event.php:433 core/post_type/event.php:572
+msgid "Knockdowns"
+msgstr "Нокдауны"
+
+#: core/post_type/event.php:434 core/post_type/event.php:573
+msgid "Knockdowns."
+msgstr "Нокдауны."
+
+#: core/post_type/event.php:443 core/post_type/event.php:582
+msgid "Submission attempted"
+msgstr "Попытки сабмишена"
+
+#: core/post_type/event.php:444 core/post_type/event.php:583
+msgid "Submission attempted."
+msgstr "Попытки сабмишена."
+
+#: core/post_type/event.php:453 core/post_type/event.php:592
+msgid "Pass"
+msgstr "Проход"
+
+#: core/post_type/event.php:454 core/post_type/event.php:593
+msgid "Pass."
+msgstr "Проход."
+
+#: core/post_type/event.php:463 core/post_type/event.php:464
+#: core/post_type/event.php:602 core/post_type/event.php:603
+msgid "Rev."
+msgstr "Переворот."
+
+#: core/post_type/event.php:474
+msgid "Opponent stats"
+msgstr "Статистика соперника"
+
+#: core/post_type/event.php:613 core/post_type/news.php:242
+#: js/src/blocks/media-editor.js:9
+msgid "Media"
+msgstr ""
+
+#: core/post_type/event.php:620 core/post_type/news.php:249
+msgid "Gallery"
+msgstr ""
+
+#: core/post_type/goal.php:5 core/post_type/goal.php:7
+#: core/post_type/goal.php:9
+msgid "Goals"
+msgstr ""
+
+#: core/post_type/goal.php:8 core/post_type/goal.php:10
+msgid "Goal"
+msgstr ""
+
+#: core/post_type/goal.php:12
+#, fuzzy
+#| msgid "Add new athlete"
+msgid "Add new goal"
+msgstr "Добавить нового бойца"
+
+#: core/post_type/goal.php:13
+#, fuzzy
+#| msgid "New athlete"
+msgid "New goal"
+msgstr "Новый боец"
+
+#: core/post_type/goal.php:14
+#, fuzzy
+#| msgid "Edit icon"
+msgid "Edit goal"
+msgstr "Отредактировать иконку"
+
+#: core/post_type/goal.php:15
+msgid "View goal"
+msgstr ""
+
+#: core/post_type/goal.php:16
+msgid "View goals"
+msgstr ""
+
+#: core/post_type/goal.php:17
+#, fuzzy
+#| msgid "All athletes"
+msgid "All goals"
+msgstr "Все бойцы"
+
+#: core/post_type/goal.php:18
+#, fuzzy
+#| msgid "Search athletes"
+msgid "Search goals"
+msgstr "Поиск бойцов"
+
+#: core/post_type/goal.php:19
+msgid "Parent goal:"
+msgstr ""
+
+#: core/post_type/goal.php:20
+msgid "No goals found."
+msgstr ""
+
+#: core/post_type/goal.php:21
+msgid "No goals found in Trash."
+msgstr ""
+
+#: core/post_type/goal.php:22
+#, fuzzy
+#| msgid "News archives"
+msgid "Goals archives"
+msgstr "Архив новостей"
+
+#: core/post_type/goal.php:23
+msgid "Goals attributes"
+msgstr ""
+
+#: core/post_type/goal.php:24
+#, fuzzy
+#| msgid "Insert into news"
+msgid "Insert into goals"
+msgstr "Добавить к новостям"
+
+#: core/post_type/goal.php:25
+msgid "Uploaded to this goal"
+msgstr ""
+
+#: core/post_type/goal.php:30
+#, fuzzy
+#| msgid "Filter athletes list"
+msgid "Filter goals list"
+msgstr "Фильтровать список бойцов"
+
+#: core/post_type/goal.php:31
+#, fuzzy
+#| msgid "News list navigation"
+msgid "Goals list navigation"
+msgstr "Навигация по списку новостей"
+
+#: core/post_type/goal.php:32
+#, fuzzy
+#| msgid "News list"
+msgid "Goals list"
+msgstr "Список новостей"
+
+#: core/post_type/goal.php:33
+#, fuzzy
+#| msgid "Event published."
+msgid "Goal published."
+msgstr "Обновленный бой."
+
+#: core/post_type/goal.php:34
+msgid "Goal published privately."
+msgstr ""
+
+#: core/post_type/goal.php:35
+msgid "Goal reverted to draft."
+msgstr ""
+
+#: core/post_type/goal.php:36
+#, fuzzy
+#| msgid "Event scheduled."
+msgid "Goal scheduled."
+msgstr "Запланированный бой."
+
+#: core/post_type/goal.php:37
+msgid "Goal updated."
+msgstr ""
+
+#: core/post_type/goal.php:39
+msgid "Goals."
+msgstr ""
+
+#: core/post_type/goal.php:69
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Accomplishments"
+msgstr "достижения"
+
+#: core/post_type/goal.php:70
+#, fuzzy
+#| msgid "accomplishments"
+msgid "All accomplishments"
+msgstr "достижения"
+
+#: core/post_type/goal.php:71
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Edit accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:72
+#, fuzzy
+#| msgid "accomplishments"
+msgid "View accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:73
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Update accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:74
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Add accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:75
+#, fuzzy
+#| msgid "accomplishments"
+msgid "New accomplishment name"
+msgstr "достижения"
+
+#: core/post_type/goal.php:76
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Parent accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:77
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Parent accomplishment:"
+msgstr "достижения"
+
+#: core/post_type/goal.php:78
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Search accomplishment"
+msgstr "достижения"
+
+#: core/post_type/goal.php:79
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Popular accomplishments"
+msgstr "достижения"
+
+#: core/post_type/goal.php:80
+msgid "Separate accomplishments with commas"
+msgstr ""
+
+#: core/post_type/goal.php:81
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Add or remove accomplishments"
+msgstr "достижения"
+
+#: core/post_type/goal.php:82
+msgid "Choose from the most used accomplishments"
+msgstr ""
+
+#: core/post_type/goal.php:83
+#, fuzzy
+#| msgid "accomplishments"
+msgid "No accomplishments found."
+msgstr "достижения"
+
+#: core/post_type/goal.php:85
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Accomplishment."
+msgstr "достижения"
+
+#: core/post_type/goal.php:109 core/post_type/goal.php:128
+#, fuzzy
+#| msgid "Title"
+msgid "Title."
+msgstr "Название"
+
+#: core/post_type/goal.php:114 core/post_type/goal.php:133
+#, fuzzy
+#| msgid "Description"
+msgid "Description."
+msgstr "Описание"
+
+#: core/post_type/goal.php:121 core/post_type/news.php:83
+#: core/post_type/page.php:60 core/post_type/post.php:34
+msgid "Apps"
+msgstr ""
+
+#: core/post_type/goal.php:147 core/post_type/goal.php:159
+msgid "Priority"
+msgstr ""
+
+#: core/post_type/goal.php:149 core/post_type/goal.php:162
+msgid "Priority number."
+msgstr ""
+
+#: core/post_type/news.php:5 core/post_type/news.php:7
+#: core/post_type/news.php:9
+msgid "News"
+msgstr "Новости"
+
+#: core/post_type/news.php:8 core/post_type/news.php:10
+msgid "News post"
+msgstr "Новая новость"
+
+#: core/post_type/news.php:12
+msgid "Add new news post"
+msgstr "Добавить новую новость "
+
+#: core/post_type/news.php:13
+msgid "New news post"
+msgstr "Новая новость"
+
+#: core/post_type/news.php:14
+msgid "Edit news post"
+msgstr "Отредактировать новость"
+
+#: core/post_type/news.php:15
+msgid "View news post"
+msgstr ""
+
+#: core/post_type/news.php:16
+msgid "View news"
+msgstr ""
+
+#: core/post_type/news.php:17
+msgid "All news"
+msgstr "Все новости"
+
+#: core/post_type/news.php:18
+msgid "Search news"
+msgstr "Поиск новостей"
+
+#: core/post_type/news.php:19
+msgid "Parent news post:"
+msgstr ""
+
+#: core/post_type/news.php:20
+msgid "No news found."
+msgstr ""
+
+#: core/post_type/news.php:21
+msgid "No news found in Trash."
+msgstr ""
+
+#: core/post_type/news.php:22
+msgid "News archives"
+msgstr "Архив новостей"
+
+#: core/post_type/news.php:23
+msgid "News attributes"
+msgstr ""
+
+#: core/post_type/news.php:24
+msgid "Insert into news"
+msgstr "Добавить к новостям"
+
+#: core/post_type/news.php:25
+msgid "Uploaded to this news post"
+msgstr ""
+
+#: core/post_type/news.php:30
+msgid "Filter news list"
+msgstr "Фильтровать список новостей"
+
+#: core/post_type/news.php:31
+msgid "News list navigation"
+msgstr "Навигация по списку новостей"
+
+#: core/post_type/news.php:32
+msgid "News list"
+msgstr "Список новостей"
+
+#: core/post_type/news.php:33
+msgid "News post published."
+msgstr ""
+
+#: core/post_type/news.php:34
+msgid "News post published privately."
+msgstr ""
+
+#: core/post_type/news.php:35
+msgid "News post reverted to draft."
+msgstr ""
+
+#: core/post_type/news.php:36
+msgid "News post scheduled."
+msgstr ""
+
+#: core/post_type/news.php:37
+msgid "News post updated."
+msgstr ""
+
+#: core/post_type/news.php:39
+msgid "News."
+msgstr "Новости."
+
+#: core/post_type/news.php:70 core/post_type/page.php:21
+#: core/post_type/page.php:44 core/post_type/post.php:21
+msgid "Video"
+msgstr ""
+
+#: core/post_type/news.php:72 core/post_type/page.php:23
+#: core/post_type/post.php:23
+msgid "YouTube video ID."
+msgstr ""
+
+#: core/post_type/news.php:90 core/post_type/page.php:67
+#: core/post_type/post.php:41
+msgid "Content for apps."
+msgstr ""
+
+#: core/post_type/news.php:91 core/post_type/page.php:68
+#: core/post_type/post.php:42
+msgid "Content"
+msgstr ""
+
+#: core/post_type/news.php:96 core/post_type/news.php:104
+#: core/post_type/post.php:47 core/post_type/post.php:55
+msgid "Excerpt"
+msgstr "Отрывок"
+
+#: core/post_type/news.php:103 core/post_type/post.php:54
+msgid "Excerpt description."
+msgstr "Описание отрывка."
+
+#: core/post_type/news.php:217
+#, fuzzy
+#| msgid "accomplishments"
+msgid "Attachments"
+msgstr "достижения"
+
+#: core/post_type/page.php:46
+#, fuzzy
+#| msgid "Background"
+msgid "Background video."
+msgstr "Фон"
+
+#: core/walkers/EditNavMenuWalker.php:48
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:52
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:66
+msgid "sub item"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:104
+#: woocommerce/myaccount/my-address.php:52
+msgid "Edit"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:113
+msgid "URL"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:120
+msgid "Navigation Label"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:126
+msgid "Title Attribute"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:133
+msgid "Open link in a new tab"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:138
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:144
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:152
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:179
+msgid "Icon"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:197
+msgid ""
+"The icon will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:203
+msgid "Move"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:204
+msgid "Up one"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:205
+msgid "Down one"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:208
+msgid "To the top"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:216
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:233
+msgid "Remove"
+msgstr ""
+
+#: core/walkers/EditNavMenuWalker.php:245
+msgid "Cancel"
+msgstr ""
+
+#: core/woo.php:24
+msgid "Currency options"
+msgstr ""
+
+#: core/woo.php:26
+msgid "The following options affect how prices are displayed on the frontend."
+msgstr ""
+
+#: core/woo.php:31
+msgid "Currency"
+msgstr ""
+
+#: core/woo.php:32
+msgid ""
+"This controls what currency prices are listed at in the catalog and which "
+"currency gateways will take payments in."
+msgstr ""
+
+#: core/woo.php:42
+msgid "Currency position"
+msgstr ""
+
+#: core/woo.php:43
+msgid "This controls the position of the currency symbol."
+msgstr ""
+
+#: core/woo.php:49
+msgid "Left"
+msgstr ""
+
+#: core/woo.php:50
+#, fuzzy
+#| msgid "height"
+msgid "Right"
+msgstr "рост"
+
+#: core/woo.php:51
+msgid "Left with space"
+msgstr ""
+
+#: core/woo.php:52
+#, fuzzy
+#| msgid "fight win streak"
+msgid "Right with space"
+msgstr "победная серия боев"
+
+#: core/woo.php:58
+msgid "Thousand separator"
+msgstr ""
+
+#: core/woo.php:59
+msgid "This sets the thousand separator of displayed prices."
+msgstr ""
+
+#: core/woo.php:68
+msgid "Decimal separator"
+msgstr ""
+
+#: core/woo.php:69
+msgid "This sets the decimal separator of displayed prices."
+msgstr ""
+
+#: core/woo.php:78
+msgid "Number of decimals"
+msgstr ""
+
+#: core/woo.php:79
+msgid "This sets the number of decimal points shown in displayed prices."
+msgstr ""
+
+#: core/woo.php:126
+#, fuzzy
+#| msgid "Search events"
+msgid "Measurements"
+msgstr "Поиск боев"
+
+#: core/woo.php:132
+#, fuzzy
+#| msgid "Weight"
+msgid "Weight unit"
+msgstr "Вес"
+
+#: core/woo.php:133
+msgid "This controls what unit you will define weights in."
+msgstr ""
+
+#: core/woo.php:140
+msgid "kg"
+msgstr ""
+
+#: core/woo.php:141
+msgid "g"
+msgstr ""
+
+#: core/woo.php:142
+msgid "lbs"
+msgstr ""
+
+#: core/woo.php:143
+msgid "oz"
+msgstr ""
+
+#: core/woo.php:149
+msgid "Dimensions unit"
+msgstr ""
+
+#: core/woo.php:150
+msgid "This controls what unit you will define lengths in."
+msgstr ""
+
+#: core/woo.php:157
+msgid "m"
+msgstr ""
+
+#: core/woo.php:158
+msgid "cm"
+msgstr ""
+
+#: core/woo.php:159
+msgid "mm"
+msgstr ""
+
+#: core/woo.php:160
+msgid "in"
+msgstr ""
+
+#: core/woo.php:161
+msgid "yd"
+msgstr ""
+
+#: excerpt-event.php:63
+msgid " vs. "
+msgstr ""
+
+#: js/build/admin.js:1
+msgid ".zabit-field_gallery"
+msgstr ""
+
+#: js/src/blocks/media-editor.js:73
+msgid "Upload"
+msgstr ""
+
+#: js/src/blocks/media-editor.js:91
+msgid "Youtube ID"
+msgstr ""
+
+#: js/src/blocks/media-editor.js:92
+#, fuzzy
+#| msgid "Add new"
+msgid "Add"
+msgstr "Добавить новое"
+
+#: js/src/blocks/yt-editor.js:32
+msgid "ID"
+msgstr ""
+
+#: section-statistics.php:41
+msgid "striking accuracy"
+msgstr "точность ударов"
+
+#: section-statistics.php:43
+msgid "sig. strikes landed"
+msgstr "нанесенные акц. удары"
+
+#: section-statistics.php:47
+msgid "sig. strikes attempted"
+msgstr "попытки акц. ударов"
+
+#: section-statistics.php:65
+msgid "grappling accuracy"
+msgstr "статистика в борьбе"
+
+#: section-statistics.php:67
+msgid "takedowns landed"
+msgstr "нанесенные тейкдауны"
+
+#: section-statistics.php:71
+msgid "takedowns attempted"
+msgstr "попытки тейкдаунов"
+
+#: section-statistics.php:98
+#, php-format
+msgid "sig. str.%slanded"
+msgstr "нанесенные%sакц. удары"
+
+#: section-statistics.php:111
+msgid "per min"
+msgstr "в минуту"
+
+#: section-statistics.php:117
+#, php-format
+msgid "sig. str.%sabsorbed"
+msgstr "пропускает%sакц. ударов"
+
+#: section-statistics.php:127
+#, php-format
+msgid "takedown%savg"
+msgstr "среднее количество%sтейкдаунов"
+
+#: section-statistics.php:146
+#, php-format
+msgid "submission%savg"
+msgstr "среднее количество%sсабмишенов"
+
+#: section-statistics.php:163
+#, php-format
+msgid "sig. str.%sdefence"
+msgstr "защита%sот акц. ударов"
+
+#: section-statistics.php:178
+#, php-format
+msgid "takedown%sdefence"
+msgstr "защита от%sтейкдаунов"
+
+#: section-statistics.php:188
+#, php-format
+msgid "knockdown%sration"
+msgstr "процент%sнокдаунов"
+
+#: section-statistics.php:195
+#, php-format
+msgid "average fight%stime"
+msgstr "среднее время%sбоев"
+
+#: woocommerce/auth/form-grant-access.php:24 woocommerce/auth/form-login.php:25
+#, php-format
+msgid "%s would like to connect to your store"
+msgstr ""
+
+#: woocommerce/auth/form-grant-access.php:28
+#, php-format
+msgid "This will give \"%1$s\" %2$s access which will allow it to:"
+msgstr ""
+
+#: woocommerce/auth/form-grant-access.php:38
+#, php-format
+msgid "Logged in as %s"
+msgstr ""
+
+#: woocommerce/auth/form-grant-access.php:38
+#, fuzzy
+#| msgid "Logo"
+msgid "Logout"
+msgstr "Логотип"
+
+#: woocommerce/auth/form-grant-access.php:42
+msgid "Approve"
+msgstr ""
+
+#: woocommerce/auth/form-grant-access.php:43
+msgid "Deny"
+msgstr ""
+
+#: woocommerce/auth/form-login.php:34
+#, php-format
+msgid ""
+"To connect to %1$s you need to be logged in. Log in to your store below, or "
+"<a href=\"%2$s\">cancel and return to %1$s</a>"
+msgstr ""
+
+#: woocommerce/auth/header.php:28
+msgid "Application authentication request"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:51
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:52
+msgid "Change address"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:54
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:61
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:63
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:66
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:67
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:27
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:91 woocommerce/checkout/review-order.php:26
+#: woocommerce/checkout/review-order.php:105
+#: woocommerce/myaccount/my-orders.php:16
+#: woocommerce/order/order-details.php:45
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:55 woocommerce/cart/mini-cart.php:46
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:89
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:26
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:70
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:78
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Returning customer?"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:32
+msgid ""
+"If you have shopped with us before, please enter your details below. If you "
+"are a new customer, please proceed to the Billing &amp; Shipping section."
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:79
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:42
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:25
+#: woocommerce/order/order-details.php:44
+msgid "Product"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "My account"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:82
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:45
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:50
+#, fuzzy
+#| msgid "Date"
+msgid "Date:"
+msgstr "Дата"
+
+#: woocommerce/checkout/thankyou.php:56
+msgid "Email:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:62
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/content-widget-reviews.php:31
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: woocommerce/emails/admin-cancelled-order.php:28
+#: woocommerce/emails/plain/admin-cancelled-order.php:25
+#, php-format
+msgid ""
+"Alas. Just to let you know &mdash; order #%1$s belonging to %2$s has been "
+"cancelled:"
+msgstr ""
+
+#: woocommerce/emails/admin-failed-order.php:28
+#: woocommerce/emails/plain/admin-failed-order.php:25
+#, php-format
+msgid "Payment for order #%1$s from %2$s has failed. The order was as follows:"
+msgstr ""
+
+#: woocommerce/emails/admin-failed-order.php:54
+#: woocommerce/emails/plain/admin-failed-order.php:51
+#, php-format
+msgid ""
+"Hopefully they’ll be back. Read more about <a href=\"%s\">troubleshooting "
+"failed payments</a>."
+msgstr ""
+
+#: woocommerce/emails/admin-new-order.php:28
+#: woocommerce/emails/plain/admin-new-order.php:25
+#, php-format
+msgid "You’ve received the following order from %s:"
+msgstr ""
+
+#: woocommerce/emails/customer-completed-order.php:28
+#: woocommerce/emails/customer-invoice.php:30
+#: woocommerce/emails/customer-new-account.php:27
+#: woocommerce/emails/customer-note.php:28
+#: woocommerce/emails/customer-on-hold-order.php:28
+#: woocommerce/emails/customer-processing-order.php:28
+#: woocommerce/emails/customer-refunded-order.php:28
+#: woocommerce/emails/customer-reset-password.php:27
+#: woocommerce/emails/plain/customer-completed-order.php:25
+#: woocommerce/emails/plain/customer-invoice.php:25
+#: woocommerce/emails/plain/customer-new-account.php:25
+#: woocommerce/emails/plain/customer-note.php:26
+#: woocommerce/emails/plain/customer-on-hold-order.php:25
+#: woocommerce/emails/plain/customer-processing-order.php:25
+#: woocommerce/emails/plain/customer-refunded-order.php:25
+#: woocommerce/emails/plain/customer-reset-password.php:25
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:38
+#: woocommerce/emails/plain/customer-invoice.php:30
+#, php-format
+msgid ""
+"An order has been created for you on %1$s. Your invoice is below, with a "
+"link to make payment when you’re ready: %2$s"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:46
+msgid "Pay for this order"
+msgstr ""
+
+#: woocommerce/emails/customer-invoice.php:55
+#: woocommerce/emails/plain/customer-invoice.php:37
+#, php-format
+msgid "Here are the details of your order placed on %s:"
+msgstr ""
+
+#: woocommerce/emails/customer-new-account.php:29
+#: woocommerce/emails/plain/customer-new-account.php:27
+#, php-format
+msgid ""
+"Thanks for creating an account on %1$s. Your username is %2$s. You can "
+"access your account area to view orders, change your password, and more at: "
+"%3$s"
+msgstr ""
+
+#: woocommerce/emails/customer-new-account.php:33
+#, php-format
+msgid "Your password has been automatically generated: %s"
+msgstr ""
+
+#: woocommerce/emails/customer-on-hold-order.php:29
+#: woocommerce/emails/plain/customer-on-hold-order.php:26
+msgid ""
+"Thanks for your order. It’s on-hold until we confirm that payment has been "
+"received. In the meantime, here’s a reminder of what you ordered:"
+msgstr ""
+
+#: woocommerce/emails/customer-on-hold-order.php:54
+#: woocommerce/emails/plain/customer-on-hold-order.php:51
+msgid "We look forward to fulfilling your order soon."
+msgstr ""
+
+#: woocommerce/emails/customer-processing-order.php:30
+#: woocommerce/emails/plain/customer-processing-order.php:27
+#, php-format
+msgid ""
+"Just to let you know &mdash; we've received your order #%s, and it is now "
+"being processed:"
+msgstr ""
+
+#: woocommerce/emails/customer-refunded-order.php:34
+#: woocommerce/emails/plain/customer-refunded-order.php:28
+#, php-format
+msgid ""
+"Your order on %s has been partially refunded. There are more details below "
+"for your reference:"
+msgstr ""
+
+#: woocommerce/emails/customer-refunded-order.php:37
+#: woocommerce/emails/plain/customer-refunded-order.php:31
+#, php-format
+msgid ""
+"Your order on %s has been refunded. There are more details below for your "
+"reference:"
+msgstr ""
+
+#: woocommerce/emails/customer-refunded-order.php:64
+#: woocommerce/emails/plain/customer-refunded-order.php:56
+msgid "We hope to see you again soon."
+msgstr ""
+
+#: woocommerce/emails/customer-reset-password.php:29
+#: woocommerce/emails/plain/customer-reset-password.php:27
+#, php-format
+msgid "Someone has requested a new password for the following account on %s:"
+msgstr ""
+
+#: woocommerce/emails/customer-reset-password.php:31
+#: woocommerce/emails/plain/customer-reset-password.php:29
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: woocommerce/emails/email-addresses.php:32
+#: woocommerce/order/order-details-customer.php:35
+#: woocommerce/order/order-details-customer.php:53
+#: woocommerce/single-product/meta.php:30
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/emails/email-customer-details.php:27
+#: woocommerce/emails/plain/email-customer-details.php:24
+#, fuzzy
+#| msgid "fight details"
+msgid "Customer details"
+msgstr "результаты боя"
+
+#: woocommerce/emails/email-order-details.php:36
+#, php-format
+msgid "[Order #%s]"
+msgstr ""
+
+#: woocommerce/emails/plain/admin-cancelled-order.php:50
+#: woocommerce/emails/plain/customer-invoice.php:68
+#: woocommerce/emails/plain/customer-note.php:60
+#: woocommerce/emails/plain/customer-reset-password.php:32
+msgid "Thanks for reading."
+msgstr ""
+
+#: woocommerce/emails/plain/customer-completed-order.php:27
+msgid "We have finished processing your order."
+msgstr ""
+
+#: woocommerce/emails/plain/customer-completed-order.php:52
+msgid "Thanks for shopping with us."
+msgstr ""
+
+#: woocommerce/emails/plain/customer-new-account.php:31
+#, php-format
+msgid "Your password has been automatically generated: %s."
+msgstr ""
+
+#: woocommerce/emails/plain/customer-new-account.php:34
+msgid "We look forward to seeing you soon."
+msgstr ""
+
+#: woocommerce/emails/plain/customer-note.php:27
+msgid "The following note has been added to your order:"
+msgstr ""
+
+#: woocommerce/emails/plain/customer-note.php:35
+msgid "As a reminder, here are your order details:"
+msgstr ""
+
+#: woocommerce/emails/plain/customer-reset-password.php:30
+msgid ""
+"If you didn't make this request, just ignore this email. If you'd like to "
+"proceed:"
+msgstr ""
+
+#: woocommerce/emails/plain/email-addresses.php:22
+#: woocommerce/emails/plain/email-addresses.php:37
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:26
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:31
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/emails/plain/email-downloads.php:20
+msgid "Downloads"
+msgstr ""
+
+#: woocommerce/emails/plain/email-order-details.php:25
+#, php-format
+msgid "[Order #%1$s] (%2$s)"
+msgstr ""
+
+#: woocommerce/emails/plain/email-order-details.php:47
+#: woocommerce/order/order-details.php:83
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/emails/plain/email-order-details.php:52
+#, php-format
+msgid "View order: %s"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:28
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:28
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:23
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: woocommerce/loop/result-count.php:28 woocommerce/loop/result-count.php:33
+#, php-format
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/loop/sale-flash.php:12
+#: woocommerce/single-product/sale-flash.php:12
+msgid "discount"
+msgstr "скидка"
+
+#: woocommerce/myaccount/dashboard.php:28
+#, php-format
+msgid "Hello %1$s (not %1$s? <a href=\"%2$s\">Log out</a>)"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:36
+#, php-format
+msgid ""
+"From your account dashboard you can view your <a href=\"%1$s\">recent "
+"orders</a>, manage your <a href=\"%2$s\">shipping and billing addresses</a>, "
+"and <a href=\"%3$s\">edit your password and account details</a>."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:25
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-reset-password.php:25
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:22
+msgid "Password reset email has been sent."
+msgstr ""
+
+#: woocommerce/myaccount/lost-password-confirmation.php:25
+msgid ""
+"A password reset email has been sent to the email address on file for your "
+"account, but may take several minutes to show up in your inbox. Please wait "
+"at least 10 minutes before attempting another reset."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:40
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-downloads.php:29
+msgid "Available downloads"
+msgstr ""
+
+#: woocommerce/myaccount/my-downloads.php:38
+#, php-format
+msgid "%s download remaining"
+msgid_plural "%s downloads remaining"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/myaccount/my-orders.php:13
+msgid "Order"
+msgstr ""
+
+#: woocommerce/myaccount/my-orders.php:15
+#, fuzzy
+#| msgid "Stats"
+msgid "Status"
+msgstr "Статистика"
+
+#: woocommerce/myaccount/my-orders.php:30
+#, fuzzy
+#| msgid "Recent fights"
+msgid "Recent orders"
+msgstr "Недавние бои"
+
+#: woocommerce/myaccount/my-orders.php:67 woocommerce/myaccount/orders.php:62
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/myaccount/orders.php:88
+msgid "Previous"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:92
+msgid "Next"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:100
+msgid "Go shop"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:102
+msgid "No order has been made yet."
+msgstr ""
+
+#: woocommerce/myaccount/payment-methods.php:51
+#, php-format
+msgid "%1$s ending in %2$s"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:28 woocommerce/order/tracking.php:26
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:36 woocommerce/order/tracking.php:34
+msgid "Order updates"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:42 woocommerce/order/tracking.php:40
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#: woocommerce/order/order-details.php:38
+#, fuzzy
+#| msgid "details"
+msgid "Order details"
+msgstr "детали"
+
+#: woocommerce/order/order-downloads.php:56
+msgid "&infin;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:36
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/single-product-reviews.php:78
+#, fuzzy
+#| msgid "Add new event"
+msgid "Add a review"
+msgstr "Добавить новый бой"
+
+#: woocommerce/single-product-reviews.php:78
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:80
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:85
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:87
+msgid "Email"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:102
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:103
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:104
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:105
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:106
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:107
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:108
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:112
+#, fuzzy
+#| msgid "Add new event"
+msgid "Your review"
+msgstr "Добавить новый бой"
+
+#: woocommerce/single-product/add-to-cart/variable.php:46
+msgid "Clear"
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variation.php:22
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/single-product/product-image.php:43
+msgid "Awaiting product image"
+msgstr ""
+
+#: woocommerce/single-product/rating.php:38
+#, php-format
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: woocommerce/single-product/tabs/additional-information.php:24
+msgid "Additional information"
+msgstr ""
+
+#~ msgid "Octagon debut"
+#~ msgstr "Дебют на октагоне"
+
+#~ msgid "octagon debut"
+#~ msgstr "дебют на октагоне"
+
+#~ msgid "reach"
+#~ msgstr "размах"
+
+#~ msgid "fight win streak"
+#~ msgstr "победная серия боев"
+
+#~ msgid "win by knockout"
+#~ msgid_plural "wins by knockout"
+#~ msgstr[0] "победа нокаутом "
+#~ msgstr[1] "победы нокаутом "
+#~ msgstr[2] "побед нокаутом "
+
+#~ msgid "win by submission"
+#~ msgid_plural "wins by submission"
+#~ msgstr[0] "победа приемами"
+#~ msgstr[1] "победы приемами"
+#~ msgstr[2] "побед приемами"
+
+#~ msgid "ufc"
+#~ msgstr "ufc"

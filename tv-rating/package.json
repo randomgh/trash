@@ -1,0 +1,34 @@
+{
+  "name": "tv-rating",
+  "version": "0.0.0",
+  "description": "TV rating",
+  "keywords": [
+    "tv",
+    "rating",
+    "tv-rating",
+    "messapps"
+  ],
+  "author": "nmudriy",
+  "license": "Apache-2.0",
+  "private": true,
+  "homepage": "https://github.com/Messapps/tv-rating#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Messapps/tv-rating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Messapps/tv-rating/issues"
+  },
+  "scripts": {
+    "app-watch": "cd ./api && npm run server-watch",
+    "app-start": "cd ./api && npm run server-start",
+    "serve-dev": "cd ./www && npm run serve-dev",
+    "serve-prod": "cd ./www && npm run serve-prod",
+    "watch-dev": "cd ./www && npm run watch-dev",
+    "watch-prod": "cd ./www && npm run watch-prod",
+    "build-dev": "cd ./www && npm run build-dev",
+    "build-prod": "cd ./www && npm run build-prod"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
